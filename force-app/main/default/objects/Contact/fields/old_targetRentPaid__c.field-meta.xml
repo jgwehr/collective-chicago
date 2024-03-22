@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>old_targetRentPaid__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
+    <description>How much the Resident should have paid towards rent. Automated via Flow. Increases while Resident; stops at Graduation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Begins 45 days after Move In. Increases on the first of the month.</inlineHelpText>
+    <label>(Do Not Use) Targeted Rent Paid</label>
+    <precision>7</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

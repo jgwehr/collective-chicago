@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>applicationIncome__c</fullName>
+    <externalId>false</externalId>
+    <label>Income (Application)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No current income</fullName>
+                <default>true</default>
+                <label>No current income</label>
+            </value>
+            <value>
+                <fullName>Link card / Food stamps / SNAP</fullName>
+                <default>false</default>
+                <label>Link card / Food stamps / SNAP</label>
+            </value>
+            <value>
+                <fullName>SSI / Unemployment / disability</fullName>
+                <default>false</default>
+                <label>SSI / Unemployment / disability</label>
+            </value>
+            <value>
+                <fullName>Part-time making $20 - $100 per month</fullName>
+                <default>false</default>
+                <label>Part-time making $20 - $100 per month</label>
+            </value>
+            <value>
+                <fullName>Part-time making $100 - $500 per month</fullName>
+                <default>false</default>
+                <label>Part-time making $100 - $500 per month</label>
+            </value>
+            <value>
+                <fullName>Part-time making $500 - $1,000 per month</fullName>
+                <default>false</default>
+                <label>Part-time making $500 - $1,000 per month</label>
+            </value>
+            <value>
+                <fullName>Part-time making $1,000 - $1,500 per month</fullName>
+                <default>false</default>
+                <label>Part-time making $1,000 - $1,500 per month</label>
+            </value>
+            <value>
+                <fullName>Full-time making $1,500+ per month</fullName>
+                <default>false</default>
+                <label>Full-time making $1,500+ per month</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

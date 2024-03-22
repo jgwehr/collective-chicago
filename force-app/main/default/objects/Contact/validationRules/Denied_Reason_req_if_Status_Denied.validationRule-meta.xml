@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Denied_Reason_req_if_Status_Denied</fullName>
+    <active>true</active>
+    <description>A Denied Reason should be required whenever the Stakeholder is in the &quot;Denied&quot; Status. It should be empty if they&apos;re not in this status</description>
+    <errorConditionFormula>ISPICKVAL( Stakeholder_Status__c, &quot;Denied&quot; ) &amp;&amp; ISPICKVAL( Denied_Reason__c,&quot;&quot; )</errorConditionFormula>
+    <errorDisplayField>Denied_Reason__c</errorDisplayField>
+    <errorMessage>A Denied Reason is required if the Stakeholder is Denied. Otherwise, it must be blank</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>generalEmail__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Displayed in the Email Body for general contact. Not the SendFrom or ReplyTo value.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>General Email</label>
+    <required>true</required>
+    <securityClassification>Public</securityClassification>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

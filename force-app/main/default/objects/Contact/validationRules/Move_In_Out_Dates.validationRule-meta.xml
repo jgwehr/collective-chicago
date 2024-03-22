@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Move_In_Out_Dates</fullName>
+    <active>true</active>
+    <description>Out should be after In</description>
+    <errorConditionFormula>residentMoveInDate__c &gt;  residentMoveOutDate__c</errorConditionFormula>
+    <errorDisplayField>residentMoveOutDate__c</errorDisplayField>
+    <errorMessage>Move Out Date must be after Move In Date</errorMessage>
+</ValidationRule>

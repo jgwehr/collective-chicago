@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Stakeholder Duplicate Check</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;Duplicate detection is always active, but will only show for new Stakeholders in the &lt;strong&gt;Applied&lt;/strong&gt; stage.&lt;/p&gt;&lt;p&gt;Merge duplicate records before moving to &lt;strong&gt;Interview&lt;/strong&gt; stages.&lt;/p&gt;</body>
+        <delayDays>5</delayDays>
+        <dismissButtonLabel>Okay!</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <endDate>2022-10-06</endDate>
+        <isPublished>true</isPublished>
+        <masterLabel>Stakeholder Duplicate Check</masterLabel>
+        <publishedDate>2022-09-06</publishedDate>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;runtime_sales_merge_mergeCandidatesPreviewCard&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <startDate>2022-09-06</startDate>
+        <targetPageKey1>Contact</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <targetRecordType>Contact.Stakeholder</targetRecordType>
+        <timesToDisplay>2</timesToDisplay>
+        <title>De-Dupe Applications</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

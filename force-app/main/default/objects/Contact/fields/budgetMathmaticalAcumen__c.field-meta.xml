@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>budgetMathmaticalAcumen__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>1 unable to do any math, mental or otherwise; an obstacle to employment | 5 able to quickly formulate and solve mental math problems</inlineHelpText>
+    <label>Mathematical Acumen (Budget)</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

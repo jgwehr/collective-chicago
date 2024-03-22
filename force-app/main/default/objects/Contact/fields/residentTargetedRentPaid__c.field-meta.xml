@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>residentTargetedRentPaid__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>How much the Resident should have paid towards rent. Increases while Resident; stops at Graduation.
+$400 times number of months worth of Bed Nights Provided (after the first 45 days).</description>
+    <externalId>false</externalId>
+    <formula>400 * IF( Bed_Nights_Provided__c &lt; 45
+,0
+,CEILING((Bed_Nights_Provided__c - 45 + 1) / 30)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Begins 45 days after Move In. Increases every 30 days</inlineHelpText>
+    <label>Targeted Rent Paid</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

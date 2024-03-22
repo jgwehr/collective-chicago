@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Denied_Reason__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Required when a Stakeholder has been Denied. Used in Analytics.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Pick the primary reason if many exist</inlineHelpText>
+    <label>Denied Reason</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Absentee</fullName>
+                <default>false</default>
+                <label>Absentee</label>
+            </value>
+            <value>
+                <fullName>Aggression</fullName>
+                <default>false</default>
+                <label>Aggression</label>
+            </value>
+            <value>
+                <fullName>Apathy</fullName>
+                <default>false</default>
+                <label>Apathy</label>
+            </value>
+            <value>
+                <fullName>Couldn’t Follow Through</fullName>
+                <default>false</default>
+                <label>Couldn’t Follow Through</label>
+            </value>
+            <value>
+                <fullName>Creating Unsafe Environment</fullName>
+                <default>false</default>
+                <label>Creating Unsafe Environment</label>
+            </value>
+            <value>
+                <fullName>Current Drug Use</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>Current Drug Use</label>
+            </value>
+            <value>
+                <fullName>Didn’t Schedule Next Interview</fullName>
+                <color>#663333</color>
+                <default>false</default>
+                <label>Didn’t Schedule Next Interview</label>
+            </value>
+            <value>
+                <fullName>Dishonest</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dishonest</label>
+            </value>
+            <value>
+                <fullName>Dishonesty</fullName>
+                <color>#993300</color>
+                <default>false</default>
+                <label>Dishonesty</label>
+            </value>
+            <value>
+                <fullName>Does Not Fit Admission Criteria</fullName>
+                <default>false</default>
+                <label>Does Not Fit Admission Criteria</label>
+            </value>
+            <value>
+                <fullName>Drug Relapse</fullName>
+                <default>false</default>
+                <label>Drug Relapse</label>
+            </value>
+            <value>
+                <fullName>Found Alternate</fullName>
+                <default>false</default>
+                <label>Found Alternate</label>
+            </value>
+            <value>
+                <fullName>High Risk of Violence</fullName>
+                <color>#CC6600</color>
+                <default>false</default>
+                <label>High Risk of Violence</label>
+            </value>
+            <value>
+                <fullName>Incarcerated</fullName>
+                <color>#6600CC</color>
+                <default>false</default>
+                <label>Incarcerated</label>
+            </value>
+            <value>
+                <fullName>Incompatibility with Current Resident</fullName>
+                <color>#CC66CC</color>
+                <default>false</default>
+                <label>Incompatibility with Current Resident</label>
+            </value>
+            <value>
+                <fullName>Lack of Need</fullName>
+                <default>false</default>
+                <label>Lack of Need</label>
+            </value>
+            <value>
+                <fullName>Left City</fullName>
+                <color>#BBBBBB</color>
+                <default>false</default>
+                <label>Left City</label>
+            </value>
+            <value>
+                <fullName>Lost Contact</fullName>
+                <default>false</default>
+                <label>Lost Contact</label>
+            </value>
+            <value>
+                <fullName>More Work Needed on Budget</fullName>
+                <color>#009900</color>
+                <default>false</default>
+                <label>More Work Needed on Budget</label>
+            </value>
+            <value>
+                <fullName>More Work Needed on Resume</fullName>
+                <color>#00CCCC</color>
+                <default>false</default>
+                <label>More Work Needed on Resume</label>
+            </value>
+            <value>
+                <fullName>No Openings</fullName>
+                <color>#33FFFF</color>
+                <default>false</default>
+                <label>No Openings</label>
+            </value>
+            <value>
+                <fullName>Residents’ Veto</fullName>
+                <color>#000000</color>
+                <default>false</default>
+                <label>Residents’ Veto</label>
+            </value>
+            <value>
+                <fullName>Unable to Keep Up</fullName>
+                <color>#996633</color>
+                <default>false</default>
+                <label>Unable to Keep Up</label>
+            </value>
+            <value>
+                <fullName>Unable to Work Full-time</fullName>
+                <default>false</default>
+                <label>Unable to Work Full-time</label>
+            </value>
+            <value>
+                <fullName>Unwilling to Adhere to Conditions of Residency</fullName>
+                <color>#990000</color>
+                <default>false</default>
+                <label>Unwilling to Adhere to Conditions of Residency</label>
+            </value>
+            <value>
+                <fullName>Unwilling to sign contract</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unwilling to sign contract</label>
+            </value>
+            <value>
+                <fullName>Violent</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Violent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stakeholder_Status__c</fullName>
+    <description>Tracks a Stakeholder&apos;s status with the Collective. May control required fields, business processes, or influence analytics.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Anyone who isn&apos;t a Stakeholder should be &quot;Not Applied&quot;.</inlineHelpText>
+    <label>Stakeholder Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Applied</fullName>
+                <default>true</default>
+                <label>Not Applied</label>
+            </value>
+            <value>
+                <fullName>Applied</fullName>
+                <default>false</default>
+                <label>Applied</label>
+            </value>
+            <value>
+                <fullName>Interview 1</fullName>
+                <default>false</default>
+                <label>Interview 1</label>
+            </value>
+            <value>
+                <fullName>Interview 2</fullName>
+                <default>false</default>
+                <label>Interview 2</label>
+            </value>
+            <value>
+                <fullName>Interview 3</fullName>
+                <default>false</default>
+                <label>Interview 3</label>
+            </value>
+            <value>
+                <fullName>Denied</fullName>
+                <default>false</default>
+                <label>Denied</label>
+            </value>
+            <value>
+                <fullName>Resident</fullName>
+                <default>false</default>
+                <label>Resident</label>
+            </value>
+            <value>
+                <fullName>Drop Out</fullName>
+                <default>false</default>
+                <label>Drop Out</label>
+            </value>
+            <value>
+                <fullName>Graduated</fullName>
+                <default>false</default>
+                <label>Graduated</label>
+            </value>
+            <value>
+                <fullName>Interviewing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Interviewing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_the_Preferred_Email</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT($Permission.BypassValidationRules),
+(ISPICKVAL( npe01__Preferred_Email__c , &quot;Personal&quot;) &amp;&amp;
+ISBLANK( npe01__HomeEmail__c )) || (ISPICKVAL( npe01__Preferred_Email__c , &quot;Work&quot;) &amp;&amp;
+ISBLANK(  npe01__WorkEmail__c  )) || (ISPICKVAL( npe01__Preferred_Email__c , &quot;Alternate&quot;) &amp;&amp;
+ISBLANK(  npe01__AlternateEmail__c  ))
+)</errorConditionFormula>
+    <errorDisplayField>npe01__Preferred_Email__c</errorDisplayField>
+    <errorMessage>Please provide an Email for the Contact&apos;s Preferred Email method.</errorMessage>
+</ValidationRule>

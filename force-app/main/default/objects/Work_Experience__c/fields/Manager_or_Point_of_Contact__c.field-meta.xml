@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manager_or_Point_of_Contact__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Non-Resident Contact who can resolve any issues with employment</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Person we can reach out to for questions, verification, etc</inlineHelpText>
+    <label>Manager or Point of Contact</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Please select a Contact who is not a resident</errorMessage>
+        <filterItems>
+            <field>Contact.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Stakeholder</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Employees</relationshipLabel>
+    <relationshipName>Employees</relationshipName>
+    <required>false</required>
+    <securityClassification>Confidential</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

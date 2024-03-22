@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>speculatedMentalComments__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <complianceGroup>HIPAA</complianceGroup>
+    <externalId>false</externalId>
+    <inlineHelpText>Non-medical comments about a Resident&apos;s Mental Health</inlineHelpText>
+    <label>Speculated Mental Comments</label>
+    <length>2056</length>
+    <securityClassification>Restricted</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

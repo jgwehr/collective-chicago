@@ -4,5 +4,12 @@
         <plural>false</plural>
         <value>提出書類</value>
     </caseValues>
+    <layouts>
+        <layout>Deliverable</layout>
+        <sections>
+            <label>助成金の提出書類要件</label>
+            <section>Grant Deliverable Requirements</section>
+        </sections>
+    </layouts>
     <nameFieldLabel>提出書類名</nameFieldLabel>
 </CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used for APIs such as Zapier</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Donation Integration</label>
+    <permissionSets>Create_Basic_Donation_Account</permissionSets>
+    <permissionSets>Create_Basic_Donation_Campaign</permissionSets>
+    <permissionSets>Create_Basic_Donation_Opportunity</permissionSets>
+    <permissionSets>Create_Basic_Donor_Contact</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

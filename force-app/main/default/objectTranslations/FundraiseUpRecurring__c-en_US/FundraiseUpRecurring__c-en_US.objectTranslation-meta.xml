@@ -8,5 +8,20 @@
         <plural>true</plural>
         <value>Recurring Plans</value>
     </caseValues>
+    <layouts>
+        <layout>Recurring Plan Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Payment Method</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tribute</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

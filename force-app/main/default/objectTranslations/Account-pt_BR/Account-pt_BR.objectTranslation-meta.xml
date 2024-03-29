@@ -12,6 +12,84 @@
         <label></label>
         <name>npsp__Manage_Household_Custom</name>
     </fieldSets>
+    <layouts>
+        <layout>Household Lightning Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Donation Totals</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Membership Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Organization Lightning Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Donation Totals</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Grantmaking Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Matching Gift Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Membership Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>New_Donation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Grant</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_In_Kind_Gift</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Major_Gift</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Matching_Gift</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Membership</name>
+    </quickActions>
     <recordTypes>
         <description></description>
         <label></label>

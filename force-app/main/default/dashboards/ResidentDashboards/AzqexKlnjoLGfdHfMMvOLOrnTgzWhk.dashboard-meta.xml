@@ -99,7 +99,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>Applications/New_Applications_for_Outreach_Rr9</report>
+                <report>Residents/Applications/New_Applications_for_Outreach_Rr9</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>2</rowIndex>
@@ -192,7 +192,7 @@
                 </flexComponentProperties>
                 <groupingSortProperties/>
                 <header>New Applications for Outreach</header>
-                <report>Applications/New_Applications_for_Outreach_Rr9</report>
+                <report>Residents/Applications/New_Applications_for_Outreach_Rr9</report>
             </dashboardComponent>
             <rowIndex>6</rowIndex>
             <rowSpan>8</rowSpan>
@@ -249,7 +249,7 @@
                 </flexComponentProperties>
                 <groupingSortProperties/>
                 <header>Rent Due in Next 2 wks</header>
-                <report>CoachingMeetings/Rent_Due_in_Next_2_wks_aoA</report>
+                <report>Residents/CoachingMeetings/Rent_Due_in_Next_2_wks_aoA</report>
             </dashboardComponent>
             <rowIndex>6</rowIndex>
             <rowSpan>8</rowSpan>
@@ -286,7 +286,7 @@
                 </groupingSortProperties>
                 <header>Time Spent on Mental</header>
                 <legendPosition>Right</legendPosition>
-                <report>CheckUps/Coaching_Meeting_Mental_over_Time_7Hi</report>
+                <report>SystemReports/CheckUps/Coaching_Meeting_Mental_over_Time_7Hi</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -342,7 +342,7 @@
                 </flexComponentProperties>
                 <groupingSortProperties/>
                 <header>Applications for Resume Interview</header>
-                <report>Applications/Applications_for_Resume_Interview_v0t</report>
+                <report>Residents/Applications/Applications_for_Resume_Interview_v0t</report>
             </dashboardComponent>
             <rowIndex>14</rowIndex>
             <rowSpan>8</rowSpan>
@@ -393,7 +393,7 @@
                 </flexComponentProperties>
                 <groupingSortProperties/>
                 <header>Applications for Budget Interview</header>
-                <report>Applications/Applications_for_Budget_Interview_rT6</report>
+                <report>Residents/Applications/Applications_for_Budget_Interview_rT6</report>
             </dashboardComponent>
             <rowIndex>22</rowIndex>
             <rowSpan>8</rowSpan>
@@ -450,7 +450,7 @@
                 </flexComponentProperties>
                 <groupingSortProperties/>
                 <header>Applications ready for Residency</header>
-                <report>Applications/Applications_ready_for_Residency_SfX</report>
+                <report>Residents/Applications/Applications_ready_for_Residency_SfX</report>
             </dashboardComponent>
             <rowIndex>30</rowIndex>
             <rowSpan>8</rowSpan>

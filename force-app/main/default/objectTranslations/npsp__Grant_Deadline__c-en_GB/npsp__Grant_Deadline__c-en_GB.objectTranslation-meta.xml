@@ -8,6 +8,13 @@
         <plural>true</plural>
         <value>Deliverables</value>
     </caseValues>
+    <layouts>
+        <layout>Deliverable</layout>
+        <sections>
+            <label></label>
+            <section>Grant Deliverable Requirements</section>
+        </sections>
+    </layouts>
     <nameFieldLabel>Deliverable Name</nameFieldLabel>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

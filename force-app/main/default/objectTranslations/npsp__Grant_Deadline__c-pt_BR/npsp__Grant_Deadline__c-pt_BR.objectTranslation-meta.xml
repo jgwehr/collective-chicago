@@ -9,5 +9,12 @@
         <value>Entregas</value>
     </caseValues>
     <gender>Feminine</gender>
+    <layouts>
+        <layout>Deliverable</layout>
+        <sections>
+            <label></label>
+            <section>Grant Deliverable Requirements</section>
+        </sections>
+    </layouts>
     <nameFieldLabel>Nome do objetivo</nameFieldLabel>
 </CustomObjectTranslation>

@@ -28,7 +28,7 @@
                 <indicatorHighColor>#01E4D9</indicatorHighColor>
                 <indicatorLowColor>#FF4E47</indicatorLowColor>
                 <indicatorMiddleColor>#FFAC47</indicatorMiddleColor>
-                <report>AnnualReportsResidents/Annual_Report_Total_Bed_Nights_TnL</report>
+                <report>AnnualReports/AnnualReportsResidents/Annual_Report_Total_Bed_Nights_TnL</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -53,7 +53,7 @@
                 <indicatorHighColor>#C2CCD6</indicatorHighColor>
                 <indicatorLowColor>#C2CCD6</indicatorLowColor>
                 <indicatorMiddleColor>#C2CCD6</indicatorMiddleColor>
-                <report>AnnualReportsResidents/New_Residents_Last_Year_0VT</report>
+                <report>AnnualReports/AnnualReportsResidents/New_Residents_Last_Year_0VT</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -104,7 +104,7 @@
                 <indicatorLowColor>#00716B</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <metricLabel>All Time</metricLabel>
-                <report>AnnualReportsResidents/Days_to_Gain_Employment_All_Time_mYP</report>
+                <report>AnnualReports/AnnualReportsResidents/Days_to_Gain_Employment_All_Time_mYP</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -128,7 +128,7 @@
                 <indicatorHighColor>#063733</indicatorHighColor>
                 <indicatorLowColor>#063733</indicatorLowColor>
                 <indicatorMiddleColor>#063733</indicatorMiddleColor>
-                <report>AnnualReportsResidents/New_Graduates_Last_Year_Qn4</report>
+                <report>AnnualReports/AnnualReportsResidents/New_Graduates_Last_Year_Qn4</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -179,7 +179,7 @@
                 <indicatorLowColor>#004643</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <metricLabel>Active Residents</metricLabel>
-                <report>AnnualReportsResidents/Days_Unemployed_Active_Residents_rX3</report>
+                <report>AnnualReports/AnnualReportsResidents/Days_Unemployed_Active_Residents_rX3</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -213,7 +213,7 @@
                 <header>Total Bed Nights</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>
-                <report>AnnualReportsResidents/Annual_Report_Total_Bed_Nights_TnL</report>
+                <report>AnnualReports/AnnualReportsResidents/Annual_Report_Total_Bed_Nights_TnL</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -244,7 +244,7 @@
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <metricLabel>All Time</metricLabel>
-                <report>AnnualReportsResidents/Annual_Report_Total_Bed_Nights_TnL</report>
+                <report>AnnualReports/AnnualReportsResidents/Annual_Report_Total_Bed_Nights_TnL</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>16</rowIndex>

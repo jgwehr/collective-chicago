@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides Sandbox, Change Set capability without full Sys Admin. Ideally, without any Donor/Resident access.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Volunteer Admin</label>
+    <permissionSets>Admin_Deployment_Manager</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

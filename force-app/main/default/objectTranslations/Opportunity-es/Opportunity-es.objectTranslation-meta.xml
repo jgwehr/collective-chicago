@@ -8,6 +8,10 @@
         <label></label>
         <name>npsp__BDE_List_FS_v2</name>
     </fieldSets>
+    <quickActions>
+        <label></label>
+        <name>New_Deliverable</name>
+    </quickActions>
     <recordTypes>
         <description>Donación recibida</description>
         <label>Donación</label>

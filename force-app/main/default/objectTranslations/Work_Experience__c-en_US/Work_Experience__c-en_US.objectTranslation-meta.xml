@@ -8,6 +8,25 @@
         <plural>true</plural>
         <value>Work Experiences</value>
     </caseValues>
+    <layouts>
+        <layout>Work Experience Layout</layout>
+        <sections>
+            <label></label>
+            <section>Benefits</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Commute</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employer Details</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage></errorMessage>

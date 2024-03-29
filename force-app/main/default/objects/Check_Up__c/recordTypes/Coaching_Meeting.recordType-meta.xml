@@ -5,4 +5,23 @@
     <compactLayoutAssignment>Coaching</compactLayoutAssignment>
     <description>General Coaching Meeting</description>
     <label>Coaching Meeting</label>
+    <picklistValues>
+        <picklist>Quadranting__c</picklist>
+        <values>
+            <fullName>High Energy - Pleasant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Energy - Unpleasant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Energy - Pleasant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Energy - Unpleasant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
 </RecordType>

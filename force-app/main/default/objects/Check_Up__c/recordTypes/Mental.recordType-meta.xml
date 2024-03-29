@@ -5,4 +5,23 @@
     <compactLayoutAssignment>Mental</compactLayoutAssignment>
     <description>Track&apos;s Resident Therapy, Mental Well-being, Outlook</description>
     <label>Mental</label>
+    <picklistValues>
+        <picklist>Quadranting__c</picklist>
+        <values>
+            <fullName>High Energy - Pleasant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Energy - Unpleasant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Energy - Pleasant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Energy - Unpleasant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
 </RecordType>

@@ -41,5 +41,12 @@
         <value>Lieferungen</value>
     </caseValues>
     <gender>Feminine</gender>
+    <layouts>
+        <layout>Deliverable</layout>
+        <sections>
+            <label>Unterstützungsanforderungen</label>
+            <section>Grant Deliverable Requirements</section>
+        </sections>
+    </layouts>
     <nameFieldLabel>Lieferungsname</nameFieldLabel>
 </CustomObjectTranslation>

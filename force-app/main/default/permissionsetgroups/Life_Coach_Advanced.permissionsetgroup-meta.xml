@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permissions for senior Life Coaches</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Life Coach Advanced</label>
+    <permissionSets>Merge_or_Delete_Contacts</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

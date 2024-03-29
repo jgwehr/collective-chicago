@@ -8,6 +8,79 @@
         <plural>true</plural>
         <value>Check Ups</value>
     </caseValues>
+    <layouts>
+        <layout>Coaching Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financial</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mental</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Physical</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Social</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vocational</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Financial Advising Layout</layout>
+        <sections>
+            <label></label>
+            <section>Check Up Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Credit Score</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financial</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financial Advising</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Mental Layout</layout>
+        <sections>
+            <label></label>
+            <section>Check Up Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mental Checkup</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <description></description>
         <label></label>

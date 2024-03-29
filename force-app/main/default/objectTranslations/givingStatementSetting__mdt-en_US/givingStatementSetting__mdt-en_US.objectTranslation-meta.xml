@@ -8,5 +8,28 @@
         <plural>true</plural>
         <value>Giving Statement Settings</value>
     </caseValues>
+    <layouts>
+        <layout>Giving Statement Setting Layout</layout>
+        <sections>
+            <label></label>
+            <section>Attachment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Intro</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Footer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Images</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

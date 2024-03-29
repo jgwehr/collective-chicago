@@ -6,6 +6,135 @@
     <description>Collective Chicago&apos;s Residents</description>
     <label>Stakeholder</label>
     <picklistValues>
+        <picklist>Denied_Reason__c</picklist>
+        <values>
+            <fullName>Absentee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aggression</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apathy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Couldn%E2%80%99t Follow Through</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creating Unsafe Environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Drug Use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Didn%E2%80%99t Schedule Next Interview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dishonesty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Does Not Fit Admission Criteria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drug Relapse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Found Alternate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Risk of Violence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incarcerated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incompatibility with Current Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Need</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Left City</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More Work Needed on Budget</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More Work Needed on Resume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Openings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residents%E2%80%99 Veto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to Keep Up%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to Work Full-time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unwilling to Adhere to Conditions of Residency</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gender__c</picklist>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Binary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prefer Not To Say</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Group_Membership__c</picklist>
+        <values>
+            <fullName>Graduate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resident</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>LeadSource</picklist>
         <values>
             <fullName>Friend or family</fullName>
@@ -68,6 +197,1260 @@
         </values>
         <values>
             <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Neighborhood__c</picklist>
+        <values>
+            <fullName>Albany Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Altgeld Gardens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Andersonville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arcadia Terrace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Archer Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armour Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ashburn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ashburn Estates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auburn Gresham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avalon Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avondale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avondale Gardens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Back of the Yards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belmont Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belmont Gardens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belmont Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belmont Terrace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beverly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beverly View</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beverly Woods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Big Oaks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bowmanville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brainerd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brickyard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bridgeport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brighton Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bronzeville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bucktown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Budlong Woods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buena Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burnside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cabrini%E2%80%93Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calumet Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canaryville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central Station</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chatham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicago Lawn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinatown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chrysler Village</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clarendon Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clearing East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clearing West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cottage Grove Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cragin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crestline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dearborn Homes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dearborn Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Douglas Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dunning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Beverly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Chatham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Garfield Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Hyde Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Pilsen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Side</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Village</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eden Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edgebrook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edgewater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edgewater Beach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edgewater Glen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edison Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Englewood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fernwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fifth City</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ford City</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forest Glen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuller Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fulton River District</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gage Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Galewood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garfield Ridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gladstone Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold Coast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Golden Gate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Goose Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graceland West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grand Boulevard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grand Crossing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greater Grand Crossing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greektown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gresham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groveland Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hamilton Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hanson Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heart of Chicago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hegewisch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hermosa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hollywood Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homan Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Humboldt Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hyde Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Illinois Medical District</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irving Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irving Woods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jackowo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jackson Park Highlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jefferson Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K-Town</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kelvyn Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kennedy Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kensington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kenwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kilbourn Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kosciuszko Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lake Meadows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lake View</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lakeview %28East%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lakeview %28West%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lakewood %2F Balmoral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LeClaire Courts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legends South %28Robert Taylor Homes%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lilydale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lincoln Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lincoln Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lithuanian Plaza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Little Italy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Little Village</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logan Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Longwood Manor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lower West Side</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loyola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magnificent Mile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Margate Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marquette Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marshall Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marynook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mayfair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>McKinley Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montclare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Morgan Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mount Greenwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Museum Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Chinatown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New City</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Eastside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noble Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Austin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Halsted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Halsted %22Boystown%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Kenwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Lawndale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Mayfair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nortown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norwood Park East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norwood Park West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%27Hare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oakland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old Edgebrook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old Irving Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old Norwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old Town</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old Town Triangle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oriole Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palmer Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Park Manor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Park West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parkview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peterson Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pill Hill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pilsen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polish Downtown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polish Village</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portage Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prairie Avenue Historic District</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prairie Shores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Princeton Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printer%27s Row</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulaski Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pullman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ranch Triangle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ravenswood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ravenswood Gardens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ravenswood Manor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>River North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>River West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>River%27s Edge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riverdale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rogers Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roscoe Village</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rosehill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roseland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rosemoor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sauganash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schorsch Forest View</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schorsch Village</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scottsdale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sheffield Neighbors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sheridan Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sheridan Station Corridor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sleepy Hollow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smith Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Austin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Chicago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Commons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Deering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South East Ravenswood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Edgebrook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Lawndale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Loop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Shore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>St%2E Ben%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stateway Gardens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stony Island Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Streeterville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suburb of Chicago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Talley%27s Corner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Gap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Loop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Villa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tri-Taylor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ukrainian Village</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Union Ridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University Village</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uptown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vittum Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wacławowo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washington Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washington Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wentworth Gardens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Beverly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Chatham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Chesterfield</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West DePaul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Elsdon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Englewood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Garfield Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Humboldt Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Lawn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Loop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Morgan Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Pullman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Ridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Rogers Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Town</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Woodlawn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wicker Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wildwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Woodlawn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrightwood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrightwood Neighbors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrigleyville</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stakeholder_Status__c</picklist>
+        <values>
+            <fullName>Applied</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drop Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graduated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interview 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interview 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interview 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resident</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>applicationEmploymentStatus__c</picklist>
+        <values>
+            <fullName>Full-time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Part-time or inconsistent work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unemployed and not seeking work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unemployed but actively seeking work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>applicationIncome__c</picklist>
+        <values>
+            <fullName>Full-time making %241%2C500%2B per month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Link card %2F Food stamps %2F SNAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No current income</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Part-time making %241%2C000 - %241%2C500 per month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Part-time making %24100 - %24500 per month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Part-time making %2420 - %24100 per month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Part-time making %24500 - %241%2C000 per month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSI %2F Unemployment %2F disability</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>applicationLivingConditions__c</picklist>
+        <values>
+            <fullName>In a shelter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In an apartment where I pay rent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outside or on the train</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporarily with a friend or family</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>applicationSource__c</picklist>
+        <values>
+            <fullName>Friend or family</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Nonprofit staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shelter employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shelter volunteer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__PreferredPhone__c</picklist>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__Preferred_Email__c</picklist>
+        <values>
+            <fullName>Alternate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__Primary_Address_Type__c</picklist>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__Secondary_Address_Type__c</picklist>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__SystemAccountProcessor__c</picklist>
+        <values>
+            <fullName>Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One-to-One</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npo02__Naming_Exclusions__c</picklist>
+        <values>
+            <fullName>Household%5F%5Fc%2EFormal_Greeting%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Household%5F%5Fc%2EInformal_Greeting%5F%5Fc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Household%5F%5Fc%2EName</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npo02__SystemHouseholdProcessor__c</picklist>
+        <values>
+            <fullName>All Individual Contacts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All New or Edited Contacts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Contacts</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npsp__Sustainer__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Former</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lapsed</fullName>
             <default>false</default>
         </values>
     </picklistValues>

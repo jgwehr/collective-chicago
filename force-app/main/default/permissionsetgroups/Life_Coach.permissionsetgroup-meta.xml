@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Edit Access to Resident-specific features.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Life Coach</label>
+    <permissionSets>View_and_Edit_Resident_Check_Up</permissionSets>
+    <permissionSets>View_and_Edit_Resident_Interview</permissionSets>
+    <permissionSets>View_and_Edit_Work_Experience</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

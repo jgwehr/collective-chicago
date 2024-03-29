@@ -8,4 +8,11 @@
         <label></label>
         <name>npsp__BDE_List_FS</name>
     </fieldSets>
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Volunteer Information</section>
+        </sections>
+    </layouts>
 </CustomObjectTranslation>

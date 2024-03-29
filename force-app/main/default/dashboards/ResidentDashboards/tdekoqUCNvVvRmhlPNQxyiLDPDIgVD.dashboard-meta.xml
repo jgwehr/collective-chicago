@@ -27,7 +27,7 @@
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
                 <metricLabel>Last 30 Days</metricLabel>
-                <report>CheckUps/Coaching_Meetings_in_the_Last_30_days_mGj</report>
+                <report>SystemReports/CheckUps/Coaching_Meetings_in_the_Last_30_days_mGj</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -55,7 +55,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>CheckUps/Coaching_Meeting_Mental_over_Time_7Hi</report>
+                <report>SystemReports/CheckUps/Coaching_Meeting_Mental_over_Time_7Hi</report>
                 <showPercentage>false</showPercentage>
                 <showRange>false</showRange>
                 <showTotal>true</showTotal>
@@ -115,7 +115,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Mental Dimension</header>
-                <report>CheckUps/Coaching_Meetings_in_the_Last_30_days_mGj</report>
+                <report>SystemReports/CheckUps/Coaching_Meetings_in_the_Last_30_days_mGj</report>
                 <title>Last 30 Days</title>
             </dashboardComponent>
             <rowIndex>8</rowIndex>

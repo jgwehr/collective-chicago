@@ -21,5 +21,12 @@
         <value></value>
     </caseValues>
     <gender></gender>
+    <layouts>
+        <layout>Deliverable</layout>
+        <sections>
+            <label></label>
+            <section>Grant Deliverable Requirements</section>
+        </sections>
+    </layouts>
     <nameFieldLabel></nameFieldLabel>
 </CustomObjectTranslation>

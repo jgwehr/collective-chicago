@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used by Zapier to import Google Form responses as Stakeholder Applications</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Application Integration</label>
+    <permissionSets>Create_Basic_Donor_Contact</permissionSets>
+    <permissionSets>Edit_Stakeholder_Application_Details</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1266,26 +1266,6 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.interviewTimeliness__c</fieldItem>
-                <identifier>RecordinterviewTimeliness_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.interviewReadinessToWork__c</fieldItem>
-                <identifier>RecordinterviewReadinessToWork_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
                 <fieldItem>Record.interviewFervorForOpportunity__c</fieldItem>
                 <identifier>RecordinterviewFervorForOpportunity_cField</identifier>
             </fieldInstance>

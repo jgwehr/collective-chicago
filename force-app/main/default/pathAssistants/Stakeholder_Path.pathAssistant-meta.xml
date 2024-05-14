@@ -25,6 +25,7 @@
     </pathAssistantSteps>
     <pathAssistantSteps>
         <fieldNames>residentMoveOutDate__c</fieldNames>
+        <fieldNames>residentGraduationDate__c</fieldNames>
         <picklistValueName>Graduated</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>

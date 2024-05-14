@@ -465,6 +465,23 @@
                 <identifier>RecordresidentJobStartDate_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.residentGraduationDate__c</fieldItem>
+                <identifier>RecordresidentGraduationDate_cField</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Stakeholder_Status__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Graduated</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-b6466be4-50e9-44de-9a05-bd221503de28</name>
         <type>Facet</type>
     </flexiPageRegions>

@@ -1964,14 +1964,24 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.graduateFirstRearrestDate__c</fieldItem>
-                <identifier>RecordgraduateFirstRearrestDate_cField</identifier>
+                <fieldItem>Record.graduatePostTaxIncome__c</fieldItem>
+                <identifier>RecordgraduatePostTaxIncome_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-72597432-b44c-40e9-bcd4-85dfdbd3670a</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.graduateFirstRearrestDate__c</fieldItem>
+                <identifier>RecordgraduateFirstRearrestDate_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-e49bd96d-a305-4374-aaf3-9f08d299d970</name>
         <type>Facet</type>
     </flexiPageRegions>

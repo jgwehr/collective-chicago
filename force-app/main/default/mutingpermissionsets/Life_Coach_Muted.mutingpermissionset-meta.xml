@@ -7,6 +7,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.graduatePostTaxIncome__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.intakeDrugAlcoholAbuse__c</field>
         <readable>false</readable>
     </fieldPermissions>

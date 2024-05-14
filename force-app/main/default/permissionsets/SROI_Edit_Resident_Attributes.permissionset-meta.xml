@@ -3,7 +3,22 @@
     <description>Ability to view and modify data points which can affect SROI calculations</description>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.budgetSnapLinkAmount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.budgetUnemploymentAmount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.graduateFirstRearrestDate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.graduatePostTaxIncome__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

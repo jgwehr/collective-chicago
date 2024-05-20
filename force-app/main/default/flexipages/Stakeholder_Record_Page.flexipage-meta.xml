@@ -2159,10 +2159,6 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Tabs</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
                     <name>tabs</name>
                     <value>Facet-d62b3d37-4a4a-4b06-8cc6-fff3327f56bb</value>
                 </componentInstanceProperties>
@@ -2757,10 +2753,6 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Tabs</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
                     <name>tabs</name>
                     <value>Facet-2cd3a2a2-aea8-433a-a422-4ca6d1ca8643</value>
                 </componentInstanceProperties>
@@ -2956,10 +2948,6 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Tabs</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
                     <name>tabs</name>
                     <value>Facet-157ef07e-6b2b-400d-b881-409cf04fe6d2</value>
                 </componentInstanceProperties>
@@ -3068,10 +3056,6 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Tabs</value>
-                </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>tabs</name>
                     <value>Facet-c89436f2-7d96-4871-b41f-e3e9360fc42e</value>

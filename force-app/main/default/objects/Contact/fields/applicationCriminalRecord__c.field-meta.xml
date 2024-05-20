@@ -2,8 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>applicationCriminalRecord__c</fullName>
     <defaultValue>false</defaultValue>
+    <description>Added via Application but should be adjusted by Coaches based on conversations / research. Included in SROI Calculations.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Do you have anything on your criminal record? (Answer will not affect your chances of being accepted.)</inlineHelpText>
+    <inlineHelpText>Submitted via Application. Correct during Interview process.</inlineHelpText>
     <label>Criminal Record (Application)</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

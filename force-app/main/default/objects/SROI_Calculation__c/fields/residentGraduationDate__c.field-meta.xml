@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>residentGraduationDate__c</fullName>
-    <description>Populated by the Resident Path via Flow. Used in various calculations including SROI</description>
+    <description>Populated by the Resident Path via Flow upon Graduation.</description>
     <externalId>false</externalId>
     <label>Graduation Date</label>
-    <required>false</required>
-    <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
     <type>Date</type>
 </CustomField>

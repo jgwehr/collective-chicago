@@ -103,6 +103,16 @@
                 <identifier>RecordhealthBenefits_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.workExperienceId__c</fieldItem>
+                <identifier>RecordworkExperienceId__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-3fd7faee-3508-4ac3-9d7f-5961fe446231</name>
         <type>Facet</type>
     </flexiPageRegions>

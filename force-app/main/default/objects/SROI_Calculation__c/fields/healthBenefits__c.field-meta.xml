@@ -3,7 +3,6 @@
     <fullName>healthBenefits__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Defined by Work Experience active during Graduation</description>
-    <externalId>false</externalId>
     <label>Health Benefits</label>
     <trackTrending>false</trackTrending>
     <type>Checkbox</type>

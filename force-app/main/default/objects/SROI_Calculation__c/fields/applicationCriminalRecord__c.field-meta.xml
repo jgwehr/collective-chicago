@@ -3,7 +3,6 @@
     <fullName>applicationCriminalRecord__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Added via Application but should be adjusted by Coaches based on conversations / research</description>
-    <externalId>false</externalId>
     <label>Criminal Record (Application)</label>
     <trackTrending>false</trackTrending>
     <type>Checkbox</type>

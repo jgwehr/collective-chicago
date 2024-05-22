@@ -71,6 +71,11 @@
         <field>SROI_Calculation__c.sroiUnemployment__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SROI_Calculation__c.workExperienceId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>SROI - Manage Calculations</label>
     <objectPermissions>

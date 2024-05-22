@@ -162,7 +162,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>SROI Calculation</label>
     <nameField>
-        <displayFormat>SROI {YYMMDD}-{000}</displayFormat>
+        <displayFormat>SROI {YYMMDD}-{00000}</displayFormat>
         <label>SROI Calculation Name</label>
         <type>AutoNumber</type>
     </nameField>

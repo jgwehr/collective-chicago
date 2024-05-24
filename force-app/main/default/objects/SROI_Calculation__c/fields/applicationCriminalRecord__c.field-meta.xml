@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>applicationCriminalRecord__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Added via Application but should be adjusted by Coaches based on conversations / research</description>
+    <label>Criminal Record (Application)</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>healthBenefits__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Defined by Work Experience active during Graduation</description>
+    <label>Health Benefits</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

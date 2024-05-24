@@ -22,9 +22,13 @@
     <tabs>standard-Opportunity</tabs>
     <tabs>npo02__Opportunity_Rollups</tabs>
     <tabs>standard-report</tabs>
+    <tabs>SROI_Calculation__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Back_Office_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>SROI_Calculation__c</tab>
+        </mappings>
         <mappings>
             <tab>npe5__Affiliation__c</tab>
         </mappings>

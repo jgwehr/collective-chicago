@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>graduate__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Graduate</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Only Graduated Residents can be selected</errorMessage>
+        <filterItems>
+            <field>Contact.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>Stakeholder</value>
+        </filterItems>
+        <filterItems>
+            <field>Contact.Stakeholder_Status__c</field>
+            <operation>equals</operation>
+            <value>Graduated</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>SROI Calculations</relationshipLabel>
+    <relationshipName>SROI_Calculation</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

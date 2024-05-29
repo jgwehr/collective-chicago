@@ -44,7 +44,6 @@ $RECYCLE.BIN/
 **/.venv/
 **/venv/
 
-
 # Translations
 force-app/main/default/objectTranslations/
 

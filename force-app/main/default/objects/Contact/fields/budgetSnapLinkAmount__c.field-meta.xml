@@ -4,6 +4,7 @@
     <businessStatus>Active</businessStatus>
     <defaultValue>0</defaultValue>
     <description>Discovered during Budget interview. An sum of this type of aid.</description>
+    <externalId>false</externalId>
     <inlineHelpText>Monthly</inlineHelpText>
     <label>SNAP/Link Amounts</label>
     <precision>7</precision>

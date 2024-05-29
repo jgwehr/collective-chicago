@@ -10,3 +10,14 @@ package.xml
 
 # LWC Jest
 **/__tests__/**
+
+# Translations
+**/force-app/main/default/objectTranslations/
+
+# Installed Packages
+**/npsp__*.*
+**/npe01__*.*
+**/npe01__*.*
+**/npo02__*.*
+**/npe03__*.*
+**/npe5__*.*

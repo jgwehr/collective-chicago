@@ -3,6 +3,7 @@
     <fullName>applicationCriminalRecord__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Added via Application but should be adjusted by Coaches based on conversations / research. Included in SROI Calculations.</description>
+    <externalId>false</externalId>
     <inlineHelpText>Submitted via Application. Correct during Interview process.</inlineHelpText>
     <label>Criminal Record (Application)</label>
     <trackFeedHistory>false</trackFeedHistory>

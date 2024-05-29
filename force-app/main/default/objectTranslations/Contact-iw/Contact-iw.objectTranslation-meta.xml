@@ -91,6 +91,10 @@
         </sections>
         <sections>
             <label></label>
+            <section>Intake</section>
+        </sections>
+        <sections>
+            <label></label>
             <section>Interview</section>
         </sections>
         <sections>
@@ -103,7 +107,15 @@
         </sections>
         <sections>
             <label></label>
+            <section>Post-Graduation</section>
+        </sections>
+        <sections>
+            <label></label>
             <section>Rent</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resident Details</section>
         </sections>
         <sections>
             <label></label>
@@ -120,10 +132,6 @@
         <sections>
             <label></label>
             <section>Resume - Long</section>
-        </sections>
-        <sections>
-            <label></label>
-            <section>Stakeholder Details</section>
         </sections>
         <sections>
             <label></label>

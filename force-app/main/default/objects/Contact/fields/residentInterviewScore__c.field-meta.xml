@@ -4,12 +4,10 @@
     <description>Empty ratings are treated as 0</description>
     <externalId>false</externalId>
     <formula>(
-interviewTimeliness__c
-+interviewReadinessToWork__c  
-+interviewMarketability__c 
+interviewMarketability__c 
 +interviewOwnership__c 
 +interviewFervorForOpportunity__c
-) / 5</formula>
+) / 3</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Average of Interview Ratings</inlineHelpText>
     <label>Interview Score</label>

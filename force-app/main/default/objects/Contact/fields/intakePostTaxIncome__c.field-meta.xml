@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>intakePostTaxIncome__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Part of SROI calculations.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Determined by Coaches based on Application, Budget Interview, and first Coaching Meeting.</inlineHelpText>
+    <label>Post-Tax Monthly Income (Intake)</label>
+    <precision>8</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <securityClassification>Confidential</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

@@ -557,11 +557,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>interviewReadinessToWork__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>resumeReferenceCheck__c</field>
             <table>Contact</table>
         </columns>
@@ -683,11 +678,6 @@
         <masterLabel>Contacts</masterLabel>
     </sections>
     <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>interviewTimeliness__c</field>
-            <table>Contact</table>
-        </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>interviewOwnership__c</field>

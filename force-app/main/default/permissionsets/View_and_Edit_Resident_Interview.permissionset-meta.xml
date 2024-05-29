@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>test</description>
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Denied_Reason_Comments__c</field>
@@ -77,17 +78,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.interviewReadinessToWork__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Contact.interviewStrengths__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Contact.interviewTimeliness__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

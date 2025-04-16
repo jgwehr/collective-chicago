@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help></help>
-    <label></label>
+    <help><!-- Please describe what would appear on a background check. --></help>
+    <label><!-- Background Check (Application) --></label>
     <name>applicationBackgroundCheck__c</name>
 </CustomFieldTranslation>

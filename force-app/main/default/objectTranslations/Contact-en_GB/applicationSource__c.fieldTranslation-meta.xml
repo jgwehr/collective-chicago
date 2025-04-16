@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help></help>
-    <label></label>
+    <help><!-- How did you hear about Collective Chicago? --></help>
+    <label><!-- Source (Application) --></label>
     <name>applicationSource__c</name>
     <picklistValues>
         <masterLabel>Friend or family</masterLabel>
-        <translation></translation>
+        <translation><!-- Friend or family --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Nonprofit staff</masterLabel>
-        <translation></translation>
+        <translation><!-- Nonprofit staff --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Online</masterLabel>
-        <translation></translation>
+        <translation><!-- Online --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Shelter employee</masterLabel>
-        <translation></translation>
+        <translation><!-- Shelter employee --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Shelter volunteer</masterLabel>
-        <translation></translation>
+        <translation><!-- Shelter volunteer --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Social worker</masterLabel>
-        <translation></translation>
+        <translation><!-- Social worker --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Streetlight app</masterLabel>
-        <translation></translation>
+        <translation><!-- Streetlight app --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Unknown</masterLabel>
-        <translation></translation>
+        <translation><!-- Unknown --></translation>
     </picklistValues>
 </CustomFieldTranslation>

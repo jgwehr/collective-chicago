@@ -61,6 +61,13 @@
         </weightedSourceCategories>
     </forecastingCategoryMappings>
     <forecastingCategoryMappings>
+        <forecastingItemCategoryApiName>customcategory</forecastingItemCategoryApiName>
+        <weightedSourceCategories>
+            <sourceCategoryApiName>custom category</sourceCategoryApiName>
+            <weight>1.0</weight>
+        </weightedSourceCategories>
+    </forecastingCategoryMappings>
+    <forecastingCategoryMappings>
         <forecastingItemCategoryApiName>commitforecast</forecastingItemCategoryApiName>
         <weightedSourceCategories>
             <sourceCategoryApiName>closed</sourceCategoryApiName>
@@ -89,6 +96,7 @@
         <forecastedCategoryApiNames>openpipeline</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
+        <forecastedCategoryApiNames>customcategory</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>commitforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
         <forecastingDateType>OpportunityCloseDate</forecastingDateType>
@@ -251,6 +259,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4od</field>
             <label>Batch Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000AYxJF</field>
+            <label>Campaign Code</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bG</field>
@@ -565,6 +577,7 @@
             <field>00N4x00000Kf4bF</field>
             <field>00N4x00000Kf4h1</field>
             <field>00N4x00000Kf4od</field>
+            <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
@@ -646,6 +659,7 @@
         <forecastedCategoryApiNames>openpipeline</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
+        <forecastedCategoryApiNames>customcategory</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>commitforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
         <forecastingDateType>OpportunityCloseDate</forecastingDateType>
@@ -814,6 +828,10 @@
             <label>Batch Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000AYxJF</field>
+            <label>Campaign Code</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bG</field>
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
@@ -1127,6 +1145,7 @@
             <field>00N4x00000Kf4bF</field>
             <field>00N4x00000Kf4h1</field>
             <field>00N4x00000Kf4od</field>
+            <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
@@ -1208,6 +1227,7 @@
         <forecastedCategoryApiNames>openpipeline</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
+        <forecastedCategoryApiNames>customcategory</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>commitforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
         <forecastingDateType>OpportunityCloseDate</forecastingDateType>
@@ -1370,6 +1390,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4od</field>
             <label>Batch Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000AYxJF</field>
+            <label>Campaign Code</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bG</field>
@@ -1684,6 +1708,7 @@
             <field>00N4x00000Kf4bF</field>
             <field>00N4x00000Kf4h1</field>
             <field>00N4x00000Kf4od</field>
+            <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
@@ -1765,6 +1790,7 @@
         <forecastedCategoryApiNames>openpipeline</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
+        <forecastedCategoryApiNames>customcategory</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>commitforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
         <forecastingDateType>OpportunityCloseDate</forecastingDateType>
@@ -1933,6 +1959,10 @@
             <label>Batch Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000AYxJF</field>
+            <label>Campaign Code</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bG</field>
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
@@ -2242,6 +2272,7 @@
             <field>00N4x00000Kf4bF</field>
             <field>00N4x00000Kf4h1</field>
             <field>00N4x00000Kf4od</field>
+            <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
@@ -2322,6 +2353,7 @@
         <forecastedCategoryApiNames>openpipeline</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
+        <forecastedCategoryApiNames>customcategory</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>commitforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
         <forecastingDateType>ProductDate</forecastingDateType>
@@ -2490,6 +2522,10 @@
             <label>Batch Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000AYxJF</field>
+            <label>Campaign Code</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bG</field>
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
@@ -2803,6 +2839,7 @@
             <field>00N4x00000Kf4bF</field>
             <field>00N4x00000Kf4h1</field>
             <field>00N4x00000Kf4od</field>
+            <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
@@ -2884,6 +2921,7 @@
         <forecastedCategoryApiNames>openpipeline</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
+        <forecastedCategoryApiNames>customcategory</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>commitforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
         <forecastingDateType>ProductDate</forecastingDateType>
@@ -3046,6 +3084,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4od</field>
             <label>Batch Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000AYxJF</field>
+            <label>Campaign Code</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bG</field>
@@ -3360,6 +3402,7 @@
             <field>00N4x00000Kf4bF</field>
             <field>00N4x00000Kf4h1</field>
             <field>00N4x00000Kf4od</field>
+            <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
@@ -3441,6 +3484,7 @@
         <forecastedCategoryApiNames>openpipeline</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
+        <forecastedCategoryApiNames>customcategory</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>commitforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
         <forecastingDateType>ProductDate</forecastingDateType>
@@ -3609,6 +3653,10 @@
             <label>Batch Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000AYxJF</field>
+            <label>Campaign Code</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bG</field>
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
@@ -3922,6 +3970,7 @@
             <field>00N4x00000Kf4bF</field>
             <field>00N4x00000Kf4h1</field>
             <field>00N4x00000Kf4od</field>
+            <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
@@ -4003,6 +4052,7 @@
         <forecastedCategoryApiNames>openpipeline</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
+        <forecastedCategoryApiNames>customcategory</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>commitforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
         <forecastingDateType>ProductDate</forecastingDateType>
@@ -4165,6 +4215,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4od</field>
             <label>Batch Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000AYxJF</field>
+            <label>Campaign Code</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bG</field>
@@ -4479,6 +4533,7 @@
             <field>00N4x00000Kf4bF</field>
             <field>00N4x00000Kf4h1</field>
             <field>00N4x00000Kf4od</field>
+            <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
@@ -4560,6 +4615,7 @@
         <forecastedCategoryApiNames>openpipeline</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
+        <forecastedCategoryApiNames>customcategory</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>commitforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
         <forecastingDateType>ScheduleDate</forecastingDateType>
@@ -4728,6 +4784,10 @@
             <label>Batch Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000AYxJF</field>
+            <label>Campaign Code</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bG</field>
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
@@ -5041,6 +5101,7 @@
             <field>00N4x00000Kf4bF</field>
             <field>00N4x00000Kf4h1</field>
             <field>00N4x00000Kf4od</field>
+            <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
@@ -5122,6 +5183,7 @@
         <forecastedCategoryApiNames>openpipeline</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
+        <forecastedCategoryApiNames>customcategory</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>commitforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
         <forecastingDateType>ScheduleDate</forecastingDateType>
@@ -5284,6 +5346,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4od</field>
             <label>Batch Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000AYxJF</field>
+            <label>Campaign Code</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bG</field>
@@ -5598,6 +5664,7 @@
             <field>00N4x00000Kf4bF</field>
             <field>00N4x00000Kf4h1</field>
             <field>00N4x00000Kf4od</field>
+            <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
@@ -5679,6 +5746,7 @@
         <forecastedCategoryApiNames>openpipeline</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
+        <forecastedCategoryApiNames>customcategory</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>commitforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
         <forecastingDateType>ScheduleDate</forecastingDateType>
@@ -5847,6 +5915,10 @@
             <label>Batch Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000AYxJF</field>
+            <label>Campaign Code</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bG</field>
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
@@ -6160,6 +6232,7 @@
             <field>00N4x00000Kf4bF</field>
             <field>00N4x00000Kf4h1</field>
             <field>00N4x00000Kf4od</field>
+            <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
@@ -6241,6 +6314,7 @@
         <forecastedCategoryApiNames>openpipeline</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
+        <forecastedCategoryApiNames>customcategory</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>commitforecast</forecastedCategoryApiNames>
         <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
         <forecastingDateType>ScheduleDate</forecastingDateType>
@@ -6403,6 +6477,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4od</field>
             <label>Batch Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000AYxJF</field>
+            <label>Campaign Code</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bG</field>
@@ -6717,6 +6795,7 @@
             <field>00N4x00000Kf4bF</field>
             <field>00N4x00000Kf4h1</field>
             <field>00N4x00000Kf4od</field>
+            <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>

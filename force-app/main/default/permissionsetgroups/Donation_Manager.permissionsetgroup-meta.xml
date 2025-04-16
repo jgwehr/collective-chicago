@@ -3,6 +3,7 @@
     <description>Enables someone to enter cash donations (but not non-cash). May report on all Donations.</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Donation Manager</label>
+    <permissionSets>Campaign_Management_for_Donations</permissionSets>
     <permissionSets>Edit_Donations</permissionSets>
     <permissionSets>Edit_Donations_and_Payments</permissionSets>
     <permissionSets>View_Donation_Fee_Information</permissionSets>

@@ -5,8 +5,5 @@
     <label>DevOps Release Manager</label>
     <permissionSets>sf_devops_InitializeEnvironments</permissionSets>
     <permissionSets>sf_devops_NamedCredentials</permissionSets>
-    <permissionSets>sf_devops__DevOps_Center</permissionSets>
-    <permissionSets>sf_devops__DevOps_CenterManager</permissionSets>
-    <permissionSets>sf_devops__DevOps_CenterRelease</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>

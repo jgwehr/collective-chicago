@@ -11,89 +11,88 @@
     <layouts>
         <layout>Coaching Layout</layout>
         <sections>
-            <label></label>
+            <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
         <sections>
-            <label></label>
+            <label><!-- Fields --></label>
             <section>Fields</section>
         </sections>
         <sections>
-            <label></label>
+            <label><!-- Financial --></label>
             <section>Financial</section>
         </sections>
         <sections>
-            <label></label>
+            <label><!-- General --></label>
             <section>General</section>
         </sections>
         <sections>
-            <label></label>
+            <label><!-- Mental --></label>
             <section>Mental</section>
         </sections>
         <sections>
-            <label></label>
+            <label><!-- Physical --></label>
             <section>Physical</section>
         </sections>
         <sections>
-            <label></label>
+            <label><!-- Social --></label>
             <section>Social</section>
         </sections>
         <sections>
-            <label></label>
+            <label><!-- Vocational --></label>
             <section>Vocational</section>
         </sections>
     </layouts>
     <layouts>
         <layout>Financial Advising Layout</layout>
         <sections>
-            <label></label>
+            <label><!-- Check Up Notes --></label>
             <section>Check Up Notes</section>
         </sections>
         <sections>
-            <label></label>
+            <label><!-- Credit Score --></label>
             <section>Credit Score</section>
         </sections>
         <sections>
-            <label></label>
+            <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
         <sections>
-            <label></label>
+            <label><!-- Education and Therapy --></label>
+            <section>Education and Therapy</section>
+        </sections>
+        <sections>
+            <label><!-- Financial --></label>
             <section>Financial</section>
         </sections>
         <sections>
-            <label></label>
+            <label><!-- Financial Advising --></label>
             <section>Financial Advising</section>
         </sections>
     </layouts>
     <layouts>
         <layout>Mental Layout</layout>
         <sections>
-            <label></label>
+            <label><!-- Check Up Notes --></label>
             <section>Check Up Notes</section>
         </sections>
         <sections>
-            <label></label>
+            <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
         <sections>
-            <label></label>
+            <label><!-- Mental Checkup --></label>
             <section>Mental Checkup</section>
         </sections>
     </layouts>
     <recordTypes>
-        <description></description>
-        <label></label>
+        <description><!-- General Coaching Meeting --></description>
+        <label><!-- Coaching Meeting --></label>
         <name>Coaching_Meeting</name>
     </recordTypes>
     <recordTypes>
-        <description></description>
-        <label></label>
-        <name>Mental</name>
-    </recordTypes>
-    <recordTypes>
-        <description></description>
-        <label></label>
+        <description><!-- Capture Financial and Employment --></description>
+        <label><!-- Professional --></label>
         <name>Professional</name>
     </recordTypes>
     <startsWith>Consonant</startsWith>

@@ -7,7 +7,8 @@
 interviewMarketability__c 
 +interviewOwnership__c 
 +interviewFervorForOpportunity__c
-) / 3</formula>
++interviewLevelOfNeed__c 
+) / 4</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Average of Interview Ratings</inlineHelpText>
     <label>Interview Score</label>

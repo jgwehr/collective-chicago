@@ -8,13 +8,13 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>HorizontalBarGrouped</chartType>
+        <chartType>HorizontalBarStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>Contact$Name</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>Contact.Check_Ups__r$RecordType</secondaryGroupingColumn>
+        <secondaryGroupingColumn>Contact.Check_Ups__r$CreatedDate</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -51,13 +51,6 @@
             <operator>equals</operator>
             <value>Contact.Stakeholder</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Contact.Check_Ups__r$Pay_Date__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>LAST_N_WEEKS:2</value>
-        </criteriaItems>
         <language>en_US</language>
     </filter>
     <format>Summary</format>
@@ -67,11 +60,11 @@
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Contact.Check_Ups__r$RecordType</field>
+        <dateGranularity>Week</dateGranularity>
+        <field>Contact.Check_Ups__r$CreatedDate</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Checkups in the Last 2 Weeks</name>
+    <name>Checkups in Last 30 Days</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -84,7 +77,7 @@
     <sortColumn>Contact.Check_Ups__r$Pay_Date__c</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>Contact$CreatedDate</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <dateColumn>Contact.Check_Ups__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
     </timeFrameFilter>
 </Report>

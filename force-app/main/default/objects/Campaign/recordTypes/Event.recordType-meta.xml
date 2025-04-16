@@ -27,10 +27,6 @@
     <picklistValues>
         <picklist>Type</picklist>
         <values>
-            <fullName>Conference</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Networking</fullName>
             <default>false</default>
         </values>
@@ -43,11 +39,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Training</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Webinar</fullName>
+            <fullName>Volunteering</fullName>
             <default>false</default>
         </values>
         <values>

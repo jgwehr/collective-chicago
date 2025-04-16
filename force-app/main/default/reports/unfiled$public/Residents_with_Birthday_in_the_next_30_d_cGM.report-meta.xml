@@ -25,7 +25,7 @@
         <field>BIRTHDATE</field>
     </columns>
     <filter>
-        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <booleanFilter>1 AND 2 AND (3 OR 4) AND 5</booleanFilter>
         <criteriaItems>
             <column>CONTACT_RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
@@ -45,14 +45,21 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>THIS_MONTH</value>
+            <value>NEXT_N_DAYS:14</value>
         </criteriaItems>
         <criteriaItems>
             <column>BIRTHDATE</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>LAST_WEEK</value>
+            <value>LAST_N_DAYS:7</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Stakeholder_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Drop Out,Graduated,Resident</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
@@ -62,7 +69,7 @@
         <field>Contact.Stakeholder_Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Residents with Birthday in the next 30 d</name>
+    <name>Residents with Birthday next 14 Days</name>
     <params>
         <name>co</name>
         <value>1</value>

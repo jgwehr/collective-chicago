@@ -7,18 +7,12 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Check_Up__c.Mental_Minutes__c</column>
-        </chartSummaries>
-        <chartSummaries>
-            <aggregate>Sum</aggregate>
-            <axisBinding>y</axisBinding>
             <column>Check_Up__c.Therapy_Minutes__c</column>
         </chartSummaries>
         <chartType>Line</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>FIRST_NAME</groupingColumn>
-        <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -37,25 +31,13 @@
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <aggregateTypes>Average</aggregateTypes>
-        <field>Check_Up__c.Mental_Minutes__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <aggregateTypes>Average</aggregateTypes>
         <field>Check_Up__c.Therapy_Minutes__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Check_Up__c.Mental_LMS_Minutes__c</field>
     </columns>
     <columns>
         <field>Check_Up__c.Check_Up_Notes__c</field>
     </columns>
     <columns>
         <field>CUST_CREATED_NAME</field>
-    </columns>
-    <columns>
-        <field>Check_Up__c.Mental_Coaching_Notes__c</field>
     </columns>
     <description>Mental Dimension</description>
     <filter>

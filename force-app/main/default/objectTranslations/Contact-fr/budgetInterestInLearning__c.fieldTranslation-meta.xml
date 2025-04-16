@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help></help>
-    <label></label>
+    <help><!-- 1 views session as a waste of time | 5 asks engaged questions; expresses interest in applying new info --></help>
+    <label><!-- Interest in Learning (Budget) --></label>
     <name>budgetInterestInLearning__c</name>
 </CustomFieldTranslation>

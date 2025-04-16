@@ -7,9 +7,9 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Check_Up__c.Financial_Minutes__c</column>
+            <column>Check_Up__c.Therapy_Minutes__c</column>
         </chartSummaries>
-        <chartType>VerticalColumn</chartType>
+        <chartType>Line</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>Check_Up__c.checkUpDate__c</groupingColumn>
@@ -27,47 +27,11 @@
     </chart>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Check_Up__c.Financial_Minutes__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Check_Up__c.Mental_Minutes__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Check_Up__c.Physical_Minutes__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Check_Up__c.Social_Minutes__c</field>
+        <field>Check_Up__c.Financial_Minutes_del__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Check_Up__c.Therapy_Minutes__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Check_Up__c.Vocational_Minutes__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Check_Up__c.Financial_LMS_Minutes__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Check_Up__c.Mental_LMS_Minutes__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Check_Up__c.Physical_LMS_Minutes__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Check_Up__c.Social_LMS_Minutes__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Check_Up__c.Vocational_LMS_Minutes__c</field>
     </columns>
     <filter>
         <criteriaItems>

@@ -5,9 +5,8 @@
         <backgroundColor2>#FFFFFF</backgroundColor2>
         <backgroundFadeDir>Diagonal</backgroundFadeDir>
         <chartSummaries>
-            <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Contact.residentDaysToGainEmployment__c</column>
+            <column>RowCount</column>
         </chartSummaries>
         <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
@@ -34,11 +33,26 @@
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <aggregateTypes>Average</aggregateTypes>
-        <field>Contact.residentDaysToGainEmployment__c</field>
+        <field>Contact.residentDaysUnemployed__c</field>
     </columns>
+    <columns>
+        <field>Contact.residentMoveInDate__c</field>
+    </columns>
+    <columns>
+        <field>Contact.residentJobStartDate__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>Contact.residentJobStartDate__c - Contact.residentMoveInDate__c</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>Calc Check</label>
+        <scale>2</scale>
+    </customDetailFormulas>
     <filter>
-        <booleanFilter>1 AND 2</booleanFilter>
         <criteriaItems>
             <column>CONTACT_RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
@@ -47,11 +61,11 @@
             <value>Contact.Stakeholder</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Contact.residentDaysToGainEmployment__c</column>
+            <column>Contact.Stakeholder_Status__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
-            <operator>greaterOrEqual</operator>
-            <value>0</value>
+            <operator>equals</operator>
+            <value>Drop Out,Graduated,Resident</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>

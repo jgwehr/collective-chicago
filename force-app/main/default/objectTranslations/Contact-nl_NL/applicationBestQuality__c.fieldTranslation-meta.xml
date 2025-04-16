@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help></help>
-    <label></label>
+    <help><!-- What do people tell you is one of your best qualities? --></help>
+    <label><!-- Best Quality (Application) --></label>
     <name>applicationBestQuality__c</name>
 </CustomFieldTranslation>

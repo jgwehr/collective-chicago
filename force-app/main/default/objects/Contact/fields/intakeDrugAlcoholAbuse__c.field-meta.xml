@@ -9,6 +9,6 @@
     <label>Drug / Alcohol Abuse (Intake)</label>
     <securityClassification>Restricted</securityClassification>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <type>Checkbox</type>
 </CustomField>

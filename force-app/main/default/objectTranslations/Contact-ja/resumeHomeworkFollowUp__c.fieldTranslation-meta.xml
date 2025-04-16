@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help></help>
-    <label></label>
+    <help><!-- 1 did not complete any homework | 3 avg response of three days; with 1.5 errors; taking two weeks to complete | 5 left without homework --></help>
+    <label><!-- Homework Follow Up (Resume) --></label>
     <name>resumeHomeworkFollowUp__c</name>
 </CustomFieldTranslation>

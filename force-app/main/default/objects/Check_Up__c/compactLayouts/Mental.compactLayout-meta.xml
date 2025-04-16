@@ -3,6 +3,5 @@
     <fullName>Mental</fullName>
     <fields>CreatedById</fields>
     <fields>checkUpDate__c</fields>
-    <fields>Therapy_Hours__c</fields>
     <label>Mental</label>
 </CompactLayout>

@@ -76,6 +76,11 @@
         <label>Belmont Central</label>
     </customValue>
     <customValue>
+        <fullName>Belmont Cragin</fullName>
+        <default>false</default>
+        <label>Belmont Cragin</label>
+    </customValue>
+    <customValue>
         <fullName>Belmont Gardens</fullName>
         <default>false</default>
         <label>Belmont Gardens</label>
@@ -206,14 +211,9 @@
         <label>Clarendon Park</label>
     </customValue>
     <customValue>
-        <fullName>Clearing East</fullName>
+        <fullName>Clearing</fullName>
         <default>false</default>
-        <label>Clearing East</label>
-    </customValue>
-    <customValue>
-        <fullName>Clearing West</fullName>
-        <default>false</default>
-        <label>Clearing West</label>
+        <label>Clearing</label>
     </customValue>
     <customValue>
         <fullName>Cottage Grove Heights</fullName>
@@ -241,9 +241,9 @@
         <label>Dearborn Park</label>
     </customValue>
     <customValue>
-        <fullName>Douglas Park</fullName>
+        <fullName>Douglas</fullName>
         <default>false</default>
-        <label>Douglas Park</label>
+        <label>Douglas</label>
     </customValue>
     <customValue>
         <fullName>Dunning</fullName>
@@ -741,6 +741,11 @@
         <label>Nortown</label>
     </customValue>
     <customValue>
+        <fullName>Norwood Park</fullName>
+        <default>false</default>
+        <label>Norwood Park</label>
+    </customValue>
+    <customValue>
         <fullName>Norwood Park East</fullName>
         <default>false</default>
         <label>Norwood Park East</label>
@@ -1051,6 +1056,11 @@
         <label>Streeterville</label>
     </customValue>
     <customValue>
+        <fullName>Suburb of Chicago</fullName>
+        <default>false</default>
+        <label>Suburb of Chicago</label>
+    </customValue>
+    <customValue>
         <fullName>Talley&apos;s Corner</fullName>
         <default>false</default>
         <label>Talley&apos;s Corner</label>
@@ -1236,11 +1246,6 @@
         <label>Wrigleyville</label>
     </customValue>
     <customValue>
-        <fullName>Suburb of Chicago</fullName>
-        <default>false</default>
-        <label>Suburb of Chicago</label>
-    </customValue>
-    <customValue>
         <fullName>Near West Side</fullName>
         <default>false</default>
         <isActive>false</isActive>
@@ -1252,6 +1257,18 @@
         <isActive>false</isActive>
         <label>Near North Side</label>
     </customValue>
+    <customValue>
+        <fullName>Clearing West</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Clearing West</label>
+    </customValue>
+    <customValue>
+        <fullName>Clearing East</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Clearing East</label>
+    </customValue>
     <masterLabel>Chicago Neighborhoods</masterLabel>
-    <sorted>true</sorted>
+    <sorted>false</sorted>
 </GlobalValueSet>

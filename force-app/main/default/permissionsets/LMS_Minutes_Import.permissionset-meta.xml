@@ -3,31 +3,6 @@
     <description>Allows updating a Coaching Meeting&apos;s &quot;LMS&quot; fields. Used when importing from a third party system</description>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Check_Up__c.Financial_LMS_Minutes__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Check_Up__c.Mental_LMS_Minutes__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Check_Up__c.Physical_LMS_Minutes__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Check_Up__c.Social_LMS_Minutes__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Check_Up__c.Vocational_LMS_Minutes__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Check_Up__c.checkUpDate__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -51,8 +26,4 @@
         <object>Contact</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
-    <recordTypeVisibilities>
-        <recordType>Check_Up__c.Coaching_Meeting</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
 </PermissionSet>

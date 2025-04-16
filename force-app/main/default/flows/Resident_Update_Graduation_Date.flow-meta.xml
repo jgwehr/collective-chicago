@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>61.0</apiVersion>
+    <apiVersion>60.0</apiVersion>
     <assignments>
         <name>clearGraduationDate</name>
         <label>Clear Graduate Date</label>
-        <locationX>314</locationX>
-        <locationY>395</locationY>
+        <locationX>638</locationX>
+        <locationY>503</locationY>
         <assignmentItems>
             <assignToReference>$Record.residentGraduationDate__c</assignToReference>
             <operator>Assign</operator>
@@ -14,8 +14,8 @@
     <assignments>
         <name>setGraduationDate</name>
         <label>Set Graduate Date</label>
-        <locationX>50</locationX>
-        <locationY>395</locationY>
+        <locationX>110</locationX>
+        <locationY>503</locationY>
         <assignmentItems>
             <assignToReference>$Record.residentGraduationDate__c</assignToReference>
             <operator>Assign</operator>
@@ -25,11 +25,33 @@
         </assignmentItems>
     </assignments>
     <decisions>
+        <name>Bypass_Flows</name>
+        <label>Bypass Flows</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>graduateStatus</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Standard</defaultConnectorLabel>
+        <rules>
+            <name>BypassFlows</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.BypassFlows</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Bypass</label>
+        </rules>
+    </decisions>
+    <decisions>
         <description>Different outcomes based on whether Status was changed to or from &quot;Graduate&quot;</description>
         <name>graduateStatus</name>
         <label>Graduate Status</label>
-        <locationX>314</locationX>
-        <locationY>287</locationY>
+        <locationX>506</locationX>
+        <locationY>395</locationY>
         <defaultConnectorLabel>Other</defaultConnectorLabel>
         <rules>
             <name>graduate_of_graduateStatus</name>
@@ -41,11 +63,50 @@
                     <stringValue>Graduated</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record.Stakeholder_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.residentGraduationDate__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>setGraduationDate</targetReference>
             </connector>
-            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
             <label>Graduate</label>
+        </rules>
+        <rules>
+            <name>Existing_Graduation_Date</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Stakeholder_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Graduated</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.residentGraduationDate__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Stakeholder_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Existing Graduation Date</label>
         </rules>
         <rules>
             <name>noGraduate_of_graduateStatus</name>
@@ -64,10 +125,17 @@
                     <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>$Record.Stakeholder_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Graduated</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>clearGraduationDate</targetReference>
             </connector>
-            <label>Prev Graduate</label>
+            <label>Changed from Graduated</label>
         </rules>
     </decisions>
     <environments>Default</environments>
@@ -93,10 +161,10 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <start>
-        <locationX>188</locationX>
+        <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>graduateStatus</targetReference>
+            <targetReference>Bypass_Flows</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>

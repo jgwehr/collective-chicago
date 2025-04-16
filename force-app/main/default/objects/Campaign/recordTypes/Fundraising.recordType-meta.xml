@@ -16,6 +16,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Continual</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>In Progress</fullName>
             <default>false</default>
         </values>
@@ -48,6 +52,10 @@
         </values>
         <values>
             <fullName>Telemarketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volunteering</fullName>
             <default>false</default>
         </values>
     </picklistValues>

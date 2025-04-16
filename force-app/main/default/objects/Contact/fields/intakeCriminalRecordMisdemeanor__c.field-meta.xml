@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>intakeCriminalRecordMisdemeanor__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <defaultValue>false</defaultValue>
+    <description>Qualitative only. Not used on SROI.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please check this box if background check shows a misdemeanor</inlineHelpText>
+    <label>Criminal Record, Misdemeanor (Intake)</label>
+    <securityClassification>Restricted</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

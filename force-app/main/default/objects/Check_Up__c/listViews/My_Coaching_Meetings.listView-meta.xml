@@ -3,12 +3,8 @@
     <fullName>My_Coaching_Meetings</fullName>
     <columns>NAME</columns>
     <columns>checkUpDate__c</columns>
-    <columns>Financial_Minutes__c</columns>
-    <columns>Mental_Minutes__c</columns>
+    <columns>Financial_Minutes_del__c</columns>
     <columns>Therapy_Minutes__c</columns>
-    <columns>Physical_Minutes__c</columns>
-    <columns>Social_Minutes__c</columns>
-    <columns>Vocational_Minutes__c</columns>
     <filterScope>Mine</filterScope>
     <filters>
         <field>RECORDTYPE</field>

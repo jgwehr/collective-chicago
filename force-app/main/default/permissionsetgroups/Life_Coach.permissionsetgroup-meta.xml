@@ -3,7 +3,7 @@
     <description>Edit Access to Resident-specific features.</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Life Coach</label>
-    <mutingPermissionSets>Life_Coach_Muted</mutingPermissionSets>
+    <permissionSets>Resident_Application_View_and_Edit</permissionSets>
     <permissionSets>SROI_Edit_Resident_Attributes</permissionSets>
     <permissionSets>View_and_Edit_Resident_Check_Up</permissionSets>
     <permissionSets>View_and_Edit_Resident_Interview</permissionSets>

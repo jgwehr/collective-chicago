@@ -1,102 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help></help>
-    <label></label>
+    <help><!-- Pick the primary reason if many exist --></help>
+    <label><!-- Denied Reason --></label>
     <name>Denied_Reason__c</name>
     <picklistValues>
         <masterLabel>Absentee</masterLabel>
-        <translation></translation>
+        <translation><!-- Absentee --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Aggression</masterLabel>
-        <translation></translation>
+        <translation><!-- Aggression --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Apathy</masterLabel>
-        <translation></translation>
+        <translation><!-- Apathy --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Couldn’t Follow Through</masterLabel>
-        <translation></translation>
+        <translation><!-- Couldn’t Follow Through --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Creating Unsafe Environment</masterLabel>
-        <translation></translation>
+        <translation><!-- Creating Unsafe Environment --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Current Drug Use</masterLabel>
-        <translation></translation>
+        <translation><!-- Current Drug Use --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Didn’t Schedule Next Interview</masterLabel>
-        <translation></translation>
+        <translation><!-- Didn’t Schedule Next Interview --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Dishonesty</masterLabel>
-        <translation></translation>
+        <translation><!-- Dishonesty --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Does Not Fit Admission Criteria</masterLabel>
-        <translation></translation>
+        <translation><!-- Does Not Fit Admission Criteria --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Drug Relapse</masterLabel>
-        <translation></translation>
+        <translation><!-- Drug Relapse --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Found Alternate</masterLabel>
-        <translation></translation>
+        <translation><!-- Found Alternate --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>High Risk of Violence</masterLabel>
-        <translation></translation>
+        <translation><!-- High Risk of Violence --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Incarcerated</masterLabel>
-        <translation></translation>
+        <translation><!-- Incarcerated --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Incompatibility with Current Resident</masterLabel>
-        <translation></translation>
+        <translation><!-- Incompatibility with Current Resident --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Lack of Need</masterLabel>
-        <translation></translation>
+        <translation><!-- Lack of Need --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Left City</masterLabel>
-        <translation></translation>
+        <translation><!-- Left City --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Lost Contact</masterLabel>
-        <translation></translation>
+        <translation><!-- Lost Contact --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>More Work Needed on Budget</masterLabel>
-        <translation></translation>
+        <translation><!-- More Work Needed on Budget --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>More Work Needed on Resume</masterLabel>
-        <translation></translation>
+        <translation><!-- More Work Needed on Resume --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>No Openings</masterLabel>
-        <translation></translation>
+        <translation><!-- No Openings --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Residents’ Veto</masterLabel>
-        <translation></translation>
+        <translation><!-- Residents’ Veto --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Unable to Keep Up</masterLabel>
-        <translation></translation>
+        <translation><!-- Unable to Keep Up  --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Unable to Work Full-time</masterLabel>
-        <translation></translation>
+        <translation><!-- Unable to Work Full-time --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Unwilling to Adhere to Conditions of Residency</masterLabel>
-        <translation></translation>
+        <translation><!-- Unwilling to Adhere to Conditions of Residency --></translation>
     </picklistValues>
 </CustomFieldTranslation>

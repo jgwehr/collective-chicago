@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>excludeFromAcknowledgement__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Determines whether associated Opportunities (AKA Donations) should be excluded from Acknowledgement. Implies non-tax-deductible. Usually when a donation receives a gift, such as March Madness or Anniversary Party</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Exclude Donations from Yearly Statement</inlineHelpText>
+    <label>Exclude from Acknowledgement</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>CollectiveLibraryLink__c</fullName>
-    <description></description>
     <inlineHelpText>Google Drive Link for documentation</inlineHelpText>
     <label>Collective Library Link</label>
     <required>false</required>

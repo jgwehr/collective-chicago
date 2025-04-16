@@ -4472,6 +4472,9 @@
         <flow>Work_Experience_Invoked_Update_Graduate_s_Health_Benefits</flow>
     </flowAccesses>
     <layoutAssignments>
+        <layout>Account-Organization Lightning Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>FlowOrchestrationWorkItem-Orchestration Work Item Layout</layout>
     </layoutAssignments>
     <layoutAssignments>

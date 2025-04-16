@@ -18,7 +18,7 @@
     <applicationVisibilities>
         <application>Nonprofit_Success_Pack</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__AllTabSet</application>
@@ -88,7 +88,7 @@
     <applicationVisibilities>
         <application>standard__OnlineSales</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Optimizer</application>
@@ -4471,6 +4471,9 @@
         <enabled>false</enabled>
         <flow>Work_Experience_Invoked_Update_Graduate_s_Health_Benefits</flow>
     </flowAccesses>
+    <layoutAssignments>
+        <layout>Account-Organization Lightning Layout</layout>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>ActionPlan-Action Plan Layout</layout>
     </layoutAssignments>

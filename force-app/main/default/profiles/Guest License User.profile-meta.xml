@@ -4752,7 +4752,7 @@
         <layout>givingStatementSetting__mdt-Giving Statement Setting Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>npsp__Grant_Deadline__c-npsp__Grant Deadline Layout</layout>
+        <layout>npsp__Grant_Deadline__c-Deliverable</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>sroiSettings__mdt-SROI Settings Layout</layout>

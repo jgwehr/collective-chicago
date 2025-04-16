@@ -4477,6 +4477,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Organization Lightning Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Organization Lightning Layout</layout>
         <recordType>Account.Organization</recordType>
     </layoutAssignments>
     <layoutAssignments>

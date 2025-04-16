@@ -18,7 +18,7 @@
     <applicationVisibilities>
         <application>Nonprofit_Success_Pack</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__AllTabSet</application>
@@ -88,7 +88,7 @@
     <applicationVisibilities>
         <application>standard__OnlineSales</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Optimizer</application>
@@ -4474,6 +4474,9 @@
     <layoutAssignments>
         <layout>Account-Household Lightning Layout</layout>
         <recordType>Account.HH_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Organization Lightning Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Organization Lightning Layout</layout>

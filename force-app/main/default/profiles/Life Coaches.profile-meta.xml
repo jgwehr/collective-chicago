@@ -33,12 +33,12 @@
     <applicationVisibilities>
         <application>standard__Approvals</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Chatter</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Community</application>
@@ -48,12 +48,12 @@
     <applicationVisibilities>
         <application>standard__DataGovernanceConsole</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__FlowsApp</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__LightningBolt</application>
@@ -78,7 +78,7 @@
     <applicationVisibilities>
         <application>standard__MSJApp</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Marketing</application>
@@ -4474,6 +4474,9 @@
     <layoutAssignments>
         <layout>Account-Household Lightning Layout</layout>
         <recordType>Account.HH_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Organization Lightning Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Organization Lightning Layout</layout>

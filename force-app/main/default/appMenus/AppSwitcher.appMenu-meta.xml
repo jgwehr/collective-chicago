@@ -172,4 +172,8 @@
         <name>standard__DataGovernanceConsole</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>Grant_Team</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Request__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <label>Funding Request</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Coaching</fullName>
+                <default>false</default>
+                <label>Coaching</label>
+            </value>
+            <value>
+                <fullName>Event-Specific</fullName>
+                <default>false</default>
+                <label>Event-Specific</label>
+            </value>
+            <value>
+                <fullName>For Financial Review</fullName>
+                <default>false</default>
+                <label>For Financial Review</label>
+            </value>
+            <value>
+                <fullName>General Operating</fullName>
+                <default>true</default>
+                <label>General Operating</label>
+            </value>
+            <value>
+                <fullName>Program-Financial</fullName>
+                <default>false</default>
+                <label>Program-Financial</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

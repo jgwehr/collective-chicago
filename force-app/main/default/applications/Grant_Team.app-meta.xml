@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <content>Back_Office</content>
-        <formFactor>Large</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-        <pageOrSobjectType>standard-home</pageOrSobjectType>
-    </actionOverrides>
     <brand>
-        <headerColor>#02C483</headerColor>
-        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+        <headerColor>#01B187</headerColor>
+        <logo>Screenshot_20250326_113719</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
-    <description>Used for SROI, Giving Statement, Email Templates, and other tasks affecting how the Collective operates</description>
+    <description>Grant Management Tasks</description>
     <formFactors>Small</formFactors>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>true</isNavPersonalizationDisabled>
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
-    <label>Back Office</label>
+    <label>Grant Team</label>
     <navType>Console</navType>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -75,63 +69,31 @@
         <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
-    <tabs>standard-home</tabs>
-    <tabs>SROI_Calculation__c</tabs>
-    <tabs>standard-EmailTemplate</tabs>
-    <tabs>standard-BackgroundOperation</tabs>
-    <tabs>npo02__Opportunity_Rollups</tabs>
-    <tabs>standard-report</tabs>
     <tabs>standard-Account</tabs>
-    <tabs>standard-Contact</tabs>
     <tabs>npe5__Affiliation__c</tabs>
-    <tabs>standard-Award</tabs>
-    <tabs>standard-Campaign</tabs>
-    <tabs>standard-Dashboard</tabs>
     <tabs>standard-Opportunity</tabs>
+    <tabs>npsp__Grant_Deadline__c</tabs>
+    <tabs>standard-Contact</tabs>
     <uiType>Lightning</uiType>
-    <utilityBar>Back_Office_UtilityBar</utilityBar>
+    <utilityBar>Grant_Team_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
-            <fieldName>graduate__c</fieldName>
-            <tab>SROI_Calculation__c</tab>
-        </mappings>
-        <mappings>
+            <fieldName>npe5__Contact__c</fieldName>
             <tab>npe5__Affiliation__c</tab>
         </mappings>
         <mappings>
-            <tab>npo02__Opportunity_Rollups</tab>
+            <fieldName>npsp__Opportunity__c</fieldName>
+            <tab>npsp__Grant_Deadline__c</tab>
         </mappings>
         <mappings>
             <tab>standard-Account</tab>
-        </mappings>
-        <mappings>
-            <tab>standard-Award</tab>
-        </mappings>
-        <mappings>
-            <tab>standard-BackgroundOperation</tab>
-        </mappings>
-        <mappings>
-            <tab>standard-Campaign</tab>
         </mappings>
         <mappings>
             <fieldName>AccountId</fieldName>
             <tab>standard-Contact</tab>
         </mappings>
         <mappings>
-            <tab>standard-Dashboard</tab>
-        </mappings>
-        <mappings>
-            <tab>standard-EmailTemplate</tab>
-        </mappings>
-        <mappings>
-            <fieldName>AccountId</fieldName>
             <tab>standard-Opportunity</tab>
-        </mappings>
-        <mappings>
-            <tab>standard-home</tab>
-        </mappings>
-        <mappings>
-            <tab>standard-report</tab>
         </mappings>
     </workspaceConfig>
 </CustomApplication>

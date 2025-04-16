@@ -5,10 +5,6 @@
     <fieldName>StageName</fieldName>
     <masterLabel>Grant Path</masterLabel>
     <pathAssistantSteps>
-        <fieldNames>CloseDate</fieldNames>
-        <fieldNames>npsp__Ask_Date__c</fieldNames>
-        <fieldNames>npsp__Requested_Amount__c</fieldNames>
-        <fieldNames>Amount</fieldNames>
         <picklistValueName>Application Submitted</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
@@ -26,20 +22,10 @@
         <picklistValueName>Declined</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
-        <fieldNames>CloseDate</fieldNames>
-        <fieldNames>npsp__Requested_Amount__c</fieldNames>
-        <fieldNames>Amount</fieldNames>
-        <fieldNames>npsp__Grant_Program_Area_s__c</fieldNames>
-        <fieldNames>npsp__Grant_Requirements_Website__c</fieldNames>
         <picklistValueName>LOI Submitted</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
-        <fieldNames>CloseDate</fieldNames>
-        <fieldNames>npsp__Grant_Program_Area_s__c</fieldNames>
-        <fieldNames>npsp__Grant_Requirements_Website__c</fieldNames>
-        <fieldNames>npsp__Is_Grant_Renewal__c</fieldNames>
-        <fieldNames>npsp__Previous_Grant_Opportunity__c</fieldNames>
-        <picklistValueName>Prospecting</picklistValueName>
+        <picklistValueName>Planning</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
         <fieldNames>CloseDate</fieldNames>

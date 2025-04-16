@@ -272,6 +272,10 @@
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIi5</field>
+            <label>Collective Library Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4ei</field>
             <label>Combined Rollup Fieldset</label>
         </opportunityListFieldsLabelMappings>
@@ -300,6 +304,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JeWr</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -310,6 +318,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bH</field>
             <label>Gift Strategy</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JdMH</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIdF</field>
+            <label>Grant Application Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
@@ -582,6 +598,7 @@
             <field>00N4x00000Kf4od</field>
             <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
+            <field>00NVD000002IIi5</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
             <field>00N4x00000Kf4mw</field>
@@ -589,9 +606,12 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NVD000002JeWr</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NVD000002JdMH</field>
+            <field>00NVD000002IIdF</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
             <field>00N4x00000Kf4k1</field>
@@ -839,6 +859,10 @@
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIi5</field>
+            <label>Collective Library Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4ei</field>
             <label>Combined Rollup Fieldset</label>
         </opportunityListFieldsLabelMappings>
@@ -867,6 +891,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JeWr</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -877,6 +905,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bH</field>
             <label>Gift Strategy</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JdMH</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIdF</field>
+            <label>Grant Application Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
@@ -1150,6 +1186,7 @@
             <field>00N4x00000Kf4od</field>
             <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
+            <field>00NVD000002IIi5</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
             <field>00N4x00000Kf4mw</field>
@@ -1157,9 +1194,12 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NVD000002JeWr</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NVD000002JdMH</field>
+            <field>00NVD000002IIdF</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
             <field>00N4x00000Kf4k1</field>
@@ -1403,6 +1443,10 @@
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIi5</field>
+            <label>Collective Library Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4ei</field>
             <label>Combined Rollup Fieldset</label>
         </opportunityListFieldsLabelMappings>
@@ -1431,6 +1475,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JeWr</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -1441,6 +1489,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bH</field>
             <label>Gift Strategy</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JdMH</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIdF</field>
+            <label>Grant Application Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
@@ -1713,6 +1769,7 @@
             <field>00N4x00000Kf4od</field>
             <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
+            <field>00NVD000002IIi5</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
             <field>00N4x00000Kf4mw</field>
@@ -1720,9 +1777,12 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NVD000002JeWr</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NVD000002JdMH</field>
+            <field>00NVD000002IIdF</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
             <field>00N4x00000Kf4k1</field>
@@ -1970,6 +2030,10 @@
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIi5</field>
+            <label>Collective Library Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4ei</field>
             <label>Combined Rollup Fieldset</label>
         </opportunityListFieldsLabelMappings>
@@ -1998,6 +2062,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JeWr</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -2008,6 +2076,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bH</field>
             <label>Gift Strategy</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JdMH</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIdF</field>
+            <label>Grant Application Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
@@ -2277,6 +2353,7 @@
             <field>00N4x00000Kf4od</field>
             <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
+            <field>00NVD000002IIi5</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
             <field>00N4x00000Kf4mw</field>
@@ -2284,9 +2361,12 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NVD000002JeWr</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NVD000002JdMH</field>
+            <field>00NVD000002IIdF</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
             <field>00N4x00000Kf4k1</field>
@@ -2533,6 +2613,10 @@
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIi5</field>
+            <label>Collective Library Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4ei</field>
             <label>Combined Rollup Fieldset</label>
         </opportunityListFieldsLabelMappings>
@@ -2561,6 +2645,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JeWr</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -2571,6 +2659,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bH</field>
             <label>Gift Strategy</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JdMH</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIdF</field>
+            <label>Grant Application Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
@@ -2844,6 +2940,7 @@
             <field>00N4x00000Kf4od</field>
             <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
+            <field>00NVD000002IIi5</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
             <field>00N4x00000Kf4mw</field>
@@ -2851,9 +2948,12 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NVD000002JeWr</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NVD000002JdMH</field>
+            <field>00NVD000002IIdF</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
             <field>00N4x00000Kf4k1</field>
@@ -3097,6 +3197,10 @@
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIi5</field>
+            <label>Collective Library Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4ei</field>
             <label>Combined Rollup Fieldset</label>
         </opportunityListFieldsLabelMappings>
@@ -3125,6 +3229,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JeWr</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -3135,6 +3243,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bH</field>
             <label>Gift Strategy</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JdMH</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIdF</field>
+            <label>Grant Application Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
@@ -3407,6 +3523,7 @@
             <field>00N4x00000Kf4od</field>
             <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
+            <field>00NVD000002IIi5</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
             <field>00N4x00000Kf4mw</field>
@@ -3414,9 +3531,12 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NVD000002JeWr</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NVD000002JdMH</field>
+            <field>00NVD000002IIdF</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
             <field>00N4x00000Kf4k1</field>
@@ -3664,6 +3784,10 @@
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIi5</field>
+            <label>Collective Library Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4ei</field>
             <label>Combined Rollup Fieldset</label>
         </opportunityListFieldsLabelMappings>
@@ -3692,6 +3816,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JeWr</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -3702,6 +3830,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bH</field>
             <label>Gift Strategy</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JdMH</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIdF</field>
+            <label>Grant Application Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
@@ -3975,6 +4111,7 @@
             <field>00N4x00000Kf4od</field>
             <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
+            <field>00NVD000002IIi5</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
             <field>00N4x00000Kf4mw</field>
@@ -3982,9 +4119,12 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NVD000002JeWr</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NVD000002JdMH</field>
+            <field>00NVD000002IIdF</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
             <field>00N4x00000Kf4k1</field>
@@ -4228,6 +4368,10 @@
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIi5</field>
+            <label>Collective Library Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4ei</field>
             <label>Combined Rollup Fieldset</label>
         </opportunityListFieldsLabelMappings>
@@ -4256,6 +4400,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JeWr</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -4266,6 +4414,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bH</field>
             <label>Gift Strategy</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JdMH</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIdF</field>
+            <label>Grant Application Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
@@ -4538,6 +4694,7 @@
             <field>00N4x00000Kf4od</field>
             <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
+            <field>00NVD000002IIi5</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
             <field>00N4x00000Kf4mw</field>
@@ -4545,9 +4702,12 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NVD000002JeWr</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NVD000002JdMH</field>
+            <field>00NVD000002IIdF</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
             <field>00N4x00000Kf4k1</field>
@@ -4795,6 +4955,10 @@
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIi5</field>
+            <label>Collective Library Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4ei</field>
             <label>Combined Rollup Fieldset</label>
         </opportunityListFieldsLabelMappings>
@@ -4823,6 +4987,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JeWr</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -4833,6 +5001,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bH</field>
             <label>Gift Strategy</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JdMH</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIdF</field>
+            <label>Grant Application Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
@@ -5106,6 +5282,7 @@
             <field>00N4x00000Kf4od</field>
             <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
+            <field>00NVD000002IIi5</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
             <field>00N4x00000Kf4mw</field>
@@ -5113,9 +5290,12 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NVD000002JeWr</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NVD000002JdMH</field>
+            <field>00NVD000002IIdF</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
             <field>00N4x00000Kf4k1</field>
@@ -5359,6 +5539,10 @@
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIi5</field>
+            <label>Collective Library Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4ei</field>
             <label>Combined Rollup Fieldset</label>
         </opportunityListFieldsLabelMappings>
@@ -5387,6 +5571,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JeWr</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -5397,6 +5585,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bH</field>
             <label>Gift Strategy</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JdMH</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIdF</field>
+            <label>Grant Application Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
@@ -5669,6 +5865,7 @@
             <field>00N4x00000Kf4od</field>
             <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
+            <field>00NVD000002IIi5</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
             <field>00N4x00000Kf4mw</field>
@@ -5676,9 +5873,12 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NVD000002JeWr</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NVD000002JdMH</field>
+            <field>00NVD000002IIdF</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
             <field>00N4x00000Kf4k1</field>
@@ -5926,6 +6126,10 @@
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIi5</field>
+            <label>Collective Library Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4ei</field>
             <label>Combined Rollup Fieldset</label>
         </opportunityListFieldsLabelMappings>
@@ -5954,6 +6158,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JeWr</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -5964,6 +6172,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bH</field>
             <label>Gift Strategy</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JdMH</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIdF</field>
+            <label>Grant Application Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
@@ -6237,6 +6453,7 @@
             <field>00N4x00000Kf4od</field>
             <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
+            <field>00NVD000002IIi5</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
             <field>00N4x00000Kf4mw</field>
@@ -6244,9 +6461,12 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NVD000002JeWr</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NVD000002JdMH</field>
+            <field>00NVD000002IIdF</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
             <field>00N4x00000Kf4k1</field>
@@ -6490,6 +6710,10 @@
             <label>Closed Lost Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIi5</field>
+            <label>Collective Library Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4ei</field>
             <label>Combined Rollup Fieldset</label>
         </opportunityListFieldsLabelMappings>
@@ -6518,6 +6742,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JeWr</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -6528,6 +6756,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4bH</field>
             <label>Gift Strategy</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002JdMH</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NVD000002IIdF</field>
+            <label>Grant Application Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
@@ -6800,6 +7036,7 @@
             <field>00N4x00000Kf4od</field>
             <field>00NRm00000AYxJF</field>
             <field>00N4x00000Kf4bG</field>
+            <field>00NVD000002IIi5</field>
             <field>00N4x00000Kf4ei</field>
             <field>00N4x00000Kf4c9</field>
             <field>00N4x00000Kf4mw</field>
@@ -6807,9 +7044,12 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NVD000002JeWr</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NVD000002JdMH</field>
+            <field>00NVD000002IIdF</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
             <field>00N4x00000Kf4k1</field>

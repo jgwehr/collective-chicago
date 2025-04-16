@@ -11,6 +11,11 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
+        <application>Grant_Team</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>Nonprofit_Success_Pack</application>
         <default>false</default>
         <visible>true</visible>
@@ -88,7 +93,7 @@
     <applicationVisibilities>
         <application>standard__Optimizer</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Platform</application>
@@ -115,6 +120,10 @@
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
+    <classAccesses>
+        <apexClass>deleteme</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <custom>true</custom>
     <fieldPermissions>
         <editable>false</editable>
@@ -3153,6 +3162,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.CollectiveLibraryLink__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.ContractId</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3173,12 +3187,27 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Funding_Request__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.FundraiseUpId__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.FundraiseUpRecurringId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.GrantApplicationDeadline__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.GrantApplicationLink__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4381,6 +4410,11 @@
         <field>npe5__Affiliation__c.Contact_Link__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>npsp__Grant_Deadline__c.opportunityStage__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Annual_Giving_Statement</flow>
@@ -4619,6 +4653,33 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Macro-Macro Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-npsp__Donation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-npsp__Donation Layout</layout>
+        <recordType>Opportunity.Donation</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-npsp__Grant Layout</layout>
+        <recordType>Opportunity.Grant</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-npsp__In-Kind Gift Layout</layout>
+        <recordType>Opportunity.InKindGift</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-npsp__Major Gift Layout</layout>
+        <recordType>Opportunity.MajorGift</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-npsp__Matching Gift Layout</layout>
+        <recordType>Opportunity.MatchingGift</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-npsp__Membership Layout</layout>
+        <recordType>Opportunity.Membership</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>OpportunityContactRole-Opportunity Contact Role Layout</layout>

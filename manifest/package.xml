@@ -143,10 +143,6 @@
         <name>MatchingRules</name>
     </types>
     <types>
-        <members>cbCollective_Chicago</members>
-        <name>NetworkBranding</name>
-    </types>
-    <types>
         <members>NotificationTypeConfig</members>
         <name>NotificationTypeConfig</name>
     </types>

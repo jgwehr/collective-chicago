@@ -4,6 +4,5 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>DevOps Team Member</label>
     <permissionSets>sf_devops_NamedCredentials</permissionSets>
-    <permissionSets>sf_devops__DevOps_Center</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>

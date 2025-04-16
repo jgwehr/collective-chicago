@@ -54,13 +54,6 @@
     <description>Recent Applications who need to be contacted to start the interview process.</description>
     <filter>
         <criteriaItems>
-            <column>LAST_ACTIVITY</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value></value>
-        </criteriaItems>
-        <criteriaItems>
             <column>CONTACT_RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>

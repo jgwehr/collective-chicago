@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help></help>
-    <label></label>
+    <help><!-- 1 fake resume | 2 no resume | 3 poorly formatted | 4 complete with multiple typos | 5 complete resume --></help>
+    <label><!-- Initial Resume Quality (Resume) --></label>
     <name>resumeInitialQuality__c</name>
 </CustomFieldTranslation>

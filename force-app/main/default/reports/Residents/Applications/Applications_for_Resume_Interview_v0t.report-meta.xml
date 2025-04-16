@@ -30,10 +30,6 @@
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Contact.interviewTimeliness__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
         <field>Contact.interviewFervorForOpportunity__c</field>
     </columns>
     <columns>
@@ -43,10 +39,6 @@
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Contact.interviewOwnership__c</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Contact.interviewReadinessToWork__c</field>
     </columns>
     <columns>
         <field>Contact.interviewPotentialObstacles__c</field>

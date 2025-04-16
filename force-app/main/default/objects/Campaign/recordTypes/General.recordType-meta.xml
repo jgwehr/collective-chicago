@@ -16,6 +16,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Continual</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>In Progress</fullName>
             <default>false</default>
         </values>
@@ -27,11 +31,23 @@
     <picklistValues>
         <picklist>Type</picklist>
         <values>
+            <fullName>Direct Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Email</fullName>
             <default>false</default>
         </values>
         <values>
+            <fullName>Networking</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partners</fullName>
             <default>false</default>
         </values>
         <values>
@@ -44,6 +60,10 @@
         </values>
         <values>
             <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volunteering</fullName>
             <default>false</default>
         </values>
     </picklistValues>

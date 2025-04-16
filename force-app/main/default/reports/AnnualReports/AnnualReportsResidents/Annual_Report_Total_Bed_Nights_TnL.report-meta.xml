@@ -43,9 +43,6 @@
         <field>CDF1</field>
     </columns>
     <columns>
-        <field>Contact.residentMoveInDate__c</field>
-    </columns>
-    <columns>
         <field>Contact.residentMoveOutDate__c</field>
     </columns>
     <customDetailFormulas>
@@ -103,7 +100,7 @@
         <scale>2</scale>
     </customDetailFormulas>
     <filter>
-        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
         <criteriaItems>
             <column>CONTACT_RECORDTYPE</column>
             <columnToColumn>false</columnToColumn>
@@ -125,12 +122,24 @@
             <operator>notEqual</operator>
             <value>Resident</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Contact.Stakeholder_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Drop Out,Graduated,Resident</value>
+        </criteriaItems>
         <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Contact.Stakeholder_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>Contact.residentMoveInDate__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Total Bed Nights (All Time)</name>

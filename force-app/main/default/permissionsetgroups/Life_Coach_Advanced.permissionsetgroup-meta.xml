@@ -5,5 +5,6 @@
     <label>Life Coach Advanced</label>
     <permissionSets>Merge_or_Delete_Contacts</permissionSets>
     <permissionSets>SROI_Edit_Resident_Attributes</permissionSets>
+    <permissionSets>SROI_Manage_Calculations</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>

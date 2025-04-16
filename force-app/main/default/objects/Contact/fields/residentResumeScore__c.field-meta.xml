@@ -9,7 +9,8 @@
 + resumeProgressMade__c 
 +  resumeOnlineMarketability__c 
 + resumeHomeworkFollowUp__c 
-) / 5</formula>
++  resumeLevelOfNeed__c 
+) / 6</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Average of Resume Ratings</inlineHelpText>
     <label>Resume Score</label>

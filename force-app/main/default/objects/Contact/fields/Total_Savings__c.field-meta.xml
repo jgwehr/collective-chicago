@@ -10,7 +10,7 @@
         <operation>equals</operation>
         <value>Professional</value>
     </summaryFilterItems>
-    <summaryForeignKey>Check_Up__c.Stakeholder__c</summaryForeignKey>
+    <summaryForeignKey>Check_Up__c.resident__c</summaryForeignKey>
     <summaryOperation>sum</summaryOperation>
     <trackHistory>false</trackHistory>
     <type>Summary</type>

@@ -4,7 +4,7 @@
     <externalId>false</externalId>
     <label>Latest Check Up</label>
     <summarizedField>Check_Up__c.CreatedDate</summarizedField>
-    <summaryForeignKey>Check_Up__c.Stakeholder__c</summaryForeignKey>
+    <summaryForeignKey>Check_Up__c.resident__c</summaryForeignKey>
     <summaryOperation>max</summaryOperation>
     <trackHistory>false</trackHistory>
     <type>Summary</type>

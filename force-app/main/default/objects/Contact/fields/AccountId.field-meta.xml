@@ -5,6 +5,6 @@
     <description>When blank, NPSP automatically creates or associates a Household Account.</description>
     <inlineHelpText>Leave blank for new Contacts who are not part of a professional organization.</inlineHelpText>
     <trackFeedHistory>true</trackFeedHistory>
-    <trackHistory>true</trackHistory>
+    <trackHistory>false</trackHistory>
     <type>Lookup</type>
 </CustomField>

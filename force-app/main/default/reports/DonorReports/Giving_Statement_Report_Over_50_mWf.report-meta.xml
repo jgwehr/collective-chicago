@@ -7,37 +7,25 @@
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
-        <field>STAGE_NAME</field>
+        <field>CAMPAIGN_SOURCE</field>
     </columns>
     <columns>
         <field>AMOUNT</field>
     </columns>
     <columns>
-        <field>EXP_AMOUNT</field>
-    </columns>
-    <columns>
-        <field>PROBABILITY</field>
-    </columns>
-    <columns>
-        <field>AGE</field>
-    </columns>
-    <columns>
-        <field>CLOSE_DATE</field>
+        <field>Opportunity.Net_Donation_Amount__c</field>
     </columns>
     <columns>
         <field>CREATED_DATE</field>
     </columns>
     <columns>
-        <field>NEXT_STEP</field>
-    </columns>
-    <columns>
-        <field>LEAD_SOURCE</field>
-    </columns>
-    <columns>
-        <field>TYPE</field>
+        <field>CLOSE_DATE</field>
     </columns>
     <columns>
         <field>Opportunity.npsp__Acknowledgment_Status__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.External_Transaction_Id__c</field>
     </columns>
     <description>Highlights the Donors of all Unacknowledged Donations from the previous year.</description>
     <filter>

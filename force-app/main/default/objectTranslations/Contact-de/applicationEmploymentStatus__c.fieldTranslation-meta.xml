@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label></label>
+    <label><!-- Employment Status (Application) --></label>
     <name>applicationEmploymentStatus__c</name>
     <picklistValues>
         <masterLabel>Full-time</masterLabel>
-        <translation></translation>
+        <translation><!-- Full-time --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Part-time or inconsistent work</masterLabel>
-        <translation></translation>
+        <translation><!-- Part-time or inconsistent work --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Unemployed and not seeking work</masterLabel>
-        <translation></translation>
+        <translation><!-- Unemployed and not seeking work --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Unemployed but actively seeking work</masterLabel>
-        <translation></translation>
+        <translation><!-- Unemployed but actively seeking work --></translation>
     </picklistValues>
 </CustomFieldTranslation>

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label></label>
+    <label><!-- Living Conditions (Application) --></label>
     <name>applicationLivingConditions__c</name>
     <picklistValues>
         <masterLabel>In a shelter</masterLabel>
-        <translation></translation>
+        <translation><!-- In a shelter --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>In an apartment where I pay rent</masterLabel>
-        <translation></translation>
+        <translation><!-- In an apartment where I pay rent --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Outside or on the train</masterLabel>
-        <translation></translation>
+        <translation><!-- Outside or on the train --></translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Temporarily with a friend or family</masterLabel>
-        <translation></translation>
+        <translation><!-- Temporarily with a friend or family --></translation>
     </picklistValues>
 </CustomFieldTranslation>

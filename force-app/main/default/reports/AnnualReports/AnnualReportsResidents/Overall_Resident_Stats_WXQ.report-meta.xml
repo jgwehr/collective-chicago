@@ -11,8 +11,10 @@
         <field>Contact.Neighborhood__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Average</aggregateTypes>
-        <field>Contact.Age_inputted__c</field>
+        <field>Contact.raceEthnicity__c</field>
+    </columns>
+    <columns>
+        <field>Contact.sexualOrientation__c</field>
     </columns>
     <columns>
         <aggregateTypes>Average</aggregateTypes>
@@ -44,6 +46,7 @@
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
         <field>Contact.Total_Rent_Paid__c</field>
     </columns>
     <columns>
@@ -57,8 +60,12 @@
         <field>CDF1</field>
     </columns>
     <columns>
-        <aggregateTypes>Average</aggregateTypes>
-        <field>Contact.residentDaysToGainEmployment__c</field>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.intakeCriminalRecordFelony__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.intakeCriminalRecordMisdemeanor__c</field>
     </columns>
     <customDetailFormulas>
         <calculatedFormula>(Contact.Total_Savings__c + Contact.Total_Debt_Paid__c) / Contact.Total_Earnings__c</calculatedFormula>

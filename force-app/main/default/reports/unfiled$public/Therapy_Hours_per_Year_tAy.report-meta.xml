@@ -40,9 +40,6 @@
     <columns>
         <field>CUST_CREATED_NAME</field>
     </columns>
-    <columns>
-        <field>Check_Up__c.Mental_Coaching_Notes__c</field>
-    </columns>
     <description>Counts the number of Therapy Hours in a period to audit Therapy receipts</description>
     <filter>
         <criteriaItems>

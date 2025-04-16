@@ -34,6 +34,20 @@
         <notificationType>approval_request</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>bulk_action_plan_save</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>cdp_data_share_notif_type</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
         <appSettings>
             <connectedAppName>sf_chttr_apps__Chatter_for_Android</connectedAppName>
             <enabled>true</enabled>
@@ -231,6 +245,13 @@
             <desktopEnabled>true</desktopEnabled>
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
+        <notificationType>invoice_generation</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
         <notificationType>mailapp_alert</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
@@ -291,6 +312,13 @@
             <mobileEnabled>true</mobileEnabled>
         </notificationChannels>
         <notificationType>profile_post</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>true</mobileEnabled>
+        </notificationChannels>
+        <notificationType>quote_to_order</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
         <notificationChannels>

@@ -132,11 +132,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>residentDaysToGainEmployment__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>residentDaysUnemployed__c</field>
             <table>Contact</table>
         </columns>
@@ -257,7 +252,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>applicationGrewUp__c</field>
+            <field>OLDapplicationGrewUp__c</field>
             <table>Contact</table>
         </columns>
         <columns>
@@ -667,37 +662,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>old_targetRentPaid__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Targeted_Savings_Amount__c</field>
             <table>Contact</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>intakeDrugAlcoholAbuse__c</field>
+            <field>sexualOrientation__c</field>
             <table>Contact</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>intakePostTaxIncome__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>graduateFirstRearrestDate__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>graduatePostTaxIncome__c</field>
-            <table>Contact</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>residentGraduationDate__c</field>
+            <field>applicationGrewUp__c</field>
             <table>Contact</table>
         </columns>
         <masterLabel>Contacts</masterLabel>

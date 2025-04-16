@@ -4,6 +4,6 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Application Integration</label>
     <permissionSets>Create_Basic_Donor_Contact</permissionSets>
-    <permissionSets>Edit_Stakeholder_Application_Details</permissionSets>
+    <permissionSets>Resident_Application_View_and_Edit</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>

@@ -3,8 +3,8 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Application Import</label>
     <permissionSets>DataLoader_Permissions</permissionSets>
-    <permissionSets>Edit_Stakeholder_Application_Details</permissionSets>
     <permissionSets>Merge_or_Delete_Contacts</permissionSets>
+    <permissionSets>Resident_Application_View_and_Edit</permissionSets>
     <permissionSets>View_and_Edit_Resident_Interview</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>

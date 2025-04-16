@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help></help>
-    <label></label>
+    <help><!-- If you identified you are &quot;In a shelter,&quot; please identify which one. --></help>
+    <label><!-- Shelter (Application) --></label>
     <name>applicationShelter__c</name>
 </CustomFieldTranslation>

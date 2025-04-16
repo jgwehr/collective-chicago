@@ -7,7 +7,7 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Check_Up__c.Therapy_Hours__c</column>
+            <column>Check_Up__c.Therapy_Minutes__c</column>
         </chartSummaries>
         <chartType>LineCumulative</chartType>
         <enableHoverLabels>false</enableHoverLabels>
@@ -33,19 +33,15 @@
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <aggregateTypes>Average</aggregateTypes>
-        <aggregateTypes>Maximum</aggregateTypes>
-        <aggregateTypes>Minimum</aggregateTypes>
-        <aggregateTypes>Median</aggregateTypes>
-        <field>Check_Up__c.Therapy_Hours__c</field>
+        <field>Check_Up__c.Therapy_Minutes__c</field>
     </columns>
     <filter>
         <criteriaItems>
-            <column>CUST_RECORDTYPE</column>
+            <column>Check_Up__c.Therapy_Minutes__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>Check_Up__c.Mental</value>
+            <operator>notEqual</operator>
+            <value></value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
@@ -58,7 +54,7 @@
     <name>Therapy Hours over Time</name>
     <params>
         <name>co</name>
-        <value>1</value>
+        <value>0</value>
     </params>
     <reportType>ContactCustomEntity$Check_Up__c</reportType>
     <scope>organization</scope>

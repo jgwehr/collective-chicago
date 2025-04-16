@@ -58,7 +58,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>lookupFieldName</name>
-                    <value>Check_Up__c.Stakeholder__c</value>
+                    <value>Check_Up__c.resident__c</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>titleFieldName</name>

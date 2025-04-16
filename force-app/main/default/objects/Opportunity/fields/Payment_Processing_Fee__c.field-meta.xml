@@ -4,6 +4,7 @@
     <defaultValue>0</defaultValue>
     <description>The Fee assessed by a clearing house or payment processor to finalize a transaction. Usually for credit cards. May be 0.</description>
     <externalId>false</externalId>
+    <inlineHelpText>eg. Credit Card processing fee</inlineHelpText>
     <label>Payment Processing Fee</label>
     <precision>5</precision>
     <required>false</required>

@@ -11,6 +11,11 @@
         <field>Opportunity.Payment_Processor__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.campaignCode__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>View and Edit Donations</label>
     <license>Salesforce</license>

@@ -4,12 +4,16 @@
         <name>emailGivingStatement</name>
         <label>Email Giving Statement</label>
         <locationX>50</locationX>
-        <locationY>2138</locationY>
+        <locationY>2246</locationY>
         <actionName>SendBetterEmail</actionName>
         <actionType>apex</actionType>
         <connector>
             <targetReference>update_DonationAcknowledgement</targetReference>
         </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Rollback_General_Error</targetReference>
+        </faultConnector>
         <flowTransactionModel>Automatic</flowTransactionModel>
         <inputParameters>
             <name>bcc</name>
@@ -79,19 +83,21 @@
         </inputParameters>
         <nameSegment>SendBetterEmail</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
-        <versionSegment>1</versionSegment>
     </actionCalls>
     <actionCalls>
         <description>Without Attachement; uses standard SF functionality</description>
         <name>emailGivingStatementStandard</name>
         <label>Email Giving Statement</label>
-        <locationX>578</locationX>
+        <locationX>1106</locationX>
         <locationY>2030</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
             <targetReference>update_DonationAcknowledgement</targetReference>
         </connector>
+        <faultConnector>
+            <targetReference>Rollback_General_Error</targetReference>
+        </faultConnector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>senderAddress</name>
@@ -130,14 +136,13 @@
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
-        <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>59.0</apiVersion>
     <assignments>
         <description>Inserts the current Opportunity&apos;s information into an HTML template (via tplDonationRow) and then adds it to an array.</description>
         <name>assign_addDonationHTMLRow</name>
         <label>Add Donation HTML</label>
-        <locationX>402</locationX>
+        <locationX>798</locationX>
         <locationY>1190</locationY>
         <assignmentItems>
             <assignToReference>tplEmailBody_DonationRows</assignToReference>
@@ -154,7 +159,7 @@
         <description>Adds the current Opportunity&apos;s Amount to the Total</description>
         <name>assign_increaseTotalDonationAmount</name>
         <label>Increase Total</label>
-        <locationX>402</locationX>
+        <locationX>798</locationX>
         <locationY>1298</locationY>
         <assignmentItems>
             <assignToReference>tplEmailBody_TotalAmount</assignToReference>
@@ -173,7 +178,7 @@ Yet, this date time should only be updated AFTER the email sent successfully.
 Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the time before the email was sent. User must manually clear out the time stamp if there&apos;s an issue.</description>
         <name>assign_lastGivingStatementTime</name>
         <label>Update Last Giving Statement Time</label>
-        <locationX>314</locationX>
+        <locationX>710</locationX>
         <locationY>1706</locationY>
         <assignmentItems>
             <assignToReference>get_DonorRecord.lastYearlyGivingStatement__c</assignToReference>
@@ -189,7 +194,7 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
     <assignments>
         <name>assign_updateOppyAcknowledgement</name>
         <label>Update Acknowledgement Status and Date</label>
-        <locationX>402</locationX>
+        <locationX>798</locationX>
         <locationY>1406</locationY>
         <assignmentItems>
             <assignToReference>Each_Donation.npsp__Acknowledgment_Status__c</assignToReference>
@@ -256,9 +261,35 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
         </value>
     </constants>
     <decisions>
+        <name>Attachment_Found</name>
+        <label>Attachment Found?</label>
+        <locationX>314</locationX>
+        <locationY>2138</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>errorBadAttachment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>get_PDFAttachment</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>emailGivingStatement</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>includeAttachment</name>
         <label>Include Attachment</label>
-        <locationX>314</locationX>
+        <locationX>710</locationX>
         <locationY>1922</locationY>
         <defaultConnector>
             <targetReference>emailGivingStatementStandard</targetReference>
@@ -284,7 +315,7 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
         <description>The Contact must not be a Resident, must have donated a minimum amount, and must not have opted out of email contact</description>
         <name>relevantContact</name>
         <label>Relevant Contact</label>
-        <locationX>314</locationX>
+        <locationX>710</locationX>
         <locationY>458</locationY>
         <defaultConnector>
             <targetReference>errorInsufficientDonation</targetReference>
@@ -346,7 +377,7 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
         <description>Does the current User have permissions to send a Giving Statement?</description>
         <name>userPermissions</name>
         <label>User Permissions</label>
-        <locationX>578</locationX>
+        <locationX>1304</locationX>
         <locationY>134</locationY>
         <defaultConnectorLabel>No</defaultConnectorLabel>
         <rules>
@@ -426,7 +457,7 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
     <loops>
         <name>Each_Donation</name>
         <label>Each Donation</label>
-        <locationX>314</locationX>
+        <locationX>710</locationX>
         <locationY>1082</locationY>
         <collectionReference>get_Donations</collectionReference>
         <iterationOrder>Asc</iterationOrder>
@@ -460,7 +491,7 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
         <description>Gets Opportunities related to the Contact&apos;s Account (Household). Not every Opportunity has a &quot;Primary&quot; contact, so this is a more reliable way. This also encourages one email per account rather than for every member.</description>
         <name>get_Donations</name>
         <label>Get Donations</label>
-        <locationX>314</locationX>
+        <locationX>710</locationX>
         <locationY>974</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -515,7 +546,7 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
         <description>The Quick action always passes a &amp;recordId parameter. This is mapped to our Variable Resource. We then need to Get the full Contact record from that Id.</description>
         <name>get_DonorRecord</name>
         <label>Get Donor Record</label>
-        <locationX>314</locationX>
+        <locationX>710</locationX>
         <locationY>242</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -539,14 +570,14 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
         <description>Fetches the Content Document Link (required for attachment) of an uploaded Content Document aka a &quot;File&quot;.</description>
         <name>get_PDFAttachment</name>
         <label>Get the Attachment</label>
-        <locationX>50</locationX>
+        <locationX>314</locationX>
         <locationY>2030</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>emailGivingStatement</targetReference>
+            <targetReference>Attachment_Found</targetReference>
         </connector>
         <faultConnector>
-            <targetReference>errorBadAttachment</targetReference>
+            <targetReference>Roll_Back_if_No_Attachment</targetReference>
         </faultConnector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -568,7 +599,7 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
         <description>Fetched various settings from Custom Metadata</description>
         <name>get_Settings</name>
         <label>Get Settings</label>
-        <locationX>314</locationX>
+        <locationX>710</locationX>
         <locationY>350</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -586,19 +617,41 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
         <object>givingStatementSetting__mdt</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
+    <recordRollbacks>
+        <name>Roll_Back_if_No_Attachment</name>
+        <label>Roll Back if No Attachment</label>
+        <locationX>842</locationX>
+        <locationY>2138</locationY>
+        <connector>
+            <targetReference>errorBadAttachment</targetReference>
+        </connector>
+    </recordRollbacks>
+    <recordRollbacks>
+        <name>Rollback_General_Error</name>
+        <label>Rollback General Error</label>
+        <locationX>1370</locationX>
+        <locationY>2138</locationY>
+        <connector>
+            <targetReference>General_Error</targetReference>
+        </connector>
+    </recordRollbacks>
     <recordUpdates>
         <description>Changes Acknowledgement Status and Date</description>
         <name>update_DonationAcknowledgement</name>
         <label>Update Donations</label>
-        <locationX>314</locationX>
-        <locationY>2462</locationY>
+        <locationX>710</locationX>
+        <locationY>2570</locationY>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Rollback_General_Error</targetReference>
+        </faultConnector>
         <inputReference>collectionUpdatedDonations</inputReference>
     </recordUpdates>
     <recordUpdates>
         <description>Updates the record if changes were made to Preferred Email, any emails, or Mailing Address.</description>
         <name>Update_Donor_Information</name>
         <label>Update Donor Information</label>
-        <locationX>314</locationX>
+        <locationX>710</locationX>
         <locationY>1814</locationY>
         <connector>
             <targetReference>includeAttachment</targetReference>
@@ -608,8 +661,8 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
     <screens>
         <name>errorBadAttachment</name>
         <label>Failed to load Attachment</label>
-        <locationX>314</locationX>
-        <locationY>2138</locationY>
+        <locationX>842</locationX>
+        <locationY>2246</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -624,7 +677,7 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
     <screens>
         <name>errorInsufficientDonation</name>
         <label>Irrelevant Contact</label>
-        <locationX>490</locationX>
+        <locationX>886</locationX>
         <locationY>566</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -693,10 +746,26 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
         <showHeader>true</showHeader>
     </screens>
     <screens>
+        <name>General_Error</name>
+        <label>General Error</label>
+        <locationX>1370</locationX>
+        <locationY>2246</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>generalErrorMessage</name>
+            <fieldText>&lt;p&gt;An error occured. All records were rolled back. Share this with your Salesforce Admin.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Fault Message: &lt;/strong&gt;{!$Flow.FaultMessage}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Send Giving Statement:&lt;/strong&gt; {!$Permission.SendGivingStatement}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Flow Start Time:&lt;/strong&gt; {!$Flow.InterviewStartTime}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
         <description>Allows the User to confirm or update any Donor information before continuing</description>
         <name>screen_donorInformation</name>
         <label>Donor Information</label>
-        <locationX>314</locationX>
+        <locationX>710</locationX>
         <locationY>866</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -800,7 +869,7 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
     <screens>
         <name>screen_previewEmail</name>
         <label>Preview Email</label>
-        <locationX>314</locationX>
+        <locationX>710</locationX>
         <locationY>1598</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -967,7 +1036,7 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
         <showHeader>true</showHeader>
     </screens>
     <start>
-        <locationX>452</locationX>
+        <locationX>1178</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>userPermissions</targetReference>

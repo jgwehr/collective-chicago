@@ -4,5 +4,6 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Volunteer Admin</label>
     <permissionSets>Admin_Deployment_Manager</permissionSets>
+    <permissionSets>Admin_User_Experience_Helper</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>

@@ -12,6 +12,11 @@
         <label>In Progress</label>
     </standardValue>
     <standardValue>
+        <fullName>Continual</fullName>
+        <default>false</default>
+        <label>Continual</label>
+    </standardValue>
+    <standardValue>
         <fullName>Completed</fullName>
         <default>false</default>
         <label>Completed</label>

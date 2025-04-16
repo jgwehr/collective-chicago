@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help></help>
-    <label></label>
+    <help><!-- Earned Income since the last Meeting (or this current period). Omit aid/assistance. --></help>
+    <label><!-- Total Income (after tax) --></label>
     <name>Total_Income_after_tax__c</name>
 </CustomFieldTranslation>

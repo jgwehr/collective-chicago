@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sroiSubstanceAbuse__c</fullName>
+    <description>Influenced by Collective&apos;s defined aggregate &quot;Relapse Rate&quot;. Captures the costs of Methadone and Alcohol abuse treatments</description>
+    <inlineHelpText>eg. Methadone and Alcohol abuse treatment</inlineHelpText>
+    <label>SROI Substance Abuse</label>
+    <precision>8</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

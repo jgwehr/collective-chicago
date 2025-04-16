@@ -4,7 +4,6 @@
     <businessStatus>Active</businessStatus>
     <defaultValue>false</defaultValue>
     <description>Part of SROI calculations.</description>
-    <externalId>false</externalId>
     <inlineHelpText>During Resident Intake only.</inlineHelpText>
     <label>Drug / Alcohol Abuse (Intake)</label>
     <securityClassification>Restricted</securityClassification>

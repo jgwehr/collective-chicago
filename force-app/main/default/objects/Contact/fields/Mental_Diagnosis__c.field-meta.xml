@@ -3,7 +3,6 @@
     <fullName>Mental_Diagnosis__c</fullName>
     <businessStatus>Active</businessStatus>
     <complianceGroup>HIPAA</complianceGroup>
-    <externalId>false</externalId>
     <label>Mental Diagnosis</label>
     <required>false</required>
     <securityClassification>Restricted</securityClassification>

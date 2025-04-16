@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Commute_Type__c</fullName>
     <description>Reporting SROI. Coaching towards the value of Time/Money; and costs of certain commute types. Searching for assistance programs if available.</description>
-    <externalId>false</externalId>
     <inlineHelpText>The Primary ways the Resident gets to Work</inlineHelpText>
     <label>Commute Type</label>
     <required>false</required>

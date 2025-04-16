@@ -3,7 +3,6 @@
     <fullName>budgetMedicaid__c</fullName>
     <businessStatus>Active</businessStatus>
     <defaultValue>false</defaultValue>
-    <externalId>false</externalId>
     <inlineHelpText>Do you receive at time of Application?</inlineHelpText>
     <label>Receives Medicaid</label>
     <securityClassification>Restricted</securityClassification>

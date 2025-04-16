@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Agender</fullName>
+        <default>false</default>
+        <label>Agender</label>
+    </customValue>
+    <customValue>
+        <fullName>Exploring</fullName>
+        <default>false</default>
+        <label>Exploring</label>
+    </customValue>
+    <customValue>
+        <fullName>Male</fullName>
+        <default>false</default>
+        <label>Male</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-binary</fullName>
+        <default>false</default>
+        <label>Non-binary</label>
+    </customValue>
+    <customValue>
+        <fullName>Transgender</fullName>
+        <default>false</default>
+        <label>Transgender</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Self-Identified. Available for Applications, Surveys, etc</description>
+    <masterLabel>Gender</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

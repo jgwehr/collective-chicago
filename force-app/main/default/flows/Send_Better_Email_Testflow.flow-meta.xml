@@ -536,6 +536,7 @@
         </outputParameters>
     </actionCalls>
     <apiVersion>49.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
         <name>Add_All_Attached_Files</name>
         <label>Add All Attached Files</label>

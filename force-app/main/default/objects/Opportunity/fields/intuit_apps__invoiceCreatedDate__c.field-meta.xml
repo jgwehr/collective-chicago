@@ -3,7 +3,6 @@
     <fullName>intuit_apps__invoiceCreatedDate__c</fullName>
     <deprecated>false</deprecated>
     <description>Invoice created date from QuickBooks</description>
-    <externalId>false</externalId>
     <label>Intuit Invoice Created Date</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

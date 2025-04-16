@@ -4,7 +4,6 @@
     <businessStatus>Active</businessStatus>
     <defaultValue>false</defaultValue>
     <description>Trackers whether employment offers retirement opportunities. Useful for reporting SROI</description>
-    <externalId>false</externalId>
     <inlineHelpText>eg. 401k, IRA, HSA</inlineHelpText>
     <label>Retirement Benefits?</label>
     <securityClassification>Confidential</securityClassification>

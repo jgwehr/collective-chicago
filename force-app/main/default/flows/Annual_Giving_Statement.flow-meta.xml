@@ -82,6 +82,7 @@
             </value>
         </inputParameters>
         <nameSegment>SendBetterEmail</nameSegment>
+        <offset>0</offset>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </actionCalls>
     <actionCalls>
@@ -136,8 +137,10 @@
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
     </actionCalls>
     <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
         <description>Inserts the current Opportunity&apos;s information into an HTML template (via tplDonationRow) and then adds it to an array.</description>
         <name>assign_addDonationHTMLRow</name>

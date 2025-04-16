@@ -4,7 +4,6 @@
     <businessOwnerUser>dan@collectivechicago.org.dev</businessOwnerUser>
     <businessStatus>Active</businessStatus>
     <defaultValue>0</defaultValue>
-    <externalId>false</externalId>
     <inlineHelpText>Earned Income since the last Meeting (or this current period). Omit aid/assistance.</inlineHelpText>
     <label>Total Income (after tax)</label>
     <precision>7</precision>

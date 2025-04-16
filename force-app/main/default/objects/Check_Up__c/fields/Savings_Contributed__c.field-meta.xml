@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Savings_Contributed__c</fullName>
-    <externalId>false</externalId>
     <inlineHelpText>The change in savings since the last meeting. May be negative</inlineHelpText>
     <label>Savings Contributed</label>
     <precision>8</precision>

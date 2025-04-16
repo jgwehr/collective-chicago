@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>recidivismRateYr2__c</fullName>
     <description>Sourced from the NIH. Used if the Work Experience(s) during Graduation have Health Benefits</description>
-    <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
     <inlineHelpText>Likelihood of a Rearrest in the second year</inlineHelpText>
     <label>Recidivism Rate - Year 2</label>

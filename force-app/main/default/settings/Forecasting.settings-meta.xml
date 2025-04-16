@@ -85,6 +85,9 @@
             <weight>1.0</weight>
         </weightedSourceCategories>
     </forecastingCategoryMappings>
+    <forecastingSubmissionSettings>
+        <allowForecastingSubmissions>false</allowForecastingSubmissions>
+    </forecastingSubmissionSettings>
     <forecastingTypeSettings>
         <active>false</active>
         <displayedCategoryApiNames>closedonly</displayedCategoryApiNames>
@@ -6867,6 +6870,7 @@
         </opportunityListFieldsUnselectedSettings>
     </forecastingTypeSettings>
     <globalAdjustmentsSettings>
+        <allowExpandedColumns>false</allowExpandedColumns>
         <enableAdjustments>true</enableAdjustments>
         <enableOwnerAdjustments>false</enableOwnerAdjustments>
     </globalAdjustmentsSettings>

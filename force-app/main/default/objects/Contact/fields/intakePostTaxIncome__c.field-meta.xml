@@ -3,7 +3,6 @@
     <fullName>intakePostTaxIncome__c</fullName>
     <businessStatus>Active</businessStatus>
     <description>Part of SROI calculations.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Determined by Coaches based on Application, Budget Interview, and first Coaching Meeting.</inlineHelpText>
     <label>Post-Tax Monthly Income (Intake)</label>
     <precision>8</precision>

@@ -3,7 +3,6 @@
     <fullName>imageBaseURL__c</fullName>
     <businessStatus>Active</businessStatus>
     <description>Frustratingly, not available to Flows dynamically. Generally &quot;https://collectivechicago--receipts.sandbox.file.force.com/file-asset-public/&quot;. Used to create the embedded image&apos;s url.</description>
-    <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
     <label>Image Base URL</label>
     <required>true</required>

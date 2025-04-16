@@ -4,7 +4,6 @@
     <businessStatus>Active</businessStatus>
     <defaultValue>&quot;https://www.collectivechicago.org&quot;</defaultValue>
     <description>Added to the Email Body</description>
-    <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
     <label>General Website</label>
     <required>true</required>

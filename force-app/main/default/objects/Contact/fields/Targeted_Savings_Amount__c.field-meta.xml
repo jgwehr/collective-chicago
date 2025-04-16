@@ -3,7 +3,6 @@
     <fullName>Targeted_Savings_Amount__c</fullName>
     <businessOwnerUser>tristion@collectivechicago.org.dev</businessOwnerUser>
     <businessStatus>Active</businessStatus>
-    <externalId>false</externalId>
     <inlineHelpText>Updated by Coaches</inlineHelpText>
     <label>Targeted Savings Amount</label>
     <precision>7</precision>

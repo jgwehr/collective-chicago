@@ -3,7 +3,6 @@
     <fullName>speculatedMentalComments__c</fullName>
     <businessStatus>Active</businessStatus>
     <complianceGroup>HIPAA</complianceGroup>
-    <externalId>false</externalId>
     <inlineHelpText>Non-medical comments about a Resident&apos;s Mental Health</inlineHelpText>
     <label>Speculated Mental Comments</label>
     <length>2056</length>

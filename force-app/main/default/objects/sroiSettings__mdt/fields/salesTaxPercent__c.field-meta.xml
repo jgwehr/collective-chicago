@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>salesTaxPercent__c</fullName>
     <description>Sourced from State and City tax information.</description>
-    <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
     <inlineHelpText>Based on Cook County</inlineHelpText>
     <label>Illinois Sales Tax Percent</label>

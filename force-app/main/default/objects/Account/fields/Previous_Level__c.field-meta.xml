@@ -3,7 +3,6 @@
     <fullName>Previous_Level__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <description>Sample Previous Level field for use with new Level feature. May be edited or deleted as needed.</description>
-    <externalId>false</externalId>
     <label>Previous Level</label>
     <referenceTo>npsp__Level__c</referenceTo>
     <relationshipLabel>Households (Previous Level)</relationshipLabel>

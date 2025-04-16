@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customMetadataTypeAccesses>
+        <enabled>true</enabled>
+        <name>sroiSettings__mdt</name>
+    </customMetadataTypeAccesses>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>GenerateSROI</name>
+    </customPermissions>
     <description>Provides full CRUD to the SROI Calculation object</description>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.graduateHealthBenefits__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>SROI_Calculation__c.applicationCriminalRecord__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -12,18 +25,28 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>SROI_Calculation__c.graduateFirstRearrestDate__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>SROI_Calculation__c.healthBenefits__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>SROI_Calculation__c.intakeDrugAlcoholAbuse__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SROI_Calculation__c.settingsDate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SROI_Calculation__c.settingsId__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -63,6 +86,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>SROI_Calculation__c.sroiSubstanceAbuse__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>SROI_Calculation__c.sroiTotal__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -71,20 +99,20 @@
         <field>SROI_Calculation__c.sroiUnemployment__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SROI_Calculation__c.workExperienceId__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>SROI - Manage Calculations</label>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
-        <allowEdit>true</allowEdit>
+        <allowEdit>false</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>SROI_Calculation__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <tabSettings>
+        <tab>SROI_Calculation__c</tab>
+        <visibility>Available</visibility>
+    </tabSettings>
 </PermissionSet>

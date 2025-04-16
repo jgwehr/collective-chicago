@@ -5,4 +5,5 @@
     <enableEventLogGeneration>false</enableEventLogGeneration>
     <enableEventLogObjectFeature xsi:nil="true"/>
     <enableStreamingApi>true</enableStreamingApi>
+    <eventLogRetentionDuration>0</eventLogRetentionDuration>
 </EventSettings>

@@ -2,9 +2,18 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Prospecting</fullName>
+        <fullName>Planning</fullName>
         <default>false</default>
-        <label>Prospecting</label>
+        <label>Planning</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Cultivation</fullName>
+        <default>false</default>
+        <label>Cultivation</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>10</probability>
@@ -41,15 +50,6 @@
         <fullName>Application Submitted</fullName>
         <default>false</default>
         <label>Application Submitted</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>30</probability>
-        <won>false</won>
-    </standardValue>
-    <standardValue>
-        <fullName>Cultivation</fullName>
-        <default>false</default>
-        <label>Cultivation</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>30</probability>

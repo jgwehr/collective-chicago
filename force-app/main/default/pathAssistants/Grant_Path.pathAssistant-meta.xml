@@ -5,6 +5,8 @@
     <fieldName>StageName</fieldName>
     <masterLabel>Grant Path</masterLabel>
     <pathAssistantSteps>
+        <fieldNames>npsp__Ask_Date__c</fieldNames>
+        <fieldNames>npsp__Requested_Amount__c</fieldNames>
         <picklistValueName>Application Submitted</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
@@ -22,9 +24,15 @@
         <picklistValueName>Declined</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
+        <fieldNames>npsp__Ask_Date__c</fieldNames>
+        <fieldNames>CollectiveLibraryLink__c</fieldNames>
+        <fieldNames>GrantApplicationLink__c</fieldNames>
         <picklistValueName>LOI Submitted</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
+        <fieldNames>Amount</fieldNames>
+        <fieldNames>CollectiveLibraryLink__c</fieldNames>
+        <fieldNames>GrantApplicationLink__c</fieldNames>
         <picklistValueName>Planning</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>El Estado de Donación recurrente establecido cuando Automatización de estado actualiza el registro Donación recurrente como Transcurrido.</help>
-    <label></label>
-    <name>npsp__StatusAutomationLapsedValue__c</name>
-</CustomFieldTranslation>

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Targeted_Savings_Amount__c</fullName>
-    <businessOwnerUser>tristion@collectivechicago.org.dev</businessOwnerUser>
+    <businessOwnerUser>tristion@collectivechicago.org</businessOwnerUser>
     <businessStatus>Active</businessStatus>
-    <externalId>false</externalId>
     <inlineHelpText>Updated by Coaches</inlineHelpText>
     <label>Targeted Savings Amount</label>
     <precision>7</precision>

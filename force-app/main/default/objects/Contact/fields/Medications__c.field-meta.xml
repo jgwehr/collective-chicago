@@ -3,7 +3,6 @@
     <fullName>Medications__c</fullName>
     <businessStatus>Active</businessStatus>
     <complianceGroup>HIPAA</complianceGroup>
-    <externalId>false</externalId>
     <label>Medications</label>
     <length>3000</length>
     <securityClassification>Restricted</securityClassification>

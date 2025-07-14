@@ -30,6 +30,29 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Funding_Request__c</picklist>
+        <values>
+            <fullName>Capital Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coaching</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Event-Specific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Operating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Financial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>LeadSource</picklist>
         <values>
             <fullName>Online</fullName>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
         <description>Since this WAS Active, it occupied the Reports To. Changing it to Inactive then leaves them &quot;unemployed&quot; (if there are no other active employments...)</description>
         <name>Clear_Resident_Reports_To</name>

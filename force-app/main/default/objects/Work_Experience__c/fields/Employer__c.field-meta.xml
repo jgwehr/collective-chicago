@@ -3,7 +3,6 @@
     <fullName>Employer__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <description>This or the Text version must be populated for each record. The Lookup allows tracking against a known organization, such as a Partner, to improve relationship building, coaching, etc</description>
-    <externalId>false</externalId>
     <inlineHelpText>Populate if employment is with a Partner organization</inlineHelpText>
     <label>Employer</label>
     <lookupFilter>

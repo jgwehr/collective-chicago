@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>consumptionPercentOfTotalIncome__c</fullName>
     <description>Sourced from labor statistics. Combined with Sales Tax to determine how much sales tax is collected over the year. Consumption + Savings + Rent = Total Income</description>
-    <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
     <inlineHelpText>How much of total income not spent on Rent or Saved</inlineHelpText>
     <label>Consumption Percent of Total Income</label>

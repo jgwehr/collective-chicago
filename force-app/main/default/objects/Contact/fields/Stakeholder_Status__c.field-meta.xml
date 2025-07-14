@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Stakeholder_Status__c</fullName>
     <description>Tracks a Stakeholder&apos;s status with the Collective. May control required fields, business processes, or influence analytics.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Anyone who isn&apos;t a Stakeholder should be &quot;Not Applied&quot;.</inlineHelpText>
     <label>Stakeholder Status</label>
     <required>false</required>

@@ -3,7 +3,6 @@
     <fullName>residentNextRentDue__c</fullName>
     <businessStatus>Active</businessStatus>
     <description>45 Day Grace Period and 30 day Month period should match Target Rent Due formula</description>
-    <externalId>false</externalId>
     <formula>IF(  ISPICKVAL(Stakeholder_Status__c, &quot;Resident&quot;) 
   ,residentMoveInDate__c + 45 + IF(
     Bed_Nights_Provided__c &lt;= 45

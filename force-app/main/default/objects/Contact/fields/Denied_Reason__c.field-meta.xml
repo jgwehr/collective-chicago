@@ -3,7 +3,6 @@
     <fullName>Denied_Reason__c</fullName>
     <businessStatus>Active</businessStatus>
     <description>Required when a Stakeholder has been Denied. Used in Analytics.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Pick the primary reason if many exist</inlineHelpText>
     <label>Denied Reason</label>
     <required>false</required>

@@ -3,7 +3,6 @@
     <fullName>Applied_Date__c</fullName>
     <defaultValue>TODAY()</defaultValue>
     <description>Generally provided by the Application Google Form</description>
-    <externalId>false</externalId>
     <label>Applied Date</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Admins/Developers who need to work on Work Items</description>
-    <hasActivationRequired>false</hasActivationRequired>
-    <label>DevOps Team Member</label>
-    <permissionSets>sf_devops_NamedCredentials</permissionSets>
-    <status>Updated</status>
-</PermissionSetGroup>

@@ -3,7 +3,6 @@
     <fullName>intuit_apps__invoiceAmount__c</fullName>
     <deprecated>false</deprecated>
     <description>Invoice amount from QuickBooks</description>
-    <externalId>false</externalId>
     <label>Intuit Invoice Amount</label>
     <precision>18</precision>
     <required>false</required>

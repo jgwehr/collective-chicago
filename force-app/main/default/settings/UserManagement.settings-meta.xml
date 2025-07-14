@@ -5,11 +5,16 @@
     <enableEnhancedConcealPersonalInfo>false</enableEnhancedConcealPersonalInfo>
     <enableEnhancedPermsetMgmt>true</enableEnhancedPermsetMgmt>
     <enableEnhancedProfileMgmt>true</enableEnhancedProfileMgmt>
+    <enableEnhcUiUserAccessPolicies>false</enableEnhcUiUserAccessPolicies>
     <enableNewProfileUI>true</enableNewProfileUI>
     <enableProfileFiltering>true</enableProfileFiltering>
     <enableRestrictEmailDomains>false</enableRestrictEmailDomains>
     <enableScrambleUserData>false</enableScrambleUserData>
     <enableUserSelfDeactivate>false</enableUserSelfDeactivate>
+    <enhancedPermSetList>true</enhancedPermSetList>
+    <enhancedUserListView>true</enhancedUserListView>
+    <enhancedUserRoleListView>false</enhancedUserRoleListView>
+    <groupSummaryUIEnhancement>true</groupSummaryUIEnhancement>
     <permsetsInFieldCreation>true</permsetsInFieldCreation>
     <psaExpirationUIEnabled>true</psaExpirationUIEnabled>
     <restrictedProfileCloning>true</restrictedProfileCloning>

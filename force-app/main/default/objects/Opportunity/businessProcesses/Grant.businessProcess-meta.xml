@@ -11,6 +11,10 @@
         <default>false</default>
     </values>
     <values>
+        <fullName>Cultivation</fullName>
+        <default>false</default>
+    </values>
+    <values>
         <fullName>Declined</fullName>
         <default>false</default>
     </values>
@@ -19,7 +23,7 @@
         <default>false</default>
     </values>
     <values>
-        <fullName>Prospecting</fullName>
+        <fullName>Planning</fullName>
         <default>false</default>
     </values>
     <values>

@@ -187,30 +187,6 @@
 		<members>FlowTableViewDefinition__c.View_Name__c</members>
 		<members>FlowTableViewDefinition__c.Widths__c</members>
 		<members>FlowTableViewDefinition__c.Wraps__c</members>
-		<members>ForecastingItem__hd.AmountWithoutAdjustments__c</members>
-		<members>ForecastingItem__hd.AmountWithoutAdjustments__c</members>
-		<members>ForecastingItem__hd.AmountWithoutManagerAdjustment__c</members>
-		<members>ForecastingItem__hd.AmountWithoutManagerAdjustment__c</members>
-		<members>ForecastingItem__hd.ForecastAmount__c</members>
-		<members>ForecastingItem__hd.ForecastAmount__c</members>
-		<members>ForecastingItem__hd.ForecastQuantity__c</members>
-		<members>ForecastingItem__hd.ForecastQuantity__c</members>
-		<members>ForecastingItem__hd.OverriddenRollupMgrView__c</members>
-		<members>ForecastingItem__hd.OverriddenRollupMgrView__c</members>
-		<members>ForecastingItem__hd.OverriddenRollupOwnerView__c</members>
-		<members>ForecastingItem__hd.OverriddenRollupOwnerView__c</members>
-		<members>ForecastingItem__hd.OwnerOnlyAmount__c</members>
-		<members>ForecastingItem__hd.OwnerOnlyAmount__c</members>
-		<members>ForecastingItem__hd.OwnerOnlyQuantity__c</members>
-		<members>ForecastingItem__hd.OwnerOnlyQuantity__c</members>
-		<members>ForecastingItem__hd.QuantityWithoutAdjustments__c</members>
-		<members>ForecastingItem__hd.QuantityWithoutAdjustments__c</members>
-		<members>ForecastingItem__hd.QuantityWithoutManagerAdjustment__c</members>
-		<members>ForecastingItem__hd.QuantityWithoutManagerAdjustment__c</members>
-		<members>ForecastingItem__hd.RawOwnerOnly__c</members>
-		<members>ForecastingItem__hd.RawOwnerOnly__c</members>
-		<members>ForecastingItem__hd.RawRollup__c</members>
-		<members>ForecastingItem__hd.RawRollup__c</members>
 		<members>FundraiseUpRecurring__c.AccountId__c</members>
 		<members>FundraiseUpRecurring__c.AmountInDefaultCurrency__c</members>
 		<members>FundraiseUpRecurring__c.Amount__c</members>
@@ -732,9 +708,6 @@
 		<members>Event.MyTeamsUpcomingEvents</members>
 		<members>Event.MyUpcomingEvents</members>
 		<members>Event.TodaysAgenda</members>
-		<members>FlowOrchestrationInstance.All_Orchestration_Instances</members>
-		<members>FlowOrchestrationWorkItem.ALL_Open_Work_Items</members>
-		<members>FlowOrchestrationWorkItem.All_Work_Items</members>
 		<members>FlowTableViewDefinition__c.All</members>
 		<members>Idea.Ideas_Last_7_Days</members>
 		<members>Individual.All_Individuals</members>
@@ -1205,22 +1178,7 @@
 		<name>WebLink</name>
 	</types>
 	<types>
-		<members>Annual_Giving_Statement</members>
-		<members>Create_Relationship</members>
-		<members>Opportunity_Attribute_Campaign_on_Change</members>
-		<members>Opportunity_Fast_Updates</members>
-		<members>Opportunity_Invoked_Update_Campaign_Info</members>
-		<members>Resident_After_Update_Graduate</members>
-		<members>Resident_Update_Graduation_Date</members>
-		<members>SROI_After_Create_Update_Calculate_SROI_Metrics</members>
-		<members>SROI_Create_Baseline_SROI_Metrics</members>
-		<members>SROI_Invoked_Calculate_Federal_Tax</members>
-		<members>SROI_Screen_Initiate_SROI_Calc</members>
-		<members>Send_Better_Email_Testflow</members>
-		<members>Update_Resident_with_Work_Experience</members>
-		<members>Work_Experience_After_Update_Health_Benefits</members>
-		<members>Work_Experience_Invoked_Update_Graduate_s_Health_Benefits</members>
-		<members>sendBetterEmail_Test_Create_Test_Templates_if_needed</members>
+		<members>*</members>
 		<name>WorkflowFlowAutomation</name>
 	</types>
 	<version>64.0</version>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- ﻿1 no show | 2 late by 6+ minutes | 3 late by up to 5 min | 4 slightly late; communicated in advance | 5 on time/early --></help>
-    <label><!-- Timeliness (Resume) --></label>
-    <name>resumeTimeliness__c</name>
-</CustomFieldTranslation>

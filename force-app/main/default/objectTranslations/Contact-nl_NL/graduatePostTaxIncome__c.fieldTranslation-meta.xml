@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- After Graduation. Updated regularly by Surveys. --></help>
-    <label><!-- Post-Tax Monthly Income (Graduate) --></label>
-    <name>graduatePostTaxIncome__c</name>
-</CustomFieldTranslation>

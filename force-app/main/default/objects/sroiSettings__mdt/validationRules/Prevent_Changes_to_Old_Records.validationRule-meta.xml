@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Changes_to_Old_Records</fullName>
+    <active>true</active>
+    <errorConditionFormula>DATEVALUE(CreatedDate) &lt; (TODAY()-30)</errorConditionFormula>
+    <errorMessage>This record is too old; please clone or create a new one to make changes.</errorMessage>
+</ValidationRule>

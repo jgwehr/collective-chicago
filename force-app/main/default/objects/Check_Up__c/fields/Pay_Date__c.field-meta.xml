@@ -3,7 +3,6 @@
     <fullName>Pay_Date__c</fullName>
     <businessStatus>Active</businessStatus>
     <defaultValue>TODAY()</defaultValue>
-    <externalId>false</externalId>
     <inlineHelpText>When the last pay check was received; or an approximation if covering several pay periods</inlineHelpText>
     <label>Pay Date</label>
     <required>false</required>

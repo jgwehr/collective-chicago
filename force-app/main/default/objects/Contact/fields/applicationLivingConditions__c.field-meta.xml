@@ -3,7 +3,6 @@
     <fullName>applicationLivingConditions__c</fullName>
     <businessStatus>Active</businessStatus>
     <description>Living Conditions when the stakeholder Applied</description>
-    <externalId>false</externalId>
     <label>Living Conditions (Application)</label>
     <required>false</required>
     <securityClassification>Confidential</securityClassification>

@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>applicationGrewUp__c</fullName>
     <description>Application field, populated by Google Form via Zapier. Limited edit access</description>
-    <externalId>false</externalId>
     <inlineHelpText>Applicant&apos;s home town (Chicago-based)</inlineHelpText>
     <label>Grew Up (Application)</label>
     <required>false</required>

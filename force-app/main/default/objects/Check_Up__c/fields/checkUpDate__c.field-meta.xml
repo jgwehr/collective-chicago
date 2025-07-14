@@ -3,7 +3,6 @@
     <fullName>checkUpDate__c</fullName>
     <businessStatus>Active</businessStatus>
     <defaultValue>TODAY()</defaultValue>
-    <externalId>false</externalId>
     <inlineHelpText>When the actual meeting took place</inlineHelpText>
     <label>Check Up Date</label>
     <required>false</required>

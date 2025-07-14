@@ -85,6 +85,9 @@
             <weight>1.0</weight>
         </weightedSourceCategories>
     </forecastingCategoryMappings>
+    <forecastingSubmissionSettings>
+        <allowForecastingSubmissions>false</allowForecastingSubmissions>
+    </forecastingSubmissionSettings>
     <forecastingTypeSettings>
         <active>false</active>
         <displayedCategoryApiNames>closedonly</displayedCategoryApiNames>
@@ -297,6 +300,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzO</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -309,12 +316,24 @@
             <label>Gift Strategy</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzR</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzS</field>
+            <label>Grant Application Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
             <label>Grant Contract Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k0</field>
             <label>Grant Contract Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzQ</field>
+            <label>Grant Folder Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k1</field>
@@ -586,11 +605,15 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NRm00000DRDzO</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NRm00000DRDzR</field>
+            <field>00NRm00000DRDzS</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
+            <field>00NRm00000DRDzQ</field>
             <field>00N4x00000Kf4k1</field>
             <field>00N4x00000Kf4k2</field>
             <field>00N4x00000Kf4k4</field>
@@ -864,6 +887,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzO</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -876,12 +903,24 @@
             <label>Gift Strategy</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzR</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzS</field>
+            <label>Grant Application Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
             <label>Grant Contract Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k0</field>
             <label>Grant Contract Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzQ</field>
+            <label>Grant Folder Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k1</field>
@@ -1154,11 +1193,15 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NRm00000DRDzO</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NRm00000DRDzR</field>
+            <field>00NRm00000DRDzS</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
+            <field>00NRm00000DRDzQ</field>
             <field>00N4x00000Kf4k1</field>
             <field>00N4x00000Kf4k2</field>
             <field>00N4x00000Kf4k4</field>
@@ -1428,6 +1471,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzO</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -1440,12 +1487,24 @@
             <label>Gift Strategy</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzR</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzS</field>
+            <label>Grant Application Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
             <label>Grant Contract Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k0</field>
             <label>Grant Contract Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzQ</field>
+            <label>Grant Folder Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k1</field>
@@ -1717,11 +1776,15 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NRm00000DRDzO</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NRm00000DRDzR</field>
+            <field>00NRm00000DRDzS</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
+            <field>00NRm00000DRDzQ</field>
             <field>00N4x00000Kf4k1</field>
             <field>00N4x00000Kf4k2</field>
             <field>00N4x00000Kf4k4</field>
@@ -1995,6 +2058,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzO</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -2007,12 +2074,24 @@
             <label>Gift Strategy</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzR</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzS</field>
+            <label>Grant Application Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
             <label>Grant Contract Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k0</field>
             <label>Grant Contract Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzQ</field>
+            <label>Grant Folder Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k1</field>
@@ -2281,11 +2360,15 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NRm00000DRDzO</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NRm00000DRDzR</field>
+            <field>00NRm00000DRDzS</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
+            <field>00NRm00000DRDzQ</field>
             <field>00N4x00000Kf4k1</field>
             <field>00N4x00000Kf4k2</field>
             <field>00N4x00000Kf4k4</field>
@@ -2558,6 +2641,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzO</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -2570,12 +2657,24 @@
             <label>Gift Strategy</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzR</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzS</field>
+            <label>Grant Application Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
             <label>Grant Contract Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k0</field>
             <label>Grant Contract Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzQ</field>
+            <label>Grant Folder Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k1</field>
@@ -2848,11 +2947,15 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NRm00000DRDzO</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NRm00000DRDzR</field>
+            <field>00NRm00000DRDzS</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
+            <field>00NRm00000DRDzQ</field>
             <field>00N4x00000Kf4k1</field>
             <field>00N4x00000Kf4k2</field>
             <field>00N4x00000Kf4k4</field>
@@ -3122,6 +3225,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzO</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -3134,12 +3241,24 @@
             <label>Gift Strategy</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzR</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzS</field>
+            <label>Grant Application Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
             <label>Grant Contract Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k0</field>
             <label>Grant Contract Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzQ</field>
+            <label>Grant Folder Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k1</field>
@@ -3411,11 +3530,15 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NRm00000DRDzO</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NRm00000DRDzR</field>
+            <field>00NRm00000DRDzS</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
+            <field>00NRm00000DRDzQ</field>
             <field>00N4x00000Kf4k1</field>
             <field>00N4x00000Kf4k2</field>
             <field>00N4x00000Kf4k4</field>
@@ -3689,6 +3812,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzO</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -3701,12 +3828,24 @@
             <label>Gift Strategy</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzR</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzS</field>
+            <label>Grant Application Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
             <label>Grant Contract Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k0</field>
             <label>Grant Contract Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzQ</field>
+            <label>Grant Folder Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k1</field>
@@ -3979,11 +4118,15 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NRm00000DRDzO</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NRm00000DRDzR</field>
+            <field>00NRm00000DRDzS</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
+            <field>00NRm00000DRDzQ</field>
             <field>00N4x00000Kf4k1</field>
             <field>00N4x00000Kf4k2</field>
             <field>00N4x00000Kf4k4</field>
@@ -4253,6 +4396,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzO</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -4265,12 +4412,24 @@
             <label>Gift Strategy</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzR</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzS</field>
+            <label>Grant Application Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
             <label>Grant Contract Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k0</field>
             <label>Grant Contract Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzQ</field>
+            <label>Grant Folder Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k1</field>
@@ -4542,11 +4701,15 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NRm00000DRDzO</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NRm00000DRDzR</field>
+            <field>00NRm00000DRDzS</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
+            <field>00NRm00000DRDzQ</field>
             <field>00N4x00000Kf4k1</field>
             <field>00N4x00000Kf4k2</field>
             <field>00N4x00000Kf4k4</field>
@@ -4820,6 +4983,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzO</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -4832,12 +4999,24 @@
             <label>Gift Strategy</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzR</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzS</field>
+            <label>Grant Application Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
             <label>Grant Contract Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k0</field>
             <label>Grant Contract Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzQ</field>
+            <label>Grant Folder Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k1</field>
@@ -5110,11 +5289,15 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NRm00000DRDzO</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NRm00000DRDzR</field>
+            <field>00NRm00000DRDzS</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
+            <field>00NRm00000DRDzQ</field>
             <field>00N4x00000Kf4k1</field>
             <field>00N4x00000Kf4k2</field>
             <field>00N4x00000Kf4k4</field>
@@ -5384,6 +5567,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzO</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -5396,12 +5583,24 @@
             <label>Gift Strategy</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzR</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzS</field>
+            <label>Grant Application Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
             <label>Grant Contract Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k0</field>
             <label>Grant Contract Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzQ</field>
+            <label>Grant Folder Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k1</field>
@@ -5673,11 +5872,15 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NRm00000DRDzO</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NRm00000DRDzR</field>
+            <field>00NRm00000DRDzS</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
+            <field>00NRm00000DRDzQ</field>
             <field>00N4x00000Kf4k1</field>
             <field>00N4x00000Kf4k2</field>
             <field>00N4x00000Kf4k4</field>
@@ -5951,6 +6154,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzO</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -5963,12 +6170,24 @@
             <label>Gift Strategy</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzR</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzS</field>
+            <label>Grant Application Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
             <label>Grant Contract Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k0</field>
             <label>Grant Contract Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzQ</field>
+            <label>Grant Folder Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k1</field>
@@ -6241,11 +6460,15 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NRm00000DRDzO</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NRm00000DRDzR</field>
+            <field>00NRm00000DRDzS</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
+            <field>00NRm00000DRDzQ</field>
             <field>00N4x00000Kf4k1</field>
             <field>00N4x00000Kf4k2</field>
             <field>00N4x00000Kf4k4</field>
@@ -6515,6 +6738,10 @@
             <label>Fair Market Value</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzO</field>
+            <label>Funding Request</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Q880Z</field>
             <label>Fundraise Up ID</label>
         </opportunityListFieldsLabelMappings>
@@ -6527,12 +6754,24 @@
             <label>Gift Strategy</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzR</field>
+            <label>Grant Application Deadline</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzS</field>
+            <label>Grant Application Link</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4jz</field>
             <label>Grant Contract Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k0</field>
             <label>Grant Contract Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NRm00000DRDzQ</field>
+            <label>Grant Folder Link</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N4x00000Kf4k1</field>
@@ -6804,11 +7043,15 @@
             <field>00N4x00000Kf4pW</field>
             <field>00N4x00000b28Zg</field>
             <field>00N4x00000Kf4kA</field>
+            <field>00NRm00000DRDzO</field>
             <field>00N4x00000Q880Z</field>
             <field>00N4x00000Q880Y</field>
             <field>00N4x00000Kf4bH</field>
+            <field>00NRm00000DRDzR</field>
+            <field>00NRm00000DRDzS</field>
             <field>00N4x00000Kf4jz</field>
             <field>00N4x00000Kf4k0</field>
+            <field>00NRm00000DRDzQ</field>
             <field>00N4x00000Kf4k1</field>
             <field>00N4x00000Kf4k2</field>
             <field>00N4x00000Kf4k4</field>
@@ -6867,6 +7110,7 @@
         </opportunityListFieldsUnselectedSettings>
     </forecastingTypeSettings>
     <globalAdjustmentsSettings>
+        <allowExpandedColumns>false</allowExpandedColumns>
         <enableAdjustments>true</enableAdjustments>
         <enableOwnerAdjustments>false</enableOwnerAdjustments>
     </globalAdjustmentsSettings>

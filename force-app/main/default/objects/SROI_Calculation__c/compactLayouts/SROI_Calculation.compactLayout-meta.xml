@@ -4,7 +4,7 @@
     <fields>Name</fields>
     <fields>graduate__c</fields>
     <fields>sroiTotal__c</fields>
-    <fields>residentGraduationDate__c</fields>
+    <fields>settingsDate__c</fields>
     <fields>CreatedById</fields>
     <fields>LastModifiedById</fields>
     <label>SROI Calculation</label>

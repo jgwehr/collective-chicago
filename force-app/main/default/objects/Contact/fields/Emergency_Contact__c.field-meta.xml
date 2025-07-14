@@ -3,7 +3,6 @@
     <fullName>Emergency_Contact__c</fullName>
     <businessStatus>Active</businessStatus>
     <deleteConstraint>SetNull</deleteConstraint>
-    <externalId>false</externalId>
     <label>Emergency Contact</label>
     <lookupFilter>
         <active>true</active>

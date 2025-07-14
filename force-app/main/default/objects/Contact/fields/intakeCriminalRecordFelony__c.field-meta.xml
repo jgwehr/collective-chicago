@@ -4,7 +4,6 @@
     <businessStatus>Active</businessStatus>
     <defaultValue>false</defaultValue>
     <description>qualitative only. Not used for SROI.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Please check this box if background check shows a felony</inlineHelpText>
     <label>Criminal Record, Felony (Intake)</label>
     <securityClassification>Restricted</securityClassification>

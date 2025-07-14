@@ -3,7 +3,6 @@
     <fullName>intuit_apps__invoiceDueDate__c</fullName>
     <deprecated>false</deprecated>
     <description>Invoice due date from QuickBooks</description>
-    <externalId>false</externalId>
     <label>Intuit Invoice Due Date</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

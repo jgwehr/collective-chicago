@@ -224,6 +224,69 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>npsp__Funding_Focus__c</picklist>
+        <values>
+            <fullName>Capital Campaign %28Housing Development%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community or Economic Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Counseling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Aid or Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health or Family Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Homeless Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Rights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LGBTQIA%2B Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mental Health Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reentry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Religion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Youth Development</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>npsp__Sustainer__c</picklist>
         <values>
             <fullName>Active</fullName>

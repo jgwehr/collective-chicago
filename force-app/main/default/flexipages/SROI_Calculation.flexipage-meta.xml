@@ -103,30 +103,10 @@
                 <identifier>RecordhealthBenefits_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.workExperienceId__c</fieldItem>
-                <identifier>RecordworkExperienceId__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-3fd7faee-3508-4ac3-9d7f-5961fe446231</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.graduate__c</fieldItem>
-                <identifier>Recordgraduate_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -311,12 +291,6 @@
                 <identifier>Recordgraduate_rgraduatePostTaxIncome_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>flexipage:blankSpace</componentName>
-                <identifier>flexipage_blankSpace2</identifier>
-            </componentInstance>
-        </itemInstances>
         <name>Facet-f31a4bde-5fca-4a42-bfa3-4da6716e4306</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -362,27 +336,15 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
-            <componentInstance>
-                <componentName>flexipage:blankSpace</componentName>
-                <identifier>flexipage_blankSpace3</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>flexipage:blankSpace</componentName>
-                <identifier>flexipage_blankSpace4</identifier>
-            </componentInstance>
+            <fieldInstance>
+                <fieldItem>Record.graduate__r.graduateHealthBenefits__c</fieldItem>
+                <identifier>Recordgraduate_rgraduateHealthBenefits_cField</identifier>
+            </fieldInstance>
         </itemInstances>
         <name>Facet-6fac190a-341c-4705-9c33-0be78b10c72b</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentName>flexipage:blankSpace</componentName>
-                <identifier>flexipage_blankSpace5</identifier>
-            </componentInstance>
-        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.graduate__r.residentGraduationDate__c</fieldItem>
@@ -549,7 +511,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
-                    <value>Standard.Tab.detail</value>
+                    <value>Baseline Metrics</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>flexipage_tab</identifier>
@@ -563,7 +525,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
-                    <value>Current Graduate</value>
+                    <value>Current Graduate Data</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>flexipage_tab2</identifier>
@@ -587,6 +549,16 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.graduate__c</fieldItem>
+                <identifier>Recordgraduate_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -763,6 +735,16 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.sroiSubstanceAbuse__c</fieldItem>
+                <identifier>RecordsroiSubstanceAbuse_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-a9025ec3-d03c-4544-9c6b-3ffd3ff35550</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -788,6 +770,58 @@
             </componentInstance>
         </itemInstances>
         <name>Facet-27f07600-2ecc-4f62-8f53-70f64a31bf7e</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.settingsId__c</fieldItem>
+                <identifier>RecordsettingsId_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-25dfc372-e525-4e12-b778-e0d8eba774ec</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.settingsDate__c</fieldItem>
+                <identifier>RecordsettingsDate_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-8cd89f0f-d5a4-4ad5-be89-5627da7d0fcc</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-25dfc372-e525-4e12-b778-e0d8eba774ec</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column20</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-8cd89f0f-d5a4-4ad5-be89-5627da7d0fcc</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column21</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-ae341621-f59b-49a4-be4b-9efd15e1f652</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -861,6 +895,24 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-ae341621-f59b-49a4-be4b-9efd15e1f652</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Settings</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection11</identifier>
             </componentInstance>
         </itemInstances>
         <name>rightcol</name>

@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>applicationSource__c</fullName>
     <businessStatus>Active</businessStatus>
-    <externalId>false</externalId>
     <inlineHelpText>How did you hear about Collective Chicago?</inlineHelpText>
     <label>Source (Application)</label>
     <required>false</required>

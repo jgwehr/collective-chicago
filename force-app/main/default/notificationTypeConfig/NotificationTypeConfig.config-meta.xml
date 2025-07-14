@@ -38,6 +38,13 @@
             <desktopEnabled>true</desktopEnabled>
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
+        <notificationType>ase_inbox_conflict_resolution</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
         <notificationType>bulk_action_plan_save</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
@@ -124,6 +131,13 @@
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
         <notificationType>conversation_mining_notify</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>credit_memo_generation</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
         <notificationChannels>

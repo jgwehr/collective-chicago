@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>Pesquisa o Lote de importação de dados do NPSP a que este registro pertence.</help>
-    <label></label>
-    <name>npsp__NPSP_Data_Import_Batch__c</name>
-    <relationshipLabel></relationshipLabel>
-</CustomFieldTranslation>

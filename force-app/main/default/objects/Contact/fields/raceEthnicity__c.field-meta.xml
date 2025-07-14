@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>raceEthnicity__c</fullName>
     <description>Demographic information self-reported by an applicant or resident. Inputted by coaches. Not part of the Application Form.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Needs to be Self-Reported by the Applicant/Resident</inlineHelpText>
     <label>Race / Ethnicity</label>
     <required>false</required>

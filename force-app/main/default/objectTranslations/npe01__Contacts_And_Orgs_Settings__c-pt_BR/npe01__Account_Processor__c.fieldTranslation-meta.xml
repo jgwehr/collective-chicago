@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>Configuração para o modelo Conta. Deve ser &quot;Conta de família&quot;, &quot;Um para um&quot; ou &quot;Individual&quot;. Substitui o campo personalizado Contact.SystemAccountProcessor__c. &quot;Conta de família&quot; é o modelo recomendado.</help>
-    <label></label>
-    <name>npe01__Account_Processor__c</name>
-</CustomFieldTranslation>

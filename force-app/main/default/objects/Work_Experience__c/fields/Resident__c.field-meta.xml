@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Resident__c</fullName>
     <description>The Contact this Work Experience belongs to.</description>
-    <externalId>false</externalId>
     <label>Resident</label>
     <lookupFilter>
         <active>true</active>

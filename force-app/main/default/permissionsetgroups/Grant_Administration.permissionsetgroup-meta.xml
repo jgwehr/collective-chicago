@@ -3,6 +3,8 @@
     <description>Access to run and manage SROI Calculations.</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Grant Administration</label>
+    <permissionSets>Grant_Making</permissionSets>
     <permissionSets>SROI_Manage_Calculations</permissionSets>
+    <permissionSets>System_Run_Flows</permissionSets>
     <status>Updated</status>
 </PermissionSetGroup>

@@ -3,7 +3,6 @@
     <fullName>Platform_Fee__c</fullName>
     <defaultValue>0</defaultValue>
     <description>The fee charged by a third-party platform for hosting content and collecting donations/grants/etc. May be 0.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Charged for using the Platform</inlineHelpText>
     <label>Platform Fee</label>
     <precision>5</precision>

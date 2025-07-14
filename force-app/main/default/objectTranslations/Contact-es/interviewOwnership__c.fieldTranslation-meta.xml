@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- 1 complete denial | 2 fails to see their role in circumstances | 3 acknowledges with excuses | 4 acknowledge and taking steps to improve | 5 full ownership --></help>
-    <label><!-- Ownership (Interview) --></label>
-    <name>interviewOwnership__c</name>
-</CustomFieldTranslation>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Asexual</fullName>
+        <default>false</default>
+        <label>Asexual</label>
+    </customValue>
+    <customValue>
+        <fullName>Bisexual</fullName>
+        <default>false</default>
+        <label>Bisexual</label>
+    </customValue>
+    <customValue>
+        <fullName>Gay</fullName>
+        <default>false</default>
+        <label>Gay</label>
+    </customValue>
+    <customValue>
+        <fullName>Heterosexual or straight</fullName>
+        <default>false</default>
+        <label>Heterosexual or straight</label>
+    </customValue>
+    <customValue>
+        <fullName>Lesbian</fullName>
+        <default>false</default>
+        <label>Lesbian</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Pansexual</fullName>
+        <default>false</default>
+        <label>Pansexual</label>
+    </customValue>
+    <customValue>
+        <fullName>Queer</fullName>
+        <default>false</default>
+        <label>Queer</label>
+    </customValue>
+    <description>Sexual Orientation. Usable for Application, Surveys, etc</description>
+    <masterLabel>Orientation</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

@@ -4,7 +4,6 @@
     <businessStatus>Active</businessStatus>
     <description>How much the Resident should have paid towards rent. Increases while Resident; stops at Graduation.
 $400 times number of months worth of Bed Nights Provided (after the first 45 days).</description>
-    <externalId>false</externalId>
     <formula>400 * IF( Bed_Nights_Provided__c &lt; 45
 ,0
 ,CEILING((Bed_Nights_Provided__c - 45 + 1) / 30)

@@ -3,7 +3,6 @@
     <fullName>graduateHealthBenefits__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Set if any Active Work experiences provided Health Benefits (employee-sponsored) during Graduation. Used for SROI Calculation.</description>
-    <externalId>false</externalId>
     <inlineHelpText>If Health Benefits were available during Graduation</inlineHelpText>
     <label>Health Benefits (Graduate)</label>
     <trackFeedHistory>false</trackFeedHistory>

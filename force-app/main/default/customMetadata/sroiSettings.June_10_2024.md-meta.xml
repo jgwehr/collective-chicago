@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>June 10 2024</label>
+    <protected>false</protected>
+    <values>
+        <field>collectiveRelapseRate__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+    <values>
+        <field>consumptionPercentOfTotalIncome__c</field>
+        <value xsi:type="xsd:double">27.0</value>
+    </values>
+    <values>
+        <field>fedTaxBracket_1_amount__c</field>
+        <value xsi:type="xsd:double">11000.0</value>
+    </values>
+    <values>
+        <field>fedTaxBracket_1_percent__c</field>
+        <value xsi:type="xsd:double">10.0</value>
+    </values>
+    <values>
+        <field>fedTaxBracket_2_amount__c</field>
+        <value xsi:type="xsd:double">44725.0</value>
+    </values>
+    <values>
+        <field>fedTaxBracket_2_percent__c</field>
+        <value xsi:type="xsd:double">12.0</value>
+    </values>
+    <values>
+        <field>fedTaxBracket_3_amount__c</field>
+        <value xsi:type="xsd:double">95375.0</value>
+    </values>
+    <values>
+        <field>fedTaxBracket_3_percent__c</field>
+        <value xsi:type="xsd:double">22.0</value>
+    </values>
+    <values>
+        <field>fedTaxBracket_4_amount__c</field>
+        <value xsi:type="xsd:double">182100.0</value>
+    </values>
+    <values>
+        <field>fedTaxBracket_4_percent__c</field>
+        <value xsi:type="xsd:double">24.0</value>
+    </values>
+    <values>
+        <field>fedTaxBracket_5_amount__c</field>
+        <value xsi:type="xsd:double">231250.0</value>
+    </values>
+    <values>
+        <field>fedTaxBracket_5_percent__c</field>
+        <value xsi:type="xsd:double">32.0</value>
+    </values>
+    <values>
+        <field>illinoisStateIncomeTaxPercent__c</field>
+        <value xsi:type="xsd:double">4.95</value>
+    </values>
+    <values>
+        <field>medicaidEmployerSponsored__c</field>
+        <value xsi:type="xsd:double">1563.67</value>
+    </values>
+    <values>
+        <field>medicaidNotSponsored__c</field>
+        <value xsi:type="xsd:double">933.58</value>
+    </values>
+    <values>
+        <field>recidivismCost__c</field>
+        <value xsi:type="xsd:double">151000.0</value>
+    </values>
+    <values>
+        <field>recidivismRateYr1__c</field>
+        <value xsi:type="xsd:double">17.5</value>
+    </values>
+    <values>
+        <field>recidivismRateYr2__c</field>
+        <value xsi:type="xsd:double">30.6</value>
+    </values>
+    <values>
+        <field>recidivismRateYr3__c</field>
+        <value xsi:type="xsd:double">39.1</value>
+    </values>
+    <values>
+        <field>recidivismRateYr4__c</field>
+        <value xsi:type="xsd:double">44.5</value>
+    </values>
+    <values>
+        <field>recidivismRateYr5__c</field>
+        <value xsi:type="xsd:double">48.1</value>
+    </values>
+    <values>
+        <field>salesTaxPercent__c</field>
+        <value xsi:type="xsd:double">10.25</value>
+    </values>
+    <values>
+        <field>socialSecurityPercent__c</field>
+        <value xsi:type="xsd:double">6.2</value>
+    </values>
+    <values>
+        <field>substanceTreatmentCost__c</field>
+        <value xsi:type="xsd:double">19618.4</value>
+    </values>
+    <values>
+        <field>substanceTreatmentRelapseRate__c</field>
+        <value xsi:type="xsd:double">50.0</value>
+    </values>
+</CustomMetadata>

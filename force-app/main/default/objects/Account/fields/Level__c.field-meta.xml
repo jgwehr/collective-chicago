@@ -3,7 +3,6 @@
     <fullName>Level__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <description>Sample Level field for use with Level feature. May be deleted or edited as needed.</description>
-    <externalId>false</externalId>
     <label>Level</label>
     <referenceTo>npsp__Level__c</referenceTo>
     <relationshipLabel>Households</relationshipLabel>

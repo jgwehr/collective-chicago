@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- 1 unable to do any math, mental or otherwise; an obstacle to employment | 5 able to quickly formulate and solve mental math problems --></help>
-    <label><!-- Mathematical Acumen (Budget) --></label>
-    <name>budgetMathmaticalAcumen__c</name>
-</CustomFieldTranslation>

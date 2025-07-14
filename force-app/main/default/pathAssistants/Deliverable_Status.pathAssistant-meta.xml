@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>npsp__Grant_Deadline__c</entityName>
+    <fieldName>deliverableStatus__c</fieldName>
+    <masterLabel>Deliverable Status</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>npsp__Grant_Deliverable_Requirements__c</fieldNames>
+        <fieldNames>npsp__Type__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Gathering Requirements&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

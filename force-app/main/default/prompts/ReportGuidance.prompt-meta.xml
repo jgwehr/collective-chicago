@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Report Guidance</masterLabel>
+    <promptVersions>
+        <actionButtonLabel>Learn About Reports</actionButtonLabel>
+        <actionButtonLink>https://sfdc.co/QVnrG</actionButtonLink>
+        <body>&lt;p&gt;&lt;img src=&quot;https://npsptso--c.documentforce.com/servlet/rtaImage?refid=0EM1I0000048mv7&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;&lt;p&gt;Bring your data to life by leveraging Reports: NPSP comes with a number of reports you can take advantage of immediately. To get started, select ‘All Reports’ from the menu on the left to see which reports are available to you. Learn more about these specific reports in the &lt;a href=&quot;https://powerofus.force.com/s/article/NPSP-Reports-Workbook&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Power of Us Hub&lt;/a&gt;. Select the link below to learn how you can take advantage of everything reporting has to offer as well as how to create custom reports for your organization.&amp;nbsp;&lt;/p&gt;</body>
+        <customApplication>Nonprofit_Success_Pack</customApplication>
+        <delayDays>1</delayDays>
+        <description>Prompt for new Admins with information around Reporting</description>
+        <displayType>DockedComposer</displayType>
+        <header>NPSP How To Tips</header>
+        <isPublished>true</isPublished>
+        <masterLabel>Report Guidance</masterLabel>
+        <publishedDate>2020-10-28</publishedDate>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2020-10-28</startDate>
+        <targetPageKey1>Report</targetPageKey1>
+        <targetPageKey2>home</targetPageKey2>
+        <targetPageType>standard__objectPage</targetPageType>
+        <timesToDisplay>5</timesToDisplay>
+        <title>Learn about Reports</title>
+        <uiFormulaRule>
+            <criteria>
+                <leftValue>{!$User.Profile.Key}</leftValue>
+                <operator>EQUAL</operator>
+                <rightValue>Admin</rightValue>
+            </criteria>
+        </uiFormulaRule>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>SpecificProfiles</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

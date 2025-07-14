@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <customErrors>
+        <name>errorContactId</name>
+        <label>Error: Contact Id</label>
+        <locationX>182</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>checkErrorUpdatingContact</targetReference>
+        </connector>
+        <customErrorMessages>
+            <errorMessage>Malformed Contact Id {!$Record.Resident__r.Id}</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>errorUpdateContact</name>
+        <label>Error: Updating Contact</label>
+        <locationX>50</locationX>
+        <locationY>863</locationY>
+        <customErrorMessages>
+            <errorMessage>Unable to Update Resident. Check all Required fields are populated.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>checkErrorContactId</name>
+        <label>Errors: Contact Id</label>
+        <locationX>380</locationX>
+        <locationY>539</locationY>
+        <defaultConnectorLabel>Okay</defaultConnectorLabel>
+        <rules>
+            <name>checkErrorContactId_error</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>updateGraduateHealthBenefits.errorBadContactId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>errorContactId</targetReference>
+            </connector>
+            <label>Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>checkErrorUpdatingContact</name>
+        <label>Errors: Updating Contact</label>
+        <locationX>182</locationX>
+        <locationY>755</locationY>
+        <defaultConnectorLabel>Okay</defaultConnectorLabel>
+        <rules>
+            <name>checkErrorUpdatingContact_error</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>updateGraduateHealthBenefits.errorUpdatingContact</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>errorUpdateContact</targetReference>
+            </connector>
+            <label>Error</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>checkResidentStatus</name>
+        <label>Resident Status</label>
+        <locationX>611</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Other</defaultConnectorLabel>
+        <rules>
+            <name>checkResidentStatus_graduate</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Resident__r.Stakeholder_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Graduated</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>updateGraduateHealthBenefits</targetReference>
+            </connector>
+            <label>Graduate</label>
+        </rules>
+    </decisions>
+    <description>Performs actions when a Work Experience is created or updated with Health Benefits.
+Includes firing the Resident Health Benefits flow to facilitate SROI.</description>
+    <environments>Default</environments>
+    <interviewLabel>Work Experience - After Update - Health Benefits {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Work Experience - After Create/Update - Health Benefits</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>485</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>checkResidentStatus</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Health_Benefits__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Work_Experience__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>updateGraduateHealthBenefits</name>
+        <label>Update Graduate&apos;s Health Benefits</label>
+        <locationX>380</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>checkErrorContactId</targetReference>
+        </connector>
+        <flowName>Work_Experience_Invoked_Update_Graduate_s_Health_Benefits</flowName>
+        <inputAssignments>
+            <name>inputResidentId</name>
+            <value>
+                <elementReference>$Record.Resident__c</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+</Flow>

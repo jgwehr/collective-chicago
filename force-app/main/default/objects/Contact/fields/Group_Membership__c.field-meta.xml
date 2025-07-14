@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Group_Membership__c</fullName>
+    <label>Group Membership</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Donor</fullName>
+                <default>true</default>
+                <label>Donor</label>
+            </value>
+            <value>
+                <fullName>Referral Partners</fullName>
+                <default>false</default>
+                <label>Referral Partners</label>
+            </value>
+            <value>
+                <fullName>Volunteer</fullName>
+                <default>false</default>
+                <label>Volunteer</label>
+            </value>
+            <value>
+                <fullName>Resident</fullName>
+                <default>false</default>
+                <label>Resident</label>
+            </value>
+            <value>
+                <fullName>Graduate</fullName>
+                <default>false</default>
+                <label>Graduate</label>
+            </value>
+            <value>
+                <fullName>Staff</fullName>
+                <default>false</default>
+                <label>Staff</label>
+            </value>
+            <value>
+                <fullName>Grantmaker</fullName>
+                <default>false</default>
+                <label>Grantmaker</label>
+            </value>
+            <value>
+                <fullName>Community Partner</fullName>
+                <default>false</default>
+                <label>Community Partner</label>
+            </value>
+            <value>
+                <fullName>Donor Advised Fund</fullName>
+                <default>false</default>
+                <label>Donor Advised Fund</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

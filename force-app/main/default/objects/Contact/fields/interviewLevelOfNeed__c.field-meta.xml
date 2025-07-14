@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>interviewLevelOfNeed__c</fullName>
+    <description>Determined by interviewer; used to calculate the Interview Score and Overall Application Score to accept as Resident</description>
+    <externalId>false</externalId>
+    <inlineHelpText>1 = Need not detected; 3 = Temporarily has access to housing; 5 = No access to housing, Imminent need exists</inlineHelpText>
+    <label>Level of Need (Interview)</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>residentResumeScore__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Empty ratings are treated as 0</description>
+    <externalId>false</externalId>
+    <formula>(resumeTimeliness__c 
++ resumeInitialQuality__c 
++ resumeProgressMade__c 
++  resumeOnlineMarketability__c 
++ resumeHomeworkFollowUp__c 
++  resumeLevelOfNeed__c 
+) / 6</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Average of Resume Ratings</inlineHelpText>
+    <label>Resume Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

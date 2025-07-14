@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Access to SROI and other capabilities meant for more experienced Coaches</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Life Coach Advanced</label>
+    <permissionSets>Merge_or_Delete_Contacts</permissionSets>
+    <permissionSets>SROI_Edit_Resident_Attributes</permissionSets>
+    <permissionSets>SROI_Manage_Calculations</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

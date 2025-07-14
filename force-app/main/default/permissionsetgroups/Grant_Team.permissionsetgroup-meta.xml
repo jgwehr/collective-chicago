@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grant process capabilities for the Grant Team</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Grant Team</label>
+    <permissionSets>Contact_Relationship_Management_Features</permissionSets>
+    <permissionSets>Grant_Making</permissionSets>
+    <permissionSets>System_Run_Flows</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

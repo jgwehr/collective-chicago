@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Some Donations will provide a Net Amount: the donated, tax-deductible amount LESS any Platform or Processing Fees. These Fees reduce the overall Revenue. If a Net Amount is not provided, we calculate it for data consistency. If the integration (or user) DID provide this value, we do not overwrite it.</description>
+        <name>Net_Amount</name>
+        <label>Net Amount</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Not Empty</defaultConnectorLabel>
+        <rules>
+            <name>Empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Net_Donation_Amount__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Net_Amount</targetReference>
+            </connector>
+            <label>Empty</label>
+        </rules>
+        <rules>
+            <name>Changed</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Amount</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Payment_Processing_Fee__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Platform_Fee__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Net_Amount</targetReference>
+            </connector>
+            <label>Changed</label>
+        </rules>
+    </decisions>
+    <description>Checks and corrects for Net Donation Amount</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Amount minus all Fees</description>
+        <name>NewNetAmount</name>
+        <dataType>Currency</dataType>
+        <expression>{!$Record.Amount} - {!$Record.Platform_Fee__c} - {!$Record.Payment_Processing_Fee__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Opportunity - Fast Updates {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opp - Donation - Fast Updates</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Net_Amount</name>
+        <label>Update Net Amount</label>
+        <locationX>176</locationX>
+        <locationY>587</locationY>
+        <inputAssignments>
+            <field>Net_Donation_Amount__c</field>
+            <value>
+                <elementReference>NewNetAmount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Net_Amount</targetReference>
+        </connector>
+        <filterFormula>{!$Record.RecordType.DeveloperName} = &quot;Donation&quot;</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

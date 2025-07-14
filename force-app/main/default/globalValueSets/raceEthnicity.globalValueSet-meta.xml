@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Hispanic or Latino or Spanish Origin of any race</fullName>
+        <default>false</default>
+        <label>Hispanic or Latino or Spanish Origin of any race</label>
+    </customValue>
+    <customValue>
+        <fullName>American Indian or Alaskan Native</fullName>
+        <default>false</default>
+        <label>American Indian or Alaskan Native</label>
+    </customValue>
+    <customValue>
+        <fullName>Asian</fullName>
+        <default>false</default>
+        <label>Asian</label>
+    </customValue>
+    <customValue>
+        <fullName>Native Hawaiian or Other Pacific Islander</fullName>
+        <default>false</default>
+        <label>Native Hawaiian or Other Pacific Islander</label>
+    </customValue>
+    <customValue>
+        <fullName>Black or African American</fullName>
+        <default>false</default>
+        <label>Black or African American</label>
+    </customValue>
+    <customValue>
+        <fullName>White</fullName>
+        <default>false</default>
+        <label>White</label>
+    </customValue>
+    <customValue>
+        <fullName>Two or more races</fullName>
+        <default>false</default>
+        <label>Two or more races</label>
+    </customValue>
+    <customValue>
+        <fullName>Prefer not to answer</fullName>
+        <default>false</default>
+        <label>Prefer not to answer</label>
+    </customValue>
+    <description>Demographic information self-disclosed by applications and residents</description>
+    <masterLabel>Race / Ethnicity</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

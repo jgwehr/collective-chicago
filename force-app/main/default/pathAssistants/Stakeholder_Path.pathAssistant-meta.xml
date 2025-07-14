@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Contact</entityName>
+    <fieldName>Stakeholder_Status__c</fieldName>
+    <masterLabel>Stakeholder Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Neighborhood__c</fieldNames>
+        <fieldNames>npe01__HomeEmail__c</fieldNames>
+        <fieldNames>MobilePhone</fieldNames>
+        <picklistValueName>Applied</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Denied_Reason__c</fieldNames>
+        <fieldNames>Denied_Reason_Comments__c</fieldNames>
+        <info>&lt;p&gt;Pick a &lt;strong&gt;Denied Reason&lt;/strong&gt; first, then mark the Resident as &amp;quot;Denied&amp;quot;.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;If multiple reasons exist, pick the most important for the Denied Reason and leave additional information in &lt;strong&gt;Denied Reason Comments&lt;/strong&gt;.&lt;/p&gt;</info>
+        <picklistValueName>Denied</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Denied_Reason__c</fieldNames>
+        <fieldNames>Denied_Reason_Comments__c</fieldNames>
+        <fieldNames>residentMoveOutDate__c</fieldNames>
+        <info>&lt;p&gt;Pick a &lt;strong style=&quot;font-size: 13px;&quot;&gt;Denied Reason&lt;/strong&gt; first, then mark the Resident as &amp;quot;Drop Out&amp;quot;.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;If multiple reasons exist, pick the most important for the Denied Reason and leave additional information in &lt;/span&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;Denied Reason Comments&lt;/strong&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Drop Out</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>residentMoveOutDate__c</fieldNames>
+        <fieldNames>residentGraduationDate__c</fieldNames>
+        <info>&lt;p&gt;Graduation Date is populated automatically when Stage changes to &amp;quot;Graduated&amp;quot;&lt;/p&gt;</info>
+        <picklistValueName>Graduated</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>residentInterviewScore__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong&gt;Ownership&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 complete denial | 2 fails to see their role in circumstances | 3 acknowledges with excuses | 4 acknowledge and taking steps to improve | 5 full ownership&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Marketability&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 poor attitude | 2 hard to read / withholding | 3 needs intentional work | 4 needs polish | 5 professional&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Fervor for Opportunity&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 indifference | 2 not seeing potential of the opportunity | 3 not knowing how to navigate opportunity | 4 excited and prepared to meet challenges | 5 ready to GO&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Level of Need&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 need not detected | 3 temporarily has access to housing | 5 no access to housing, imminent need exists&lt;/p&gt;</info>
+        <picklistValueName>Interview 1</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>residentInterviewScore__c</fieldNames>
+        <fieldNames>residentResumeScore__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong&gt;Timeliness&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 no show | 2 late by 6+ minutes | 3 late by up to 5 min | 4 slightly late; communicated in advance | 5 on time/early&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Initial Resume Quality&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 fake resume | 2 no resume | 3 poorly formatted | 4 complete with multiple typos | 5 complete resume&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Resume Progress&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 header to one job description | 5 completed&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Online Marketability&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 no work experience | 2 work gaps over 9 months | 5 great work experience with at least one job for over a year and no gaps&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Homework Follow Up&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 did not complete any homework | 3 avg response of three days; with 1.5 errors; taking two weeks to complete | 5 left without homework&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Level of Need&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 need not detected | 3 temporarily has access to housing | 5 no access to housing, imminent need exists&lt;/p&gt;</info>
+        <picklistValueName>Interview 2</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>residentInterviewScore__c</fieldNames>
+        <fieldNames>residentResumeScore__c</fieldNames>
+        <fieldNames>residentBudgetScore__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong&gt;Financial Openness&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 refusal to disclose financial details | 5 immediate transparency to debts and accounts&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Mathematical Acumen&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 unable to do any math, mental or otherwise; an obstacle to employment | 5 able to quickly formulate and solve mental math problems&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Forward Thinking in Savings&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 multiple sources of debt, spends money as soon as it comes; no budget | 5 current savings separate from spending money; actively budgets&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Interest in Learning&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 views session as a waste of time | 5 asks engaged questions; expresses interest in applying new info&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Overall Aptitude&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;1 late, disengaged, defensive, undisciplined | 5 timely, engaged, curious, disciplined&lt;/p&gt;</info>
+        <picklistValueName>Interview 3</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>residentMoveInDate__c</fieldNames>
+        <fieldNames>residentJobStartDate__c</fieldNames>
+        <picklistValueName>Resident</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Stakeholder</recordTypeName>
+</PathAssistant>

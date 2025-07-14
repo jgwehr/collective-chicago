@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Grant Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>npsp__Ask_Date__c</fieldNames>
+        <fieldNames>npsp__Requested_Amount__c</fieldNames>
+        <picklistValueName>Application Submitted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Amount</fieldNames>
+        <fieldNames>npsp__Grant_Contract_Date__c</fieldNames>
+        <fieldNames>npsp__Grant_Period_Start_Date__c</fieldNames>
+        <fieldNames>npsp__Grant_Period_End_Date__c</fieldNames>
+        <picklistValueName>Awarded</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Amount</fieldNames>
+        <fieldNames>npsp__Closed_Lost_Reason__c</fieldNames>
+        <picklistValueName>Declined</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>npsp__Ask_Date__c</fieldNames>
+        <fieldNames>grantFolderLink__c</fieldNames>
+        <fieldNames>GrantApplicationLink__c</fieldNames>
+        <picklistValueName>LOI Submitted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Amount</fieldNames>
+        <fieldNames>grantFolderLink__c</fieldNames>
+        <fieldNames>GrantApplicationLink__c</fieldNames>
+        <picklistValueName>Planning</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Amount</fieldNames>
+        <fieldNames>npsp__Closed_Lost_Reason__c</fieldNames>
+        <picklistValueName>Withdrawn</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Grant</recordTypeName>
+</PathAssistant>

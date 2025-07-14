@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used for manual data load (not integrations)</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Donation Import</label>
+    <permissionSets>DataLoader_Permissions</permissionSets>
+    <permissionSets>Data_Integration_FundraiseUp</permissionSets>
+    <permissionSets>Edit_Donation_Fee_Information</permissionSets>
+    <permissionSets>Edit_Donations</permissionSets>
+    <permissionSets>Edit_Donations_and_Payments</permissionSets>
+    <permissionSets>Import_Donations_External_Id</permissionSets>
+    <permissionSets>View_Donation_Fee_Information</permissionSets>
+    <permissionSets>View_Donations</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

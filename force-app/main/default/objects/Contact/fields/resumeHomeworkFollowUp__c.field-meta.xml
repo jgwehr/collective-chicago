@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>resumeHomeworkFollowUp__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>1 did not complete any homework | 3 avg response of three days; with 1.5 errors; taking two weeks to complete | 5 left without homework</inlineHelpText>
+    <label>Homework Follow Up (Resume)</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>resumeOnlineMarketability__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>1 no work experience | 2 work gaps over 9 months | 5 great work experience with at least one job for over a year and no gaps</inlineHelpText>
+    <label>Online Marketability (Resume)</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Coaching Meeting Walkthrough</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;Log how your resident has spent their time in Mental, Vocational, Social, Financial, and Physical dimensions.&lt;/p&gt;</body>
+        <customApplication>Nonprofit_Success_Pack</customApplication>
+        <delayDays>10</delayDays>
+        <description>Introduces the new Coaching Meeting</description>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>true</isPublished>
+        <masterLabel>Coaching Meeting Walkthrough Step 1</masterLabel>
+        <publishedDate>2023-06-28</publishedDate>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;scope&quot;:{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;sfdc:StandardButton.Check_Up__c.New&quot;}},&quot;attributes&quot;:{&quot;id&quot;:&quot;lst_dynamicRelatedList3&quot;}},&quot;attributes&quot;:{&quot;id&quot;:&quot;flexipage_tabset5&quot;}},&quot;version&quot;:2,&quot;interactions&quot;:[{&quot;unless&quot;:{&quot;css&quot;:&quot;[aria-selected=true]&quot;},&quot;scope&quot;:{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;flexipage_tab3Tab&quot;}},&quot;attributes&quot;:{&quot;id&quot;:&quot;flexipage_tabset2&quot;}},&quot;type&quot;:&quot;click&quot;},{&quot;unless&quot;:{&quot;css&quot;:&quot;[aria-selected=true]&quot;},&quot;scope&quot;:{&quot;scope&quot;:{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;flexipage_tab15Tab&quot;}},&quot;attributes&quot;:{&quot;id&quot;:&quot;flexipage_tabset5&quot;}},&quot;attributes&quot;:{&quot;id&quot;:&quot;flexipage_tabset2&quot;}},&quot;type&quot;:&quot;click&quot;}]}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <startDate>2023-06-29</startDate>
+        <stepNumber>1</stepNumber>
+        <targetPageKey1>Contact</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <targetRecordType>Contact.Stakeholder</targetRecordType>
+        <themeColor>Theme1</themeColor>
+        <themeSaturation>Dark</themeSaturation>
+        <timesToDisplay>2</timesToDisplay>
+        <title>New Coaching Meeting!</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;Make sure you choose &quot;Coaching Meeting&quot;&lt;/p&gt;</body>
+        <customApplication>Nonprofit_Success_Pack</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayPosition>TopCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Coaching Meeting Walkthrough Step 2</masterLabel>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>2</stepNumber>
+        <targetPageKey1>Check_Up__c</targetPageKey1>
+        <targetPageKey2>new</targetPageKey2>
+        <targetPageKey3>{&quot;navigationLocation&quot;:&quot;RELATED_LIST&quot;,&quot;nooverride&quot;:&quot;1&quot;,&quot;useRecordTypeCheck&quot;:&quot;1&quot;,&quot;onRecordTypeSelection&quot;:true}</targetPageKey3>
+        <targetPageType>standard__objectPage</targetPageType>
+        <title>Pick the Record Type</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;You can change the date if the Meeting happened in the past.&lt;/p&gt;</body>
+        <customApplication>Nonprofit_Success_Pack</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Coaching Meeting Walkthrough Step 3</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;sfdc:RecordField.Check_Up__c.checkUpDate__c&quot;}},&quot;attributes&quot;:{&quot;id&quot;:&quot;e749965136cc4d4d9fc02c6f9c4a08b7&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>3</stepNumber>
+        <targetPageKey1>Check_Up__c</targetPageKey1>
+        <targetPageKey2>new</targetPageKey2>
+        <targetPageKey3>{&quot;navigationLocation&quot;:&quot;RELATED_LIST&quot;,&quot;nooverride&quot;:&quot;1&quot;,&quot;useRecordTypeCheck&quot;:&quot;1&quot;,&quot;onRecordTypeSelection&quot;:false}</targetPageKey3>
+        <targetPageType>standard__objectPage</targetPageType>
+        <targetRecordType>Check_Up__c.Coaching_Meeting</targetRecordType>
+        <title>Correct the Date</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;u&gt;Mental Minutes&lt;/u&gt; is for time spent &lt;strong&gt;on their own or with coaches&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;Therapy Minutes&lt;/u&gt; is for structured therapy &lt;strong&gt;with a professional&lt;/strong&gt;&lt;/p&gt;</body>
+        <customApplication>Nonprofit_Success_Pack</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Coaching Meeting Walkthrough Step 4</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;sfdc:RecordField.Check_Up__c.Therapy_Minutes__c&quot;}},&quot;attributes&quot;:{&quot;id&quot;:&quot;e749965136cc4d4d9fc02c6f9c4a08b7&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>4</stepNumber>
+        <targetPageKey1>Check_Up__c</targetPageKey1>
+        <targetPageKey2>new</targetPageKey2>
+        <targetPageKey3>{&quot;navigationLocation&quot;:&quot;RELATED_LIST&quot;,&quot;nooverride&quot;:&quot;1&quot;,&quot;useRecordTypeCheck&quot;:&quot;1&quot;,&quot;onRecordTypeSelection&quot;:false}</targetPageKey3>
+        <targetPageType>standard__objectPage</targetPageType>
+        <targetRecordType>Check_Up__c.Coaching_Meeting</targetRecordType>
+        <title>Mental Dimension</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;Have the Resident describe this themselves. If this isn&apos;t possible, use your best assessment&lt;/p&gt;</body>
+        <customApplication>Nonprofit_Success_Pack</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Coaching Meeting Walkthrough Step 5</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;sfdc:RecordField.01I4x000002my9D.00N4x00000bPz9J&quot;}},&quot;attributes&quot;:{&quot;id&quot;:&quot;e749965136cc4d4d9fc02c6f9c4a08b7&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>5</stepNumber>
+        <targetPageKey1>Check_Up__c</targetPageKey1>
+        <targetPageKey2>new</targetPageKey2>
+        <targetPageKey3>{&quot;navigationLocation&quot;:&quot;RELATED_LIST&quot;,&quot;nooverride&quot;:&quot;1&quot;,&quot;useRecordTypeCheck&quot;:&quot;1&quot;,&quot;onRecordTypeSelection&quot;:false}</targetPageKey3>
+        <targetPageType>standard__objectPage</targetPageType>
+        <targetRecordType>Check_Up__c.Coaching_Meeting</targetRecordType>
+        <title>Mood and Attitude</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;u&gt;Physical Minutes&lt;/u&gt; tracks time spent on their own, with coaches, and exercising.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;Distance (Miles)&lt;/u&gt; tracks &lt;em&gt;getting out there!&lt;/em&gt; Walk, Bike, Run! Commutes count.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;Sleep Hours&lt;/u&gt; tracks hours of sleep since last meeting.&lt;/p&gt;</body>
+        <customApplication>Nonprofit_Success_Pack</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Coaching Meeting Walkthrough Step 6</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;sfdc:RecordField.01I4x000002my9D.00N4x00000bPz9I&quot;}},&quot;attributes&quot;:{&quot;id&quot;:&quot;e749965136cc4d4d9fc02c6f9c4a08b7&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>6</stepNumber>
+        <targetPageKey1>Check_Up__c</targetPageKey1>
+        <targetPageKey2>new</targetPageKey2>
+        <targetPageKey3>{&quot;navigationLocation&quot;:&quot;RELATED_LIST&quot;,&quot;nooverride&quot;:&quot;1&quot;,&quot;useRecordTypeCheck&quot;:&quot;1&quot;,&quot;onRecordTypeSelection&quot;:false}</targetPageKey3>
+        <targetPageType>standard__objectPage</targetPageType>
+        <targetRecordType>Check_Up__c.Coaching_Meeting</targetRecordType>
+        <title>Physical Dimension</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;Each Dimension has its own notes. Keep track of discussion or goals here.&lt;/p&gt;</body>
+        <customApplication>Nonprofit_Success_Pack</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Coaching Meeting Walkthrough Step 7</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;sfdc:RecordField.01I4x000002my9D.00N4x00000bPz9G&quot;}},&quot;attributes&quot;:{&quot;id&quot;:&quot;e749965136cc4d4d9fc02c6f9c4a08b7&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>7</stepNumber>
+        <targetPageKey1>Check_Up__c</targetPageKey1>
+        <targetPageKey2>new</targetPageKey2>
+        <targetPageKey3>{&quot;navigationLocation&quot;:&quot;RELATED_LIST&quot;,&quot;nooverride&quot;:&quot;1&quot;,&quot;useRecordTypeCheck&quot;:&quot;1&quot;,&quot;onRecordTypeSelection&quot;:false}</targetPageKey3>
+        <targetPageType>standard__objectPage</targetPageType>
+        <targetRecordType>Check_Up__c.Coaching_Meeting</targetRecordType>
+        <title>Notes</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;If you want, summarize the conversation or track goals.&lt;/p&gt;</body>
+        <customApplication>Nonprofit_Success_Pack</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Coaching Meeting Walkthrough Step 8</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;sfdc:RecordField.Check_Up__c.Check_Up_Notes__c&quot;}},&quot;attributes&quot;:{&quot;id&quot;:&quot;e749965136cc4d4d9fc02c6f9c4a08b7&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>8</stepNumber>
+        <targetPageKey1>Check_Up__c</targetPageKey1>
+        <targetPageKey2>new</targetPageKey2>
+        <targetPageKey3>{&quot;navigationLocation&quot;:&quot;RELATED_LIST&quot;,&quot;nooverride&quot;:&quot;1&quot;,&quot;useRecordTypeCheck&quot;:&quot;1&quot;,&quot;onRecordTypeSelection&quot;:false}</targetPageKey3>
+        <targetPageType>standard__objectPage</targetPageType>
+        <targetRecordType>Check_Up__c.Coaching_Meeting</targetRecordType>
+        <title>Summarize Notes</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>&lt;p&gt;Courses from Moodle are counted &lt;b&gt;&lt;u&gt;separately&lt;/u&gt;. &lt;/b&gt;We&apos;ll import this so &lt;strong&gt;&lt;u&gt;do not include&lt;/u&gt;&lt;/strong&gt; Moodle in your numbers.&lt;/p&gt;</body>
+        <customApplication>Nonprofit_Success_Pack</customApplication>
+        <dismissButtonLabel>Nevermind</dismissButtonLabel>
+        <displayPosition>MiddleCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Coaching Meeting Walkthrough Step 9</masterLabel>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>9</stepNumber>
+        <targetPageKey1>Check_Up__c</targetPageKey1>
+        <targetPageKey2>new</targetPageKey2>
+        <targetPageKey3>{&quot;navigationLocation&quot;:&quot;RELATED_LIST&quot;,&quot;nooverride&quot;:&quot;1&quot;,&quot;useRecordTypeCheck&quot;:&quot;1&quot;,&quot;onRecordTypeSelection&quot;:false}</targetPageKey3>
+        <targetPageType>standard__objectPage</targetPageType>
+        <targetRecordType>Check_Up__c.Coaching_Meeting</targetRecordType>
+        <title>What about Moodle?</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <actionButtonLabel>View the (test) Dashboard</actionButtonLabel>
+        <actionButtonLink>/lightning/r/Dashboard/01Z4x000000R37REAS/view?queryScope=userFolders</actionButtonLink>
+        <body>&lt;p&gt;Save all your work!&lt;/p&gt;</body>
+        <customApplication>Nonprofit_Success_Pack</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayType>Targeted</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Coaching Meeting Walkthrough Step 10</masterLabel>
+        <referenceElementContext>{&quot;scope&quot;:{&quot;attributes&quot;:{&quot;id&quot;:&quot;sfdc:StandardButton.Check_Up__c.SaveEdit&quot;}},&quot;version&quot;:2}</referenceElementContext>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>10</stepNumber>
+        <targetPageKey1>Check_Up__c</targetPageKey1>
+        <targetPageKey2>new</targetPageKey2>
+        <targetPageKey3>{&quot;navigationLocation&quot;:&quot;RELATED_LIST&quot;,&quot;nooverride&quot;:&quot;1&quot;,&quot;useRecordTypeCheck&quot;:&quot;1&quot;,&quot;onRecordTypeSelection&quot;:false}</targetPageKey3>
+        <targetPageType>standard__objectPage</targetPageType>
+        <targetRecordType>Check_Up__c.Coaching_Meeting</targetRecordType>
+        <title>Save</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

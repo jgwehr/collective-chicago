@@ -5,10 +5,26 @@
     <fieldName>deliverableStatus__c</fieldName>
     <masterLabel>Deliverable Status</masterLabel>
     <pathAssistantSteps>
-        <fieldNames>npsp__Grant_Deliverable_Requirements__c</fieldNames>
+        <fieldNames>npsp__Grant_Deadline_Due_Date__c</fieldNames>
         <fieldNames>npsp__Type__c</fieldNames>
-        <info>&lt;ul&gt;&lt;li&gt;Gathering Requirements&lt;/li&gt;&lt;/ul&gt;</info>
+        <fieldNames>npsp__Grant_Deliverable_Requirements__c</fieldNames>
+        <info>&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;Add &lt;/span&gt;&lt;strong style=&quot;font-size: 12pt;&quot;&gt;Funder Requirements&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;Create Google folder&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;Access Grant Application&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;Add narrative&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;Updated impact #s.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</info>
         <picklistValueName>Draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>npsp__Grant_Deadline_Due_Date__c</fieldNames>
+        <info>&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;Final checks are complete.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;Submit application narrative and attachments.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</info>
+        <picklistValueName>Reviewed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>npsp__Grant_Deadline_Due_Date__c</fieldNames>
+        <info>&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;Internal team reviews grammar, consistency, and impact.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;Gather and add any requested attachments to google folder and application.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</info>
+        <picklistValueName>Reviewing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>npsp__Grant_Deliverable_Close_Date__c</fieldNames>
+        <info>&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;Submit via required portal or mail.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;Confirm receipt and track status.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt;Update &lt;/span&gt;&lt;strong style=&quot;font-size: 12pt;&quot;&gt;Grant Response Narrative&lt;/strong&gt;&lt;span style=&quot;font-size: 12pt;&quot;&gt; if any new questions or edits emerged.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</info>
+        <picklistValueName>Submitted</picklistValueName>
     </pathAssistantSteps>
     <recordTypeName>__MASTER__</recordTypeName>
 </PathAssistant>

@@ -23,6 +23,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.budgetCreditScore__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.budgetFinancialOpenness__c</field>
         <readable>true</readable>
     </fieldPermissions>

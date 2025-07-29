@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>budgetCreditScore__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <defaultValue>IF($RecordType.Name == &quot;Stakeholder&quot;,625,null)</defaultValue>
+    <description>Provided by the Applicant during the Budget Interview. If unknown, defaults to a standard baseline credit score.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Defaults to 625; change if needed.</inlineHelpText>
+    <label>Credit Score (Budget)</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <securityClassification>Restricted</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

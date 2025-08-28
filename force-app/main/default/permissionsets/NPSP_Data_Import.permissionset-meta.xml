@@ -4,55 +4,7 @@
         <apexClass>npsp__BDI_ManageAdvancedMappingCtrl</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    <classAccesses>
-        <apexClass>npsp__BDI_MappingServiceAdvanced</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>npsp__BGE_BatchGiftEntry_UTIL</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>npsp__BGE_ConfigurationWizard_CTRL</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>npsp__BGE_DataImportBatchEntry_CTRL</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>npsp__BGE_FormTemplate_TDTM</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>npsp__GE_GiftEntryController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>npsp__GE_LookupController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>npsp__GE_PaymentServices</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>npsp__UTIL_AuraEnabledCommon</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>npsp__UTIL_CustomSettingsFacade</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>npsp__UTIL_CustomSettings_API</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <customSettingAccesses>
-        <enabled>true</enabled>
-        <name>npsp__Custom_Column_Header__c</name>
-    </customSettingAccesses>
-    <description>Includes Permissions for NPSP Gift Entry feature.</description>
+    <description>Includes Permissions for NPSP Data Import</description>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.BillingAddress</field>
@@ -100,6 +52,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.interviewLevelOfNeed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.npe01__AlternateEmail__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -126,6 +83,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.npe01__WorkPhone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.resumeLevelOfNeed__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -185,87 +147,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Authorized_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Authorized_UTC_Timestamp__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>npe01__OppPayment__c.npsp__Batch_Number__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Card_Expiration_Month__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Card_Expiration_Year__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Card_Last_4__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Card_Network__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Elevate_Original_Payment_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Elevate_Payment_Created_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Elevate_Payment_Created_UTC_Timestamp__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Elevate_Payment_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Gateway_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Gateway_Payment_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Origin_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Origin_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Origin_Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npe01__OppPayment__c.npsp__Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -554,16 +436,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Contact1_Consent_Message__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Contact1_Consent_Opt_In__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>npsp__DataImport__c.npsp__Contact1_Firstname__c</field>
         <readable>true</readable>
@@ -746,11 +618,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>npsp__DataImport__c.npsp__Donation_Donor__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Donation_Elevate_Recurring_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -949,93 +816,13 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Authorization_Token__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Authorized_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Authorized_UTC_Timestamp__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Card_Expiration_Month__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Card_Expiration_Year__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Card_Last_4__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Card_Network__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>npsp__DataImport__c.npsp__Payment_Check_Reference_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Declined_Reason__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Elevate_Created_Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Elevate_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Elevate_Original_Payment_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Gateway_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Gateway_Payment_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>npsp__DataImport__c.npsp__Payment_Method__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Origin_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Origin_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>npsp__DataImport__c.npsp__Payment_Origin_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1049,23 +836,13 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>npsp__DataImport__c.npsp__Payment_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>npsp__DataImport__c.npsp__Status__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>npsp__Form_Template__c.npsp__Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>npsp__Form_Template__c.npsp__Template_JSON__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1154,7 +931,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>Gift Entry Recommended</label>
+    <label>NPSP Data Import</label>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
@@ -1229,15 +1006,6 @@
     </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>npsp__Form_Template__c</object>
-        <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
@@ -1254,7 +1022,11 @@
         <enabled>true</enabled>
     </pageAccesses>
     <tabSettings>
-        <tab>npsp__GE_Gift_Entry</tab>
+        <tab>npsp__DataImportBatch__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>npsp__DataImport__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
 </PermissionSet>

@@ -2016,6 +2016,16 @@
                 <identifier>RecordintakeCriminalRecordMisdemeanor_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.residentMatriculated__c</fieldItem>
+                <identifier>RecordresidentMatriculated_cField2</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-4fbb6ab1-3791-4811-9ea1-a9ed33326973</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -2793,6 +2803,16 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.residentMatriculated__c</fieldItem>
+                <identifier>RecordresidentMatriculated_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>

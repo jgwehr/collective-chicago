@@ -680,6 +680,11 @@
             <field>budgetCreditScore__c</field>
             <table>Contact</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>residentMatriculated__c</field>
+            <table>Contact</table>
+        </columns>
         <masterLabel>Contacts</masterLabel>
     </sections>
     <sections>
@@ -839,6 +844,36 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Check_Up_Notes__c</field>
+            <table>Contact.Check_Ups__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Therapy_Minutes__c</field>
+            <table>Contact.Check_Ups__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Savings_Contributed__c</field>
+            <table>Contact.Check_Ups__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Debt_Paid__c</field>
+            <table>Contact.Check_Ups__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Credit_Score__c</field>
+            <table>Contact.Check_Ups__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Financial_Minutes_del__c</field>
+            <table>Contact.Check_Ups__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>checkUpDate__c</field>
             <table>Contact.Check_Ups__r</table>
         </columns>
         <masterLabel>Check Ups</masterLabel>

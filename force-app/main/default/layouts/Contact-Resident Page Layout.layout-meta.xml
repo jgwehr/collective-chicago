@@ -473,7 +473,7 @@
                 <field>intakePostTaxIncome__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>budgetCreditScore__c</field>
             </layoutItems>
             <layoutItems>
@@ -585,7 +585,8 @@
                 <field>Bed_Nights_Provided__c</field>
             </layoutItems>
             <layoutItems>
-                <emptySpace>true</emptySpace>
+                <behavior>Edit</behavior>
+                <field>residentMatriculated__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

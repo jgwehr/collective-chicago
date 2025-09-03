@@ -4,6 +4,7 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Grant Team</label>
     <permissionSets>Contact_Relationship_Management_Features</permissionSets>
+    <permissionSets>Create_Basic_Donation_Opportunity</permissionSets>
     <permissionSets>Grant_Making</permissionSets>
     <permissionSets>System_Run_Flows</permissionSets>
     <status>Updated</status>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>incomeForecastedYearsMultipler__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <defaultValue>5</defaultValue>
+    <description>Used to multiply the Income aspects of SROI. These are typically annual but reporting is several years.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Multiply annual Income values</inlineHelpText>
+    <label>Income Forecasted Years Multiplier</label>
+    <precision>2</precision>
+    <required>true</required>
+    <scale>0</scale>
+    <securityClassification>Confidential</securityClassification>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

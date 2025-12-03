@@ -64,11 +64,15 @@
                 <behavior>Required</behavior>
                 <field>consumptionPercentOfTotalIncome__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>socialSecurityPercent__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>socialSecurityPercent__c</field>
+                <field>incomeForecastedYearsMultipler__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>

@@ -82,7 +82,6 @@
             </value>
         </inputParameters>
         <nameSegment>SendBetterEmail</nameSegment>
-        <offset>0</offset>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </actionCalls>
     <actionCalls>
@@ -137,10 +136,8 @@
             </value>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
-        <offset>0</offset>
     </actionCalls>
     <apiVersion>59.0</apiVersion>
-    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
         <description>Inserts the current Opportunity&apos;s information into an HTML template (via tplDonationRow) and then adds it to an array.</description>
         <name>assign_addDonationHTMLRow</name>
@@ -253,11 +250,11 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
         <name>configMetadataName</name>
         <dataType>String</dataType>
         <value>
-            <stringValue>Default_Settings</stringValue>
+            <stringValue>Promo_2025</stringValue>
         </value>
     </constants>
     <constants>
-        <name>tplDonationTableHeader</name>
+        <name>tplCmpDonationTableHeader</name>
         <dataType>String</dataType>
         <value>
             <stringValue>&lt;table style=&quot;border: 1px solid black;border-collapse: collapse;width:50%&quot;&gt;&lt;thead&gt;&lt;th style=&quot;border: 1px solid black;border-collapse: collapse;border-bottom: 3px solid black;width:50%&quot;&gt;Date&lt;/th&gt;&lt;th style=&quot;border: 1px solid black;border-bottom: 3px solid black;border-collapse: collapse&quot;&gt;Amount&lt;/th&gt;&lt;/thead&gt;</stringValue>
@@ -325,6 +322,21 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
         </defaultConnector>
         <defaultConnectorLabel>No</defaultConnectorLabel>
         <rules>
+            <name>relevantContact_Admin</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.SendGivingStatementAdmin</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>screen_donorInformation</targetReference>
+            </connector>
+            <label>Admin Override</label>
+        </rules>
+        <rules>
             <name>relevantContact_Yes</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
@@ -360,21 +372,6 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             </connector>
             <label>Yes</label>
         </rules>
-        <rules>
-            <name>relevantContact_Admin</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>$Permission.SendGivingStatementAdmin</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>screen_donorInformation</targetReference>
-            </connector>
-            <label>Admin Override</label>
-        </rules>
     </decisions>
     <decisions>
         <description>Does the current User have permissions to send a Giving Statement?</description>
@@ -399,12 +396,13 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             <label>Yes</label>
         </rules>
     </decisions>
-    <description>Collects Last Year&apos;s Donations, an uploaded PDF file, and sends them to the Donor as an email and attachment.</description>
+    <description>Collects Last Year&apos;s Donations, an uploaded PDF file, and sends them to the Donor as an email and attachment. Now, allows Promo emails for Admins.</description>
     <environments>Default</environments>
     <formulas>
-        <name>configPrevFiscalYear</name>
+        <description>Presents the previous year or current year (if selected by an admin). YYYY</description>
+        <name>configFiscalYear</name>
         <dataType>Number</dataType>
-        <expression>YEAR(TODAY())-1</expression>
+        <expression>YEAR(TODAY()) - IF({!toggleFiscalYear.value},0,1)</expression>
         <scale>0</scale>
     </formulas>
     <formulas>
@@ -440,20 +438,20 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
 )</expression>
     </formulas>
     <formulas>
-        <description>Applies HTML styling to a Donation for the table.</description>
-        <name>tplDonationRow</name>
-        <dataType>String</dataType>
-        <expression>&quot;&lt;tr style=&apos;border: 1px solid black;border-collapse: collapse;&apos;&gt;&lt;td style=&apos;border: 1px solid black;border-collapse: collapse;&apos;&gt;&quot; +TEXT( {!Each_Donation.CloseDate}) + &quot;&lt;/td&gt;&lt;td style=&apos;border: 1px solid black;border-collapse: collapse;&apos;&gt;$&quot; + TEXT({!Each_Donation.Amount}) + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;</expression>
-    </formulas>
-    <formulas>
-        <name>tplDonationTableFooter</name>
+        <name>tplCmpDonationTableFooter</name>
         <dataType>String</dataType>
         <expression>&quot;&lt;tfoot&gt;&lt;th style=&apos;border: 1px solid black;border-collapse: collapse;border-top: 3px solid black;&apos;&gt;TOTAL&lt;/th&gt;&lt;th style=&apos;border: 1px solid black;border-collapse: collapse;border-top: 3px solid black;&apos;&gt;$&quot; + TEXT({!tplEmailBody_TotalAmount}) + &quot;&lt;/th&gt;&lt;/tfoot&gt;&quot; + &quot;&lt;/table&gt;&quot;</expression>
     </formulas>
     <formulas>
-        <name>tplFiscalYear</name>
+        <name>tplCmpFiscalYear</name>
         <dataType>String</dataType>
-        <expression>TEXT({!configPrevFiscalYear})</expression>
+        <expression>TEXT({!configFiscalYear})</expression>
+    </formulas>
+    <formulas>
+        <description>Applies HTML styling to a Donation for the table.</description>
+        <name>tplDonationRow</name>
+        <dataType>String</dataType>
+        <expression>&quot;&lt;tr style=&apos;border: 1px solid black;border-collapse: collapse;&apos;&gt;&lt;td style=&apos;border: 1px solid black;border-collapse: collapse;&apos;&gt;&quot; +TEXT( {!Each_Donation.CloseDate}) + &quot;&lt;/td&gt;&lt;td style=&apos;border: 1px solid black;border-collapse: collapse;&apos;&gt;$&quot; + TEXT({!Each_Donation.Amount}) + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;</expression>
     </formulas>
     <interviewLabel>Annual Giving Statement {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Annual Giving Statement</label>
@@ -519,7 +517,7 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             <field>FiscalYear</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>configPrevFiscalYear</elementReference>
+                <elementReference>configFiscalYear</elementReference>
             </value>
         </filters>
         <filters>
@@ -673,14 +671,6 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             <name>errorBadAttachmentNote</name>
             <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(255, 0, 0);&quot;&gt;Failed to Load a Relevant PDF attachment.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;Please ensure one is uploaded. Using File Id:  {!get_Settings.attachmentFileId__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -697,14 +687,6 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             <name>errorBadContactNote</name>
             <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;The chosen Contact/Donor does not have any valid Donations for the previous year.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
@@ -720,14 +702,6 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             <name>errorAlreadySent</name>
             <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;The chosen Contact/Donor has already been sent a Giving Statement this year on {!get_DonorRecord.lastYearlyGivingStatement__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
@@ -743,14 +717,6 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             <name>errorConsent</name>
             <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(255, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;The chosen Contact/Donor has not consented to receiving email.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
@@ -766,14 +732,6 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             <name>errorRecordType</name>
             <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(255, 0, 0);&quot;&gt;The chosen Contact is a Resident. Only non-Residents can receive Giving Statements.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
@@ -800,14 +758,6 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             <name>generalErrorMessage</name>
             <fieldText>&lt;p&gt;An error occured. All records were rolled back. Share this with your Salesforce Admin.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Fault Message: &lt;/strong&gt;{!$Flow.FaultMessage}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Send Giving Statement:&lt;/strong&gt; {!$Permission.SendGivingStatement}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Flow Start Time:&lt;/strong&gt; {!$Flow.InterviewStartTime}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -829,27 +779,11 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>false</isRequired>
             <objectFieldReference>get_DonorRecord.Name</objectFieldReference>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <fields>
             <name>donorInformationEmailHelp</name>
             <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 16px; color: rgb(86, 65, 0);&quot;&gt;An email will be sent to the Donor&apos;s &lt;/span&gt;&lt;strong style=&quot;font-size: 16px; color: rgb(86, 65, 0);&quot;&gt;Preferred&lt;/strong&gt;&lt;span style=&quot;font-size: 16px; color: rgb(86, 65, 0);&quot;&gt; Email. Correct this and the related Email field, if needed.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <fields>
             <name>screen_donorInformation_Section1</name>
@@ -862,14 +796,6 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
                     <inputsOnNextNavToAssocScrn>ResetValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <objectFieldReference>get_DonorRecord.npe01__Preferred_Email__c</objectFieldReference>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -887,42 +813,18 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
                     <inputsOnNextNavToAssocScrn>ResetValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <objectFieldReference>get_DonorRecord.npe01__HomeEmail__c</objectFieldReference>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
                 </fields>
                 <fields>
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>ResetValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <objectFieldReference>get_DonorRecord.npe01__WorkEmail__c</objectFieldReference>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
                 </fields>
                 <fields>
                     <fieldType>ObjectProvided</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <objectFieldReference>get_DonorRecord.npe01__AlternateEmail__c</objectFieldReference>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -934,14 +836,6 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             </fields>
             <isRequired>false</isRequired>
             <regionContainerType>SectionWithoutHeader</regionContainerType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <fields>
             <name>configIncludeAttachement</name>
@@ -968,14 +862,48 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
+        </fields>
+        <fields>
+            <name>toggleFiscalYear</name>
+            <extensionName>flowruntime:toggle</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Use Current Year</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>disabled</name>
+                <value>
+                    <elementReference>relevantContact_Yes</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>messageToggleInactive</name>
+                <value>
+                    <stringValue>Last Year</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>messageToggleActive</name>
+                <value>
+                    <stringValue>This Year</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>relevantContact_Admin</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
         </fields>
         <nextOrFinishButtonLabel>Preview Email</nextOrFinishButtonLabel>
         <showFooter>true</showFooter>
@@ -1002,14 +930,6 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
                     <name>previewEmailFrom</name>
                     <fieldText>&lt;p&gt;&lt;strong&gt;From:&lt;/strong&gt; {!tplFromName} &amp;lt;{!$User.Email}&amp;gt;&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -1026,14 +946,6 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
                     <name>previewEmailTo</name>
                     <fieldText>&lt;p&gt;&lt;strong&gt;To:&lt;/strong&gt; {!help_toEmailAddress}&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -1045,27 +957,11 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             </fields>
             <isRequired>false</isRequired>
             <regionContainerType>SectionWithoutHeader</regionContainerType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <fields>
             <name>previewEmailSubject</name>
             <fieldText>&lt;p&gt;&lt;strong&gt;Subject:&lt;/strong&gt; {!tplEmailSubject}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <fields>
             <name>previewEmailLine1</name>
@@ -1092,14 +988,6 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <fields>
             <name>screen_previewEmail_Section2</name>
@@ -1122,14 +1010,6 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
                     <name>previewEmailBody</name>
                     <fieldText>&lt;p&gt;{!tplEmailBody}&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -1152,14 +1032,6 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             </fields>
             <isRequired>false</isRequired>
             <regionContainerType>SectionWithoutHeader</regionContainerType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <fields>
             <name>previewEmailLine2</name>
@@ -1186,27 +1058,11 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <fields>
             <name>previewAttachmentNote</name>
             <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(185, 139, 14); font-size: 16px;&quot;&gt;An attachment will also be included&lt;/strong&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
@@ -1231,35 +1087,20 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
     </start>
     <status>Active</status>
     <textTemplates>
-        <description>Collects all other pieces for final output</description>
-        <name>tplEmailBody</name>
-        <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>&lt;p&gt;{!$Flow.CurrentDate}&lt;/p&gt;
-{!get_Settings.emailIntroText__c}
-{!tplEmailBody_Greeting}
-{!tplDonationTableHeader}
-{!tplEmailBody_DonationRows}
-{!tplDonationTableFooter}
-{!tplEmailFooterDisclaimer}
-{!tplEmailFooterContactInfo}
-{!tplEmbeddedImage}
-{!tplEmailSignature}</text>
-    </textTemplates>
-    <textTemplates>
-        <name>tplEmailBody_Greeting</name>
+        <name>tplCmpEmailBody_Greeting</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
         <text>&lt;p&gt;&lt;strong&gt;Donor:&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&quot;margin-left: 40px;&quot;&gt;{!get_DonorRecord.Name}&lt;/p&gt;
 &lt;p style=&quot;margin-left: 40px;&quot;&gt;{!help_toEmailAddress}&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
-        <name>tplEmailBody_Intro</name>
+        <name>tplCmpEmailBody_Intro</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
         <text>&lt;p&gt;Thank you for supporting Collective Chicago as we disrupt homelessness with dignity.&lt;/p&gt;
 &lt;p&gt;Your donation went towards our mission of disrupting cycles of poverty with dignified transitional housing that holistically connects young men to opportunities that create and sustain personal, professional, and relational growth.&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
-        <name>tplEmailFooterContactInfo</name>
+        <name>tplCmpEmailFooterContactInfo</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
         <text>&lt;table style=&quot;color:#555&quot;&gt;
     &lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;padding: .5em 0em&quot;&gt;If you have any questions, please contact us at&lt;/td&gt;&lt;/tr&gt;
@@ -1279,27 +1120,49 @@ Unfortunately, to avoid too many Update/DMLs, we accept the risk. We update the 
 &lt;/table&gt;</text>
     </textTemplates>
     <textTemplates>
-        <name>tplEmailFooterDisclaimer</name>
+        <name>tplCmpEmailFooterDisclaimer</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
         <text>&lt;p&gt;&lt;span style=&quot;color: rgb(85, 85, 85);&quot;&gt;Collective Chicago is a 501(c)(3) organization and gifts are tax-deductible as allowed by law. Our taxpayer identification number is {!get_Settings.employerIdentificationNumber__c}. No goods or services have been exchanged for these donations. Please retain this letter as a record of your contribution for tax purposes.&lt;/span&gt;&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
         <description>Thank you note</description>
-        <name>tplEmailSignature</name>
+        <name>tplCmpEmailSignature</name>
         <isViewedAsPlainText>false</isViewedAsPlainText>
         <text>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Thank you,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(85, 85, 85);&quot;&gt;The Collective Team&lt;/span&gt;&lt;/p&gt;</text>
     </textTemplates>
     <textTemplates>
-        <name>tplEmailSubject</name>
-        <isViewedAsPlainText>true</isViewedAsPlainText>
-        <text>{!$Organization.Name} - Giving Statement {!tplFiscalYear}</text>
-    </textTemplates>
-    <textTemplates>
-        <name>tplEmbeddedImage</name>
+        <name>tplCmpEmbeddedImage</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
         <text>&lt;br&gt;&lt;br&gt;
 &lt;div style=&quot;align:center;&quot;&gt;&lt;img src=&quot;{!get_Settings.imageBaseURL__c}{!get_Settings.imageAPIName__c}?oid={!get_Settings.imageOrgId__c}&quot; style=&quot;max-width:600px;max-height:600px;&quot;&gt;&lt;/div&gt;
 &lt;div style=&quot;align:center;&quot;&gt;&lt;img src=&quot;{!get_Settings.imageBaseURL__c}{!get_Settings.imageAPIName2__c}?oid={!get_Settings.imageOrgId__c}&quot; style=&quot;max-width:600px;max-height:600px;&quot;&gt;&lt;/div&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tplCmpIntroSalutation</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;{!get_DonorRecord.FirstName},&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Collects all other pieces for final output</description>
+        <name>tplEmailBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;{!$Flow.CurrentDate}&lt;/p&gt;
+{!tplCmpIntroSalutation}
+{!get_Settings.emailIntroText__c}
+{!tplCmpEmailBody_Greeting}
+{!tplCmpDonationTableHeader}
+{!tplEmailBody_DonationRows}
+{!tplCmpDonationTableFooter}
+{!tplCmpEmailFooterDisclaimer}
+{!tplCmpEmbeddedImage}
+{!get_Settings.emailBodyText__c}
+{!tplCmpEmailSignature}
+{!tplCmpEmailFooterContactInfo}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tplEmailSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!get_Settings.emailSubject__c}</text>
     </textTemplates>
     <textTemplates>
         <description>Emails will appear to come form this Name: &quot;Jane Doe&quot; &lt;jdoe@deer.com&gt;</description>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Promo 2025</label>
+    <protected>false</protected>
+    <values>
+        <field>attachmentFileId__c</field>
+        <value xsi:type="xsd:string">069E1000001F1cjIAC</value>
+    </values>
+    <values>
+        <field>emailBodyText__c</field>
+        <value xsi:type="xsd:string">Your generosity has helped us disrupt homelessness for 12 young men this year — half of whom were justice- involved, and 92% had never had more than $1,000 in savings. Because of supporters like you, we were home to more than 2,400 bed-nights, provided over 300 hours of life coaching or therapy, 130 hours of financial advising, and supported residents in saving over $35,000 collectively. We could not do this restorative work without you.</value>
+    </values>
+    <values>
+        <field>emailIntroText__c</field>
+        <value xsi:type="xsd:string">&lt;p&gt;Thank you for supporting Collective Chicago this year. &lt;b&gt;If you&apos;re considering another gift before year-end, there&apos;s still time to double your impact&lt;/b&gt; - we’re just under $15,000 away from meeting our matching grant and closing the gap created by this year’s funding cuts. With so many non-profits facing similar challenges, we’re deeply honored by anyone who goes above and beyond to help us finish the match.&lt;/p&gt;
+&lt;p&gt;Thank you for your continued support and consideration.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://collectivechicago.org&quot;&gt;Help Close the Gap — Give Here&lt;/a&gt;&lt;/p&gt;</value>
+    </values>
+    <values>
+        <field>emailSubject__c</field>
+        <value xsi:type="xsd:string">A Chance to Double Your Impact + Your 2025 Giving Statement</value>
+    </values>
+    <values>
+        <field>employerIdentificationNumber__c</field>
+        <value xsi:type="xsd:string">83-2674900</value>
+    </values>
+    <values>
+        <field>generalEmail__c</field>
+        <value xsi:type="xsd:string">info@collectivechicago.com</value>
+    </values>
+    <values>
+        <field>generalWebsite__c</field>
+        <value xsi:type="xsd:string">https://www.collectivechicago.org</value>
+    </values>
+    <values>
+        <field>imageAPIName2__c</field>
+        <value xsi:type="xsd:string">givingstatement_2024_table</value>
+    </values>
+    <values>
+        <field>imageAPIName__c</field>
+        <value xsi:type="xsd:string">GivingStatementPhoto2025Uptown</value>
+    </values>
+    <values>
+        <field>imageBaseURL__c</field>
+        <value xsi:type="xsd:string">https://collectivechicago.file.force.com/file-asset-public/</value>
+    </values>
+    <values>
+        <field>imageOrgId__c</field>
+        <value xsi:type="xsd:string">00D4x000006qacw</value>
+    </values>
+    <values>
+        <field>minimumDonationTotal__c</field>
+        <value xsi:type="xsd:double">50.0</value>
+    </values>
+</CustomMetadata>

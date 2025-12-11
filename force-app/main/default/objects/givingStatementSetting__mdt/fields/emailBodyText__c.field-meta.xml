@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>emailBodyText__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Shown after images, the donation list and tax information but before the sign-off.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Email Body</label>
+    <length>1000</length>
+    <securityClassification>Internal</securityClassification>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,78 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>60.0</apiVersion>
-    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <customErrors>
-        <name>errorContactId</name>
-        <label>Error: Contact Id</label>
-        <locationX>182</locationX>
+        <name>Error_Updating_Resident</name>
+        <label>Error Updating Resident</label>
+        <locationX>314</locationX>
         <locationY>647</locationY>
-        <connector>
-            <targetReference>checkErrorUpdatingContact</targetReference>
-        </connector>
         <customErrorMessages>
-            <errorMessage>Malformed Contact Id {!$Record.Resident__r.Id}</errorMessage>
+            <errorMessage>Unable to update Graduate&apos;s Health Benefits</errorMessage>
             <isFieldError>false</isFieldError>
         </customErrorMessages>
     </customErrors>
-    <customErrors>
-        <name>errorUpdateContact</name>
-        <label>Error: Updating Contact</label>
-        <locationX>50</locationX>
-        <locationY>863</locationY>
-        <customErrorMessages>
-            <errorMessage>Unable to Update Resident. Check all Required fields are populated.</errorMessage>
-            <isFieldError>false</isFieldError>
-        </customErrorMessages>
-    </customErrors>
-    <decisions>
-        <name>checkErrorContactId</name>
-        <label>Errors: Contact Id</label>
-        <locationX>380</locationX>
-        <locationY>539</locationY>
-        <defaultConnectorLabel>Okay</defaultConnectorLabel>
-        <rules>
-            <name>checkErrorContactId_error</name>
-            <conditionLogic>or</conditionLogic>
-            <conditions>
-                <leftValueReference>updateGraduateHealthBenefits.errorBadContactId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>errorContactId</targetReference>
-            </connector>
-            <label>Error</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>checkErrorUpdatingContact</name>
-        <label>Errors: Updating Contact</label>
-        <locationX>182</locationX>
-        <locationY>755</locationY>
-        <defaultConnectorLabel>Okay</defaultConnectorLabel>
-        <rules>
-            <name>checkErrorUpdatingContact_error</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>updateGraduateHealthBenefits.errorUpdatingContact</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <booleanValue>true</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>errorUpdateContact</targetReference>
-            </connector>
-            <label>Error</label>
-        </rules>
-    </decisions>
     <decisions>
         <name>checkResidentStatus</name>
         <label>Resident Status</label>
-        <locationX>611</locationX>
+        <locationX>314</locationX>
         <locationY>323</locationY>
         <defaultConnectorLabel>Other</defaultConnectorLabel>
         <rules>
@@ -86,7 +28,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>updateGraduateHealthBenefits</targetReference>
+                <targetReference>Scan_Work_Experience_for_Health_Benefits</targetReference>
             </connector>
             <label>Graduate</label>
         </rules>
@@ -115,8 +57,40 @@ Includes firing the Resident Health Benefits flow to facilitate SROI.</descripti
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Updating only if Health Benefits do not match</description>
+        <name>Update_Resident</name>
+        <label>Update Resident</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <faultConnector>
+            <targetReference>Error_Updating_Resident</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Stakeholder_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Graduated</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>graduateHealthBenefits__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>Scan_Work_Experience_for_Health_Benefits.hasHealthBenefits</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>graduateHealthBenefits__c</field>
+            <value>
+                <elementReference>Scan_Work_Experience_for_Health_Benefits.hasHealthBenefits</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Resident__r</inputReference>
+    </recordUpdates>
     <start>
-        <locationX>485</locationX>
+        <locationX>188</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>checkResidentStatus</targetReference>
@@ -136,14 +110,20 @@ Includes firing the Resident Health Benefits flow to facilitate SROI.</descripti
     </start>
     <status>Active</status>
     <subflows>
-        <name>updateGraduateHealthBenefits</name>
-        <label>Update Graduate&apos;s Health Benefits</label>
-        <locationX>380</locationX>
+        <name>Scan_Work_Experience_for_Health_Benefits</name>
+        <label>Scan Work Experience for Health Benefits</label>
+        <locationX>50</locationX>
         <locationY>431</locationY>
         <connector>
-            <targetReference>checkErrorContactId</targetReference>
+            <targetReference>Update_Resident</targetReference>
         </connector>
         <flowName>Work_Experience_Invoked_Update_Graduate_s_Health_Benefits</flowName>
+        <inputAssignments>
+            <name>inputGraduationDate</name>
+            <value>
+                <elementReference>$Record.Resident__r.residentGraduationDate__c</elementReference>
+            </value>
+        </inputAssignments>
         <inputAssignments>
             <name>inputResidentId</name>
             <value>

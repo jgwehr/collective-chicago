@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>60.0</apiVersion>
-    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <customErrors>
+        <name>Error_No_Credit_Score</name>
+        <label>Error: No Credit Score</label>
+        <locationX>473</locationX>
+        <locationY>863</locationY>
+        <customErrorMessages>
+            <errorMessage>No Coaching Meetings were available with a Credit Score</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
     <customErrors>
         <name>errorUpdateContact</name>
         <label>Error: Updating Contact</label>
-        <locationX>143</locationX>
-        <locationY>863</locationY>
+        <locationX>1001</locationX>
+        <locationY>971</locationY>
         <customErrorMessages>
             <errorMessage>Unable to Update Resident. Check all Required fields are populated.</errorMessage>
             <isFieldError>false</isFieldError>
         </customErrorMessages>
     </customErrors>
     <customErrors>
+        <description>All graduates should have a work experience</description>
         <name>errorWorkExperience</name>
         <label>Error: Work Experience</label>
-        <locationX>275</locationX>
+        <locationX>209</locationX>
         <locationY>647</locationY>
-        <connector>
-            <targetReference>checkErrorUpdateContact</targetReference>
-        </connector>
         <customErrorMessages>
             <errorMessage>No Work Experiences were found. Please create at least one to enable SROI calculation.</errorMessage>
             <isFieldError>false</isFieldError>
@@ -31,7 +38,7 @@
         <locationX>176</locationX>
         <locationY>323</locationY>
         <defaultConnector>
-            <targetReference>Scan_Work_Experiences_and_Update</targetReference>
+            <targetReference>Scan_Work_Experience_for_Health_Benefits</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Standard</defaultConnectorLabel>
         <rules>
@@ -48,38 +55,45 @@
         </rules>
     </decisions>
     <decisions>
-        <name>checkErrorUpdateContact</name>
-        <label>Error: Updating Contact</label>
-        <locationX>275</locationX>
+        <description>All Graduates should have at least one Coaching Meeting</description>
+        <name>Error_No_Coaching_Meetings</name>
+        <label>Error: No Coaching Meetings?</label>
+        <locationX>605</locationX>
         <locationY>755</locationY>
+        <defaultConnector>
+            <targetReference>Update_Resident</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Okay</defaultConnectorLabel>
         <rules>
-            <name>errorUpdateContact_error</name>
+            <name>Error_No_Coaching_Meetings_True</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Scan_Work_Experiences_and_Update.errorUpdatingContact</leftValueReference>
+                <leftValueReference>Get_most_Recent_Credit_Score.Error_No_Coaching_Meetings</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference>errorNoWorkExperiences_true</elementReference>
+                    <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>errorUpdateContact</targetReference>
+                <targetReference>Error_No_Credit_Score</targetReference>
             </connector>
-            <label>Error</label>
+            <label>True</label>
         </rules>
     </decisions>
     <decisions>
         <name>errorNoWorkExperiences</name>
         <label>Error: No Work Experiences?</label>
-        <locationX>473</locationX>
+        <locationX>407</locationX>
         <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>Get_most_Recent_Credit_Score</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Okay</defaultConnectorLabel>
         <rules>
             <name>errorNoWorkExperiences_true</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Scan_Work_Experiences_and_Update.errorNoWorkExperiences</leftValueReference>
+                <leftValueReference>Scan_Work_Experience_for_Health_Benefits.errorNoWorkExperiences</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -91,7 +105,7 @@
             <label>True</label>
         </rules>
     </decisions>
-    <description>Controls: Resident is changed to Graduated. Allows for non-Contact actions. Pulls Health Benefits from Work Experiences</description>
+    <description>Controls: Resident is changed to Graduated. Pulls Health Benefits from Work Experiences</description>
     <environments>Default</environments>
     <interviewLabel>Resident - After Update - Graduate {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Resident - After Update - Graduate</label>
@@ -114,6 +128,51 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Updating only if Health Benefits or Credit Score do not match</description>
+        <name>Update_Resident</name>
+        <label>Update Resident</label>
+        <locationX>737</locationX>
+        <locationY>863</locationY>
+        <faultConnector>
+            <targetReference>errorUpdateContact</targetReference>
+        </faultConnector>
+        <filterLogic>1 AND (2 OR 3)</filterLogic>
+        <filters>
+            <field>Stakeholder_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Graduated</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>graduateHealthBenefits__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>Scan_Work_Experience_for_Health_Benefits.hasHealthBenefits</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>graduateCreditScore__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>Get_most_Recent_Credit_Score.Credit_Score</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>graduateCreditScore__c</field>
+            <value>
+                <elementReference>Get_most_Recent_Credit_Score.Credit_Score</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>graduateHealthBenefits__c</field>
+            <value>
+                <elementReference>Scan_Work_Experience_for_Health_Benefits.hasHealthBenefits</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
@@ -155,18 +214,48 @@
     </start>
     <status>Active</status>
     <subflows>
-        <name>Scan_Work_Experiences_and_Update</name>
-        <label>Scan Work Experiences and Update</label>
-        <locationX>473</locationX>
+        <description>Fetches the most recent Credit Score from Coaching Meetings</description>
+        <name>Get_most_Recent_Credit_Score</name>
+        <label>Get most Recent Credit Score</label>
+        <locationX>605</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Error_No_Coaching_Meetings</targetReference>
+        </connector>
+        <flowName>Coaching_Meeting_Invoked_Search_Graduate_s_Coaching_Meetings</flowName>
+        <inputAssignments>
+            <name>Graduate</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>Graduation_Date</name>
+            <value>
+                <elementReference>$Record.residentGraduationDate__c</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Scan_Work_Experience_for_Health_Benefits</name>
+        <label>Scan Work Experience for Health Benefits</label>
+        <locationX>407</locationX>
         <locationY>431</locationY>
         <connector>
             <targetReference>errorNoWorkExperiences</targetReference>
         </connector>
         <flowName>Work_Experience_Invoked_Update_Graduate_s_Health_Benefits</flowName>
         <inputAssignments>
-            <name>inputResidentRecord</name>
+            <name>inputGraduationDate</name>
             <value>
-                <elementReference>$Record</elementReference>
+                <elementReference>$Record.residentGraduationDate__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>inputResidentId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
             </value>
         </inputAssignments>
         <storeOutputAutomatically>true</storeOutputAutomatically>

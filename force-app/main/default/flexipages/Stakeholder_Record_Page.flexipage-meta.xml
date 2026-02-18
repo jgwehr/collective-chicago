@@ -1796,10 +1796,14 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
-            <componentInstance>
-                <componentName>flexipage:blankSpace</componentName>
-                <identifier>flexipage_blankSpace</identifier>
-            </componentInstance>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.budgetCreditScore__c</fieldItem>
+                <identifier>RecordbudgetCreditScore_cField</identifier>
+            </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
@@ -2907,6 +2911,16 @@
                 <identifier>RecordgraduateFirstRearrestDate_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.graduateCreditScore__c</fieldItem>
+                <identifier>RecordgraduateCreditScore_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-e49bd96d-a305-4374-aaf3-9f08d299d970</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -2943,7 +2957,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>horizontalAlignment</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>

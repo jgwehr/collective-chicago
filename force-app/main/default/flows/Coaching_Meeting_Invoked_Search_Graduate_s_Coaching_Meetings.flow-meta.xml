@@ -130,6 +130,13 @@
                 <elementReference>Graduation_Date</elementReference>
             </value>
         </filters>
+        <filters>
+            <field>resident__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Graduate</elementReference>
+            </value>
+        </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>Check_Up__c</object>
         <sortField>checkUpDate__c</sortField>

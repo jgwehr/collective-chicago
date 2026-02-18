@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>60.0</apiVersion>
-    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
-        <name>Increment_Count</name>
-        <label>Increment Count</label>
-        <locationX>534</locationX>
-        <locationY>1190</locationY>
+        <name>Set_Found_Work_Experiences</name>
+        <label>Set Found Work Experiences</label>
+        <locationX>270</locationX>
+        <locationY>758</locationY>
         <assignmentItems>
-            <assignToReference>countWorkExperiences</assignToReference>
-            <operator>Add</operator>
+            <assignToReference>errorNoWorkExperiences</assignToReference>
+            <operator>Assign</operator>
             <value>
-                <numberValue>1.0</numberValue>
+                <booleanValue>false</booleanValue>
             </value>
         </assignmentItems>
         <connector>
@@ -19,83 +18,28 @@
         </connector>
     </assignments>
     <assignments>
-        <name>setErrorBadContactId</name>
-        <label>Error: Bad Contact Id</label>
-        <locationX>402</locationX>
-        <locationY>350</locationY>
-        <assignmentItems>
-            <assignToReference>errorBadContactId</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-    </assignments>
-    <assignments>
-        <name>setErrorNoWorkExperiences</name>
-        <label>Error: No Work Experiences</label>
-        <locationX>578</locationX>
-        <locationY>1490</locationY>
-        <assignmentItems>
-            <assignToReference>errorNoWorkExperiences</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-    </assignments>
-    <assignments>
-        <name>setErrorUpdatingContact</name>
-        <label>Error: Updating Contact</label>
-        <locationX>314</locationX>
-        <locationY>1598</locationY>
-        <assignmentItems>
-            <assignToReference>errorUpdatingContact</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </assignmentItems>
-    </assignments>
-    <assignments>
         <name>setHealthBenefits</name>
         <label>Set Health Benefits</label>
-        <locationX>402</locationX>
-        <locationY>998</locationY>
+        <locationX>138</locationX>
+        <locationY>566</locationY>
         <assignmentItems>
-            <assignToReference>tempHealthBenefits</assignToReference>
+            <assignToReference>hasHealthBenefits</assignToReference>
             <operator>Assign</operator>
             <value>
                 <booleanValue>true</booleanValue>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Increment_Count</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>setInputResidentRecord</name>
-        <label>Set the Contact to Common Variable</label>
-        <locationX>138</locationX>
-        <locationY>350</locationY>
-        <assignmentItems>
-            <assignToReference>inputResidentRecord</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>getContactById</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>getWorkExperiences</targetReference>
+            <targetReference>Set_Found_Work_Experiences</targetReference>
         </connector>
     </assignments>
     <decisions>
         <name>checkHealthBenefits</name>
         <label>Health Benefits?</label>
-        <locationX>534</locationX>
-        <locationY>890</locationY>
+        <locationX>270</locationX>
+        <locationY>458</locationY>
         <defaultConnector>
-            <targetReference>Increment_Count</targetReference>
+            <targetReference>Set_Found_Work_Experiences</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -117,24 +61,9 @@
     <decisions>
         <name>checkInputValid</name>
         <label>Was Input Provided?</label>
-        <locationX>314</locationX>
+        <locationX>182</locationX>
         <locationY>134</locationY>
         <defaultConnectorLabel>No</defaultConnectorLabel>
-        <rules>
-            <name>checkInputValid_record</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>inputResidentRecord</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>getWorkExperiences</targetReference>
-            </connector>
-            <label>Record</label>
-        </rules>
         <rules>
             <name>checkInputValid_id</name>
             <conditionLogic>and</conditionLogic>
@@ -152,54 +81,33 @@
                     <stringValue>003</stringValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>inputGraduationDate</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
             <connector>
-                <targetReference>getContactById</targetReference>
+                <targetReference>getWorkExperiences</targetReference>
             </connector>
             <label>Id</label>
         </rules>
     </decisions>
-    <decisions>
-        <name>foundWorkExperiences</name>
-        <label>More than 0 Work Experiences?</label>
-        <locationX>314</locationX>
-        <locationY>1382</locationY>
-        <defaultConnector>
-            <targetReference>setErrorNoWorkExperiences</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>No</defaultConnectorLabel>
-        <rules>
-            <name>foundWorkExperiences_yes</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>countWorkExperiences</leftValueReference>
-                <operator>GreaterThan</operator>
-                <rightValue>
-                    <numberValue>0.0</numberValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>updateGraduate</targetReference>
-            </connector>
-            <label>Yes</label>
-        </rules>
-    </decisions>
-    <description>Given a Contact Record or Contact Id, determine if the Resident had Health Benefits at the time of Graduation. Accommodates a change to the Stakeholder Status or a Work Experience event.</description>
+    <description>Given a Contact Id, determine if the Resident had Health Benefits at the time of Graduation. Accommodates a change to the Resident Status or a Work Experience event.</description>
     <environments>Default</environments>
     <interviewLabel>Work Experience - Invoked - Update Graduate&apos;s Health Benefits {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Work Experience - Invoked - Update Graduate&apos;s Health Benefits</label>
+    <label>Work Experience - Invoked - Search Graduate&apos;s Work Experiences</label>
     <loops>
         <name>loopWorkExperiences</name>
         <label>Loop Work Experiences</label>
-        <locationX>314</locationX>
-        <locationY>782</locationY>
+        <locationX>50</locationX>
+        <locationY>350</locationY>
         <collectionReference>getWorkExperiences</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
             <targetReference>checkHealthBenefits</targetReference>
         </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>foundWorkExperiences</targetReference>
-        </noMoreValuesConnector>
     </loops>
     <processMetadataValues>
         <name>BuilderType</name>
@@ -221,54 +129,11 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordLookups>
-        <name>getContactById</name>
-        <label>Get Contact from Id</label>
-        <locationX>138</locationX>
-        <locationY>242</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>setInputResidentRecord</targetReference>
-        </connector>
-        <faultConnector>
-            <targetReference>setErrorBadContactId</targetReference>
-        </faultConnector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>inputResidentId</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Stakeholder_Status__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Graduated</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>residentGraduationDate__c</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>Contact</object>
-        <queriedFields>Id</queriedFields>
-        <queriedFields>OwnerId</queriedFields>
-        <queriedFields>graduateHealthBenefits__c</queriedFields>
-        <queriedFields>residentGraduationDate__c</queriedFields>
-        <sortField>residentGraduationDate__c</sortField>
-        <sortOrder>Desc</sortOrder>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
+        <description>Started before graduation. And, has not ended - or ended after graduation</description>
         <name>getWorkExperiences</name>
-        <label>Get Work Experiences</label>
-        <locationX>314</locationX>
-        <locationY>674</locationY>
+        <label>Get Work Experiences near Graduation</label>
+        <locationX>50</locationX>
+        <locationY>242</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>loopWorkExperiences</targetReference>
@@ -278,14 +143,14 @@
             <field>Resident__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>inputResidentRecord.Id</elementReference>
+                <elementReference>inputResidentId</elementReference>
             </value>
         </filters>
         <filters>
             <field>Start_Date__c</field>
             <operator>LessThanOrEqualTo</operator>
             <value>
-                <elementReference>inputResidentRecord.residentGraduationDate__c</elementReference>
+                <elementReference>inputGraduationDate</elementReference>
             </value>
         </filters>
         <filters>
@@ -299,7 +164,7 @@
             <field>End_Date__c</field>
             <operator>GreaterThanOrEqualTo</operator>
             <value>
-                <elementReference>inputResidentRecord.residentGraduationDate__c</elementReference>
+                <elementReference>inputGraduationDate</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
@@ -310,54 +175,14 @@
         <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
-    <recordUpdates>
-        <description>Conditions allow us to only issue an update if something has changed</description>
-        <name>updateGraduate</name>
-        <label>Update Graduate</label>
-        <locationX>50</locationX>
-        <locationY>1490</locationY>
-        <faultConnector>
-            <targetReference>setErrorUpdatingContact</targetReference>
-        </faultConnector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>inputResidentRecord.Id</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>graduateHealthBenefits__c</field>
-            <operator>NotEqualTo</operator>
-            <value>
-                <elementReference>tempHealthBenefits</elementReference>
-            </value>
-        </filters>
-        <inputAssignments>
-            <field>graduateHealthBenefits__c</field>
-            <value>
-                <elementReference>tempHealthBenefits</elementReference>
-            </value>
-        </inputAssignments>
-        <object>Contact</object>
-    </recordUpdates>
     <start>
-        <locationX>188</locationX>
+        <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>checkInputValid</targetReference>
         </connector>
     </start>
     <status>Active</status>
-    <variables>
-        <name>arrayWorkExperience</name>
-        <dataType>SObject</dataType>
-        <isCollection>true</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <objectType>Work_Experience__c</objectType>
-    </variables>
     <variables>
         <name>countWorkExperiences</name>
         <dataType>Number</dataType>
@@ -370,29 +195,17 @@
         </value>
     </variables>
     <variables>
-        <description>Set if the input parameter for ID is not a Contact</description>
-        <name>errorBadContactId</name>
-        <dataType>Boolean</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>true</isOutput>
-        <value>
-            <booleanValue>false</booleanValue>
-        </value>
-    </variables>
-    <variables>
         <name>errorNoWorkExperiences</name>
         <dataType>Boolean</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>true</isOutput>
         <value>
-            <booleanValue>false</booleanValue>
+            <booleanValue>true</booleanValue>
         </value>
     </variables>
     <variables>
-        <description>eg. Running User does not have access to modify the Contact or a Validation Rule prevents saving (the Contact has existing data quality issues)</description>
-        <name>errorUpdatingContact</name>
+        <name>hasHealthBenefits</name>
         <dataType>Boolean</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
@@ -400,6 +213,13 @@
         <value>
             <booleanValue>false</booleanValue>
         </value>
+    </variables>
+    <variables>
+        <name>inputGraduationDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
     </variables>
     <variables>
         <description>Contact record id with Stakeholder Status of Graduate</description>
@@ -408,23 +228,5 @@
         <isCollection>false</isCollection>
         <isInput>true</isInput>
         <isOutput>false</isOutput>
-    </variables>
-    <variables>
-        <name>inputResidentRecord</name>
-        <dataType>SObject</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>true</isOutput>
-        <objectType>Contact</objectType>
-    </variables>
-    <variables>
-        <name>tempHealthBenefits</name>
-        <dataType>Boolean</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>true</isOutput>
-        <value>
-            <booleanValue>false</booleanValue>
-        </value>
     </variables>
 </Flow>

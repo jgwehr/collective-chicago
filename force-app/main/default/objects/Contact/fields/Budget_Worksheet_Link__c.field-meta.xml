@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Worksheet_Link__c</fullName>
+    <description>The Job Readiness Team collaborates with the Applicant during the interview process to develop a workable budget. This is a living document. It accounts for the Applicant&apos;s current (and possible) income, debts, and expenses.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Google Sheets</inlineHelpText>
+    <label>Budget Worksheet Link</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

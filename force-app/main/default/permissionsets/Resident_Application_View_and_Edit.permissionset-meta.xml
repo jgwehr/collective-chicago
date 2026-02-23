@@ -18,6 +18,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.Budget_Worksheet_Link__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.DoNotCall</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -69,6 +74,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Pronouns</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Resume_Link__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

@@ -9,6 +9,16 @@
         <visible>true</visible>
     </applicationVisibilities>
     <description>Reports, List Views etc</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.Budget_Worksheet_Link__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.Resume_Link__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Admin - User Experience Helper</label>
     <objectPermissions>

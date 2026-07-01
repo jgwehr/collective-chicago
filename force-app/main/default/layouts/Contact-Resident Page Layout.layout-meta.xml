@@ -356,10 +356,6 @@
                 <behavior>Edit</behavior>
                 <field>resumeLevelOfNeed__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>resumeHomeworkFollowUp__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>

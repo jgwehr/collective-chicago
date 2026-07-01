@@ -8,15 +8,15 @@
 + resumeInitialQuality__c 
 + resumeProgressMade__c 
 +  resumeOnlineMarketability__c 
-+ resumeHomeworkFollowUp__c 
 +  resumeLevelOfNeed__c 
-) / 6</formula>
+) / 5</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Average of Resume Ratings</inlineHelpText>
     <label>Resume Score</label>
     <precision>18</precision>
     <required>false</required>
     <scale>1</scale>
+    <securityClassification>Internal</securityClassification>
     <trackHistory>false</trackHistory>
     <type>Number</type>
     <unique>false</unique>

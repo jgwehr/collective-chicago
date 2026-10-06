@@ -31,17 +31,47 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
+        <label>Inflation</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>fedAverageInflationRate__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns/>
+        <style>TwoColumnsLeftToRight</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
         <label>Needs Based</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>medicaidEmployerSponsored__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>medicaidNotSponsored__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>fedSNAPBenefits__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>medicaidNotSponsored__c</field>
+                <field>medicaidEmployerSponsoredDate__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>medicaidNotSponsoredDate__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>fedSNAPBenefitsDate__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -138,6 +168,10 @@
                 <behavior>Required</behavior>
                 <field>substanceTreatmentCost__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>substanceTreatmentDate__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -160,6 +194,10 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>recidivismCost__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>recidivismCostDate__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

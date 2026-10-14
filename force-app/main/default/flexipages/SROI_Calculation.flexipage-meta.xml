@@ -20,6 +20,10 @@
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
+                    <name>hideSlackAction</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>numVisibleActions</name>
                     <value>3</value>
                 </componentInstanceProperties>
@@ -179,6 +183,16 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.residentMoveInDate__c</fieldItem>
+                <identifier>RecordresidentMoveInDate_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -401,6 +415,12 @@
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.graduate__r.residentMoveInDate__c</fieldItem>
+                <identifier>Recordgraduate_rresidentMoveInDate_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.graduate__r.intakeDrugAlcoholAbuse__c</fieldItem>
@@ -727,8 +747,8 @@
                     <name>uiBehavior</name>
                     <value>readonly</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.sroiRecidivism__c</fieldItem>
-                <identifier>RecordsroiRecidivism_cField</identifier>
+                <fieldItem>Record.sroiSubstanceAbuse__c</fieldItem>
+                <identifier>RecordsroiSubstanceAbuse_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-9ec57c41-3997-4338-9794-b18ced3a0f1e</name>
@@ -741,8 +761,8 @@
                     <name>uiBehavior</name>
                     <value>readonly</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.sroiSubstanceAbuse__c</fieldItem>
-                <identifier>RecordsroiSubstanceAbuse_cField</identifier>
+                <fieldItem>Record.sroiRecidivism__c</fieldItem>
+                <identifier>RecordsroiRecidivism_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-a9025ec3-d03c-4544-9c6b-3ffd3ff35550</name>

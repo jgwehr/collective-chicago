@@ -147,7 +147,7 @@
             <targetReference>checkPermissions</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <transforms>
         <name>prepareSROICalculation</name>
         <label>Prepare SROI Calculation</label>

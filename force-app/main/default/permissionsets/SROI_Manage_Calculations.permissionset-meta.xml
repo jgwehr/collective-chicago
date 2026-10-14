@@ -15,7 +15,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>SROI_Calculation__c.applicationCriminalRecord__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -25,17 +25,17 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>SROI_Calculation__c.graduateFirstRearrestDate__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>SROI_Calculation__c.healthBenefits__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>SROI_Calculation__c.intakeDrugAlcoholAbuse__c</field>
         <readable>true</readable>
     </fieldPermissions>

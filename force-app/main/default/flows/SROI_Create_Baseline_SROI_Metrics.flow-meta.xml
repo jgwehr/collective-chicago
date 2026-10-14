@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>60.0</apiVersion>
-    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
         <name>addPreparedSROI</name>
         <label>Add Prepared SROI</label>
@@ -135,6 +134,7 @@
         <queriedFields>budgetUnemploymentAmount__c</queriedFields>
         <queriedFields>OwnerId</queriedFields>
         <queriedFields>graduateHealthBenefits__c</queriedFields>
+        <queriedFields>residentMoveInDate__c</queriedFields>
         <sortField>residentGraduationDate__c</sortField>
         <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -147,7 +147,7 @@
             <targetReference>checkPermissions</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <transforms>
         <name>prepareSROICalculation</name>
         <label>Prepare SROI Calculation</label>
@@ -160,7 +160,6 @@
         <isCollection>false</isCollection>
         <objectType>SROI_Calculation__c</objectType>
         <scale>0</scale>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
         <transformValues>
             <transformValueActions>
                 <outputFieldApiName>applicationCriminalRecord__c</outputFieldApiName>
@@ -234,6 +233,13 @@
                 <transformType>Map</transformType>
                 <value>
                     <elementReference>loopGraduates.residentGraduationDate__c</elementReference>
+                </value>
+            </transformValueActions>
+            <transformValueActions>
+                <outputFieldApiName>residentMoveInDate__c</outputFieldApiName>
+                <transformType>Map</transformType>
+                <value>
+                    <elementReference>loopGraduates.residentMoveInDate__c</elementReference>
                 </value>
             </transformValueActions>
         </transformValues>

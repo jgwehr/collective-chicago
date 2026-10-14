@@ -201,6 +201,8 @@ global class test_SROI_CreateBaseline_DataSilo {
     }
 
     static void assignGenerateSroi(Id userId) {
+        //Do not put PermissionSetAssignment in @TestSetup if you can avoid it: Flow Builder may treat that object as part of the silo. Prefer the first pattern (PSA only in the Apex test method). For Flow Test Mode, grant SROI_Manage_Calculations to the user who clicks Run so the silo never has to assign it.
+        
         PermissionSet ps = [
             SELECT Id
             FROM PermissionSet

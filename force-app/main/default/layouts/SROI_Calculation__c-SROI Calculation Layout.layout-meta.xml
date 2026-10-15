@@ -17,6 +17,10 @@
                 <behavior>Required</behavior>
                 <field>graduate__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>residentMoveInDate__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

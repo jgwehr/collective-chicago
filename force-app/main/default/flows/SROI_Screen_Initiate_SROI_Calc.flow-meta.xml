@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>60.0</apiVersion>
-    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <decisions>
         <name>checkConfirmation</name>
         <label>User Confirmed Settings</label>
@@ -107,9 +106,10 @@
     </decisions>
     <environments>Default</environments>
     <formulas>
+        <description>Helps ensure settings are recent enough to be meaningful. Can be adjusted to allow for a larger window if the settings change infrequently. If Settings are older than this value, they will not be made available.</description>
         <name>helpRecentSettings</name>
         <dataType>Date</dataType>
-        <expression>{!$Flow.CurrentDate} - 30</expression>
+        <expression>{!$Flow.CurrentDate} - 90</expression>
     </formulas>
     <interviewLabel>SROI - Screen - Initiate SROI Calc {!$Flow.CurrentDateTime}</interviewLabel>
     <label>SROI - Screen - Initiate SROI Calc</label>
@@ -213,14 +213,6 @@
             <name>screenIntro_info</name>
             <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Ready to recalculate &lt;/span&gt;&lt;strong style=&quot;font-size: 16px; color: rgb(0, 0, 0);&quot;&gt;Social Return on Investment&lt;/strong&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;? Click &quot;Generate SROI&quot; to continue.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <nextOrFinishButtonLabel>Generate SROI</nextOrFinishButtonLabel>
         <showFooter>true</showFooter>
@@ -239,14 +231,6 @@
             <name>errorGettingNewRecords</name>
             <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px; color: rgb(189, 0, 0);&quot;&gt;No Calculations have been saved.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;An error occurred creating or retrieving new SROI Calculations.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;This is mostly like a Permission issue. If you are supposed to have access, please contact Collective leadership.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;Error Details:&lt;/u&gt;&lt;/p&gt;&lt;p&gt;{!$Flow.FaultMessage}&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>false</showHeader>
@@ -306,14 +290,6 @@
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>false</showHeader>
@@ -330,14 +306,6 @@
             <name>screenNoSettings_error</name>
             <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px; color: rgb(255, 115, 0);&quot;&gt;No SROI Settings Found&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;SROI Settings older than 30 days are not used. Please Create/Clone a new version of the Settings.&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
@@ -353,14 +321,6 @@
             <name>screenNoSettings_inaccurate</name>
             <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(255, 115, 0); font-size: 16px;&quot;&gt;Inaccurate SROI Settings&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Inaccurate Settings should not be used. Please Create/Clone a new version of the Settings.&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
@@ -376,14 +336,6 @@
             <name>screenNoSettings_instructions</name>
             <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(115, 88, 24);&quot;&gt;Prerequisites:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;You must have the &quot;SROI - Manage Calculations&quot; &lt;u&gt;Permission Set&lt;/u&gt; (granted via &lt;u&gt;Permission Set Group&lt;/u&gt;).&lt;/p&gt;&lt;p&gt;&lt;strong&gt;If you do not have this Permission Set&lt;/strong&gt;, please request a Collective Leader to Generate SROI Calculations &lt;strong&gt;&lt;em&gt;instead&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(115, 88, 24);&quot;&gt;Instructions:&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Navigate to &lt;strong style=&quot;font-family: serif;&quot;&gt;Setup&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;Navigate to &lt;strong style=&quot;font-family: serif;&quot;&gt;Custom Metadata Types&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;Click &quot;&lt;u&gt;Manage Records&lt;/u&gt;&quot; next to &quot;&lt;em&gt;SROI Settings&lt;/em&gt;&quot;&lt;/li&gt;&lt;li&gt;Click &lt;strong style=&quot;font-family: serif;&quot;&gt;New&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;OR&lt;/strong&gt; Click a relevant existing record&lt;ol&gt;&lt;li&gt;Click &lt;strong style=&quot;font-family: serif;&quot;&gt;Clone&lt;/strong&gt; to get a headstart&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;Once Saved, return to this screen&lt;/li&gt;&lt;/ol&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>false</showHeader>
@@ -403,73 +355,267 @@
             <name>screenPreview_basics</name>
             <fieldText>&lt;p&gt;&lt;strong&gt;Settings Name:&lt;/strong&gt; {!getSROISettings.Label}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Settings Modified:&lt;/strong&gt; {!getSROISettings.SystemModstamp}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <fields>
-            <name>screenPreview_preview</name>
-            <fieldText>Configuration Preview</fieldText>
+            <name>screenPreview_Section1</name>
             <fieldType>RegionContainer</fieldType>
             <fields>
-                <name>screenPreview_preview_Column1</name>
+                <name>screenPreview_Section1_Column1</name>
                 <fieldType>Region</fieldType>
                 <fields>
-                    <name>screenPreview_preview_medicaidYes</name>
-                    <fieldText>&lt;p&gt;&lt;strong&gt;Medicaid - Employer Sponsored&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;${!getSROISettings.medicaidEmployerSponsored__c}&lt;/p&gt;</fieldText>
-                    <fieldType>DisplayText</fieldType>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
+                    <name>Substance_Treatment_Cost</name>
+                    <dataType>Currency</dataType>
+                    <defaultValue>
+                        <elementReference>getSROISettings.substanceTreatmentCost__c</elementReference>
+                    </defaultValue>
+                    <fieldText>Substance Treatment Cost</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>true</booleanValue>
+                    </isDisabled>
+                    <isReadOnly>
+                        <booleanValue>true</booleanValue>
+                    </isReadOnly>
+                    <isRequired>false</isRequired>
+                    <scale>0</scale>
                 </fields>
                 <fields>
-                    <name>screenPreview_preview_treatment</name>
-                    <fieldText>&lt;p&gt;&lt;strong&gt;Substance Treatment Cost&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;${!getSROISettings.substanceTreatmentCost__c}&lt;/p&gt;</fieldText>
-                    <fieldType>DisplayText</fieldType>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
+                    <name>Recidivism_Cost</name>
+                    <dataType>Currency</dataType>
+                    <defaultValue>
+                        <elementReference>getSROISettings.recidivismCost__c</elementReference>
+                    </defaultValue>
+                    <fieldText>Recidivism Cost</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>true</booleanValue>
+                    </isDisabled>
+                    <isReadOnly>
+                        <booleanValue>true</booleanValue>
+                    </isReadOnly>
+                    <isRequired>false</isRequired>
+                    <scale>2</scale>
                 </fields>
                 <fields>
-                    <name>screenPreview_preview_recidivism</name>
-                    <fieldText>&lt;p&gt;&lt;strong&gt;Recidivism Cost&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;${!getSROISettings.recidivismCost__c}&lt;/p&gt;</fieldText>
-                    <fieldType>DisplayText</fieldType>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
+                    <name>SNAP_Benefit_Amount</name>
+                    <dataType>Currency</dataType>
+                    <defaultValue>
+                        <elementReference>getSROISettings.fedSNAPBenefits__c</elementReference>
+                    </defaultValue>
+                    <fieldText>SNAP Benefit Amount</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>true</booleanValue>
+                    </isDisabled>
+                    <isReadOnly>
+                        <booleanValue>true</booleanValue>
+                    </isReadOnly>
+                    <isRequired>false</isRequired>
+                    <scale>2</scale>
                 </fields>
+                <fields>
+                    <name>Medicaid_Employer_Sponsored</name>
+                    <dataType>Currency</dataType>
+                    <defaultValue>
+                        <elementReference>getSROISettings.medicaidEmployerSponsored__c</elementReference>
+                    </defaultValue>
+                    <fieldText>Medicaid - Employer Sponsored</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>true</booleanValue>
+                    </isDisabled>
+                    <isReadOnly>
+                        <booleanValue>true</booleanValue>
+                    </isReadOnly>
+                    <isRequired>false</isRequired>
+                    <scale>2</scale>
+                </fields>
+                <fields>
+                    <name>Medicaid_Not_Sponsored</name>
+                    <dataType>Currency</dataType>
+                    <defaultValue>
+                        <elementReference>getSROISettings.medicaidNotSponsored__c</elementReference>
+                    </defaultValue>
+                    <fieldText>Medicaid - Not Sponsored</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>true</booleanValue>
+                    </isDisabled>
+                    <isReadOnly>
+                        <booleanValue>true</booleanValue>
+                    </isReadOnly>
+                    <isRequired>false</isRequired>
+                    <scale>2</scale>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>4</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>screenPreview_Section1_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Substance_Treatment_Date</name>
+                    <dataType>Date</dataType>
+                    <defaultValue>
+                        <elementReference>getSROISettings.substanceTreatmentDate__c</elementReference>
+                    </defaultValue>
+                    <fieldText>Substance Treatment Date</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>true</booleanValue>
+                    </isDisabled>
+                    <isReadOnly>
+                        <booleanValue>true</booleanValue>
+                    </isReadOnly>
+                    <isRequired>false</isRequired>
+                </fields>
+                <fields>
+                    <name>Recidivism_Cost_Date</name>
+                    <dataType>Date</dataType>
+                    <defaultValue>
+                        <elementReference>getSROISettings.recidivismCostDate__c</elementReference>
+                    </defaultValue>
+                    <fieldText>Recidivism Cost Date</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>true</booleanValue>
+                    </isDisabled>
+                    <isReadOnly>
+                        <booleanValue>true</booleanValue>
+                    </isReadOnly>
+                    <isRequired>false</isRequired>
+                </fields>
+                <fields>
+                    <name>Medicaid_Employer_Sponsored_Date</name>
+                    <dataType>Date</dataType>
+                    <defaultValue>
+                        <elementReference>getSROISettings.medicaidEmployerSponsoredDate__c</elementReference>
+                    </defaultValue>
+                    <fieldText>Medicaid - Employer Sponsored Date</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>true</booleanValue>
+                    </isDisabled>
+                    <isReadOnly>
+                        <booleanValue>true</booleanValue>
+                    </isReadOnly>
+                    <isRequired>false</isRequired>
+                </fields>
+                <fields>
+                    <name>Medicaid_Not_Sponsored_Date</name>
+                    <dataType>Date</dataType>
+                    <defaultValue>
+                        <elementReference>getSROISettings.medicaidNotSponsoredDate__c</elementReference>
+                    </defaultValue>
+                    <fieldText>Medicaid - Not Sponsored Date</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>true</booleanValue>
+                    </isDisabled>
+                    <isReadOnly>
+                        <booleanValue>true</booleanValue>
+                    </isReadOnly>
+                    <isRequired>false</isRequired>
+                </fields>
+                <fields>
+                    <name>SNAP_Benefits_Date</name>
+                    <dataType>Date</dataType>
+                    <defaultValue>
+                        <elementReference>getSROISettings.fedSNAPBenefitsDate__c</elementReference>
+                    </defaultValue>
+                    <fieldText>SNAP Benefits Date</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>true</booleanValue>
+                    </isDisabled>
+                    <isReadOnly>
+                        <booleanValue>true</booleanValue>
+                    </isReadOnly>
+                    <isRequired>false</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>4</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>screenPreview_Section1_Column3</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Substance_Treatment_Relapse_Rate</name>
+                    <dataType>Number</dataType>
+                    <defaultValue>
+                        <elementReference>getSROISettings.substanceTreatmentRelapseRate__c</elementReference>
+                    </defaultValue>
+                    <fieldText>Substance Treatment Relapse Rate</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>true</booleanValue>
+                    </isDisabled>
+                    <isReadOnly>
+                        <booleanValue>true</booleanValue>
+                    </isReadOnly>
+                    <isRequired>false</isRequired>
+                    <scale>2</scale>
+                </fields>
+                <fields>
+                    <name>Recidivism_Rate_Year_1</name>
+                    <dataType>Number</dataType>
+                    <defaultValue>
+                        <elementReference>getSROISettings.recidivismRateYr1__c</elementReference>
+                    </defaultValue>
+                    <fieldText>Recidivism Rate - Year 1</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>true</booleanValue>
+                    </isDisabled>
+                    <isReadOnly>
+                        <booleanValue>true</booleanValue>
+                    </isReadOnly>
+                    <isRequired>false</isRequired>
+                    <scale>2</scale>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>4</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>screenPreview_Section2</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>screenPreview_Section2_Column1</name>
+                <fieldType>Region</fieldType>
                 <fields>
                     <name>screenPreview_preview_fedTax1</name>
                     <fieldText>&lt;p&gt;&lt;strong&gt;Federal Tax Bracket 1&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;${!getSROISettings.fedTaxBracket_1_amount__c} at {!getSROISettings.fedTaxBracket_1_percent__c}%&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -480,59 +626,12 @@
                 <isRequired>false</isRequired>
             </fields>
             <fields>
-                <name>screenPreview_preview_Column2</name>
+                <name>screenPreview_Section2_Column2</name>
                 <fieldType>Region</fieldType>
-                <fields>
-                    <name>screenPreview_preview_medicaidNo</name>
-                    <fieldText>&lt;p&gt;&lt;strong&gt;Medicaid - Not Sponsored&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;${!getSROISettings.medicaidNotSponsored__c}&lt;/p&gt;</fieldText>
-                    <fieldType>DisplayText</fieldType>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
-                </fields>
-                <fields>
-                    <name>screenPreview_preview_treatmentRate</name>
-                    <fieldText>&lt;p&gt;&lt;strong&gt;Substance Treatment Relapse Rate&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;{!getSROISettings.substanceTreatmentRelapseRate__c}%&lt;/p&gt;</fieldText>
-                    <fieldType>DisplayText</fieldType>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
-                </fields>
-                <fields>
-                    <name>screenPreview_preview_recidivismYear1</name>
-                    <fieldText>&lt;p&gt;&lt;strong&gt;Recidivism Rate - Year 1&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;{!getSROISettings.recidivismRateYr1__c}%&lt;/p&gt;</fieldText>
-                    <fieldType>DisplayText</fieldType>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
-                </fields>
                 <fields>
                     <name>screenPreview_preview_fedTax2</name>
                     <fieldText>&lt;p&gt;&lt;strong&gt;Federal Tax Bracket 2&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;${!getSROISettings.fedTaxBracket_2_amount__c} at {!getSROISettings.fedTaxBracket_2_percent__c}%&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
-                    <styleProperties>
-                        <verticalAlignment>
-                            <stringValue>top</stringValue>
-                        </verticalAlignment>
-                        <width>
-                            <stringValue>12</stringValue>
-                        </width>
-                    </styleProperties>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -543,28 +642,12 @@
                 <isRequired>false</isRequired>
             </fields>
             <isRequired>false</isRequired>
-            <regionContainerType>SectionWithHeader</regionContainerType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
         </fields>
         <fields>
             <name>screenPreview_disclaimer</name>
             <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(115, 88, 24);&quot;&gt;Warning! &lt;/strong&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Continuing with incorrect Settings will impact the Collective&apos;s reporting. Mark the toggle below accurately.&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <fields>
             <name>screenPreview_confirm</name>
@@ -591,14 +674,6 @@
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
         </fields>
         <nextOrFinishButtonLabel>Generate Calculations</nextOrFinishButtonLabel>
         <showFooter>true</showFooter>

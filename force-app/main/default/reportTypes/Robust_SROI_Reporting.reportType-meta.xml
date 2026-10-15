@@ -141,6 +141,11 @@
             <field>calcYearsBetweenRearrest__c</field>
             <table>SROI_Calculation__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>residentMoveInDate__c</field>
+            <table>SROI_Calculation__c</table>
+        </columns>
         <masterLabel>SROI Calculation</masterLabel>
     </sections>
     <sections>

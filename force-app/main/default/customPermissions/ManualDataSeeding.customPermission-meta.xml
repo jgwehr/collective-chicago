@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allow creation of seed/dummy records in a sandbox</description>
+    <isLicensed>false</isLicensed>
+    <label>ManualDataSeeding</label>
+</CustomPermission>

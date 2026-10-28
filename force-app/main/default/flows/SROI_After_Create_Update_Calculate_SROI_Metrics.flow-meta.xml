@@ -202,7 +202,7 @@
             <label>Yes</label>
         </rules>
     </decisions>
-    <description>Once an SROI Calculation record is created (with baseline metrics), this Flow grabs the latest Settings to perform the actual calculations. Now with annual multipler</description>
+    <description>Once an SROI Calculation record is created (with baseline metrics), this Flow grabs the latest Settings to perform the actual calculations. Now with Inflation</description>
     <environments>Default</environments>
     <formulas>
         <description>If the Graduate had Drug/Alcohol abuse during intake/application, then calculate the average cost of treatment modified by the difference in national vs Collective Relapse Rates.</description>
@@ -210,6 +210,7 @@
         <dataType>Currency</dataType>
         <expression>( {!getSROISettings.substanceTreatmentRelapseRate__c} - {!getSROISettings.collectiveRelapseRate__c} )  / 100
 * {!getSROISettings.substanceTreatmentCost__c}
+* ((1  + {!getSROISettings.fedAverageInflationRate__c}/100) ^ (YEAR(TODAY()) - YEAR({!getSROISettings.substanceTreatmentDate__c})))
 * IF({!$Record.intakeDrugAlcoholAbuse__c},1,0)</expression>
         <scale>2</scale>
     </formulas>
@@ -221,28 +222,33 @@
         <scale>2</scale>
     </formulas>
     <formulas>
-        <name>calcIncomeSubTotal</name>
-        <dataType>Currency</dataType>
-        <expression>{!getSROISettings.incomeForecastedYearsMultipler__c} * ({!calcStateIncomeTax} + {!calcStateSalesTax} + {!calcFederalIncomeTax} + {!calcSocialSecurity})</expression>
-        <scale>2</scale>
-    </formulas>
-    <formulas>
         <description>Changes based on whether Employer provides Health Benefits</description>
         <name>calcMedicaid</name>
         <dataType>Currency</dataType>
-        <expression>IF({!$Record.healthBenefits__c}, {!getSROISettings.medicaidEmployerSponsored__c}, {!getSROISettings.medicaidNotSponsored__c}) * 12</expression>
+        <expression>IF(
+   {!$Record.healthBenefits__c}
+   , {!getSROISettings.medicaidEmployerSponsored__c} * ((1  + {!getSROISettings.fedAverageInflationRate__c}/100) ^ (YEAR(TODAY()) - YEAR({!getSROISettings.medicaidEmployerSponsoredDate__c})))
+   , {!getSROISettings.medicaidNotSponsored__c} * ((1  + {!getSROISettings.fedAverageInflationRate__c}/100) ^ (YEAR(TODAY()) - YEAR({!getSROISettings.medicaidNotSponsoredDate__c})))
+)
+* 12</expression>
         <scale>2</scale>
     </formulas>
     <formulas>
+        <description>Overall cost is determined at a given date. So, despite Recidivism counting multiple years, inflation can be applied to when that cost was defined.</description>
         <name>calcRecidivism</name>
         <dataType>Currency</dataType>
-        <expression>({!helpRecidivismRate}/100) * {!getSROISettings.recidivismCost__c}</expression>
+        <expression>({!helpRecidivismRate}/100)
+* {!getSROISettings.recidivismCost__c}
+* ((1  + {!getSROISettings.fedAverageInflationRate__c}/100) ^ (YEAR(TODAY()) - YEAR({!getSROISettings.recidivismCostDate__c})))
+* IF({!$Record.applicationCriminalRecord__c},1,0)</expression>
         <scale>2</scale>
     </formulas>
     <formulas>
         <name>calcSnapLink</name>
         <dataType>Currency</dataType>
-        <expression>IF(BLANKVALUE({!$Record.budgetSnapLinkAmount__c},0) &gt;0,{!$Record.budgetSnapLinkAmount__c},0) * 12</expression>
+        <expression>IF(BLANKVALUE({!$Record.budgetSnapLinkAmount__c},0) &gt;0,{!getSROISettings.fedSNAPBenefits__c},0)
+* ((1  + {!getSROISettings.fedAverageInflationRate__c}/100) ^ (YEAR(TODAY()) - YEAR({!getSROISettings.fedSNAPBenefitsDate__c})))
+* 12</expression>
         <scale>2</scale>
     </formulas>
     <formulas>
@@ -256,10 +262,13 @@
         <dataType>Currency</dataType>
         <expression>{!calcMedicaid}
 + {!calcSnapLink}
++ {!calcSocialSecurity}
++ {!calcStateIncomeTax}
++ {!calcStateSalesTax}
++ {!calcFederalIncomeTax}
 + {!calcUnemployment}
 + {!calcRecidivism}
-+ {!calcAbuseTreatment}
-+ {!calcIncomeSubTotal}</expression>
++ {!calcAbuseTreatment}</expression>
         <scale>2</scale>
     </formulas>
     <formulas>
@@ -279,7 +288,14 @@
         <description>Unemployment is only issued for six months, not twelve.</description>
         <name>calcUnemployment</name>
         <dataType>Currency</dataType>
-        <expression>IF(BLANKVALUE({!$Record.budgetUnemploymentAmount__c}, 0)&gt;0,{!$Record.budgetUnemploymentAmount__c},0) * 6</expression>
+        <expression>IF(BLANKVALUE({!$Record.budgetUnemploymentAmount__c}, 0)&gt;0,{!$Record.budgetUnemploymentAmount__c},0)
+* 6
+* (
+    (1  + {!getSROISettings.fedAverageInflationRate__c}/100)
+    ^ (
+        YEAR(TODAY()) - YEAR({!$Record.residentMoveInDate__c})
+    )
+)</expression>
         <scale>2</scale>
     </formulas>
     <formulas>
@@ -295,9 +311,10 @@
         <scale>2</scale>
     </formulas>
     <formulas>
+        <description>Helps ensure settings are recent enough to be meaningful. Can be adjusted to allow for a larger window if the settings change infrequently. If Settings are older than this value, they will not be made available.</description>
         <name>helpRecentSettings</name>
         <dataType>Date</dataType>
-        <expression>{!$Flow.CurrentDate} - 30</expression>
+        <expression>{!$Flow.CurrentDate} - 90</expression>
     </formulas>
     <formulas>
         <description>Duplicates calcYearsBetweenRearrest__c because we can&apos;t access formulas in Fast Field Update Flows... it&apos;s worth redundancy for overall performance. If the Graduate has not been rearrested, it counts from Today.</description>

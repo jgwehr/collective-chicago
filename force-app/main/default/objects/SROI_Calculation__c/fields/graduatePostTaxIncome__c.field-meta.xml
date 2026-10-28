@@ -3,10 +3,12 @@
     <fullName>graduatePostTaxIncome__c</fullName>
     <businessStatus>Active</businessStatus>
     <description>Part of SROI calculations. Should be updated whenever a Graduate submits a new Survey</description>
+    <externalId>false</externalId>
     <label>Post-Tax Monthly Income (Graduate)</label>
     <precision>8</precision>
-    <required>true</required>
+    <required>false</required>
     <scale>2</scale>
+    <securityClassification>Restricted</securityClassification>
     <trackTrending>false</trackTrending>
     <type>Currency</type>
 </CustomField>

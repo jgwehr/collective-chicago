@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Ability to use Change Sets</description>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>ManualDataSeeding</name>
+    </customPermissions>
+    <description>Ability to use Change Sets and Seed Data</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Admin - Deployment Manager</label>
     <userPermissions>
@@ -22,5 +26,9 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ViewSetup</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ViewSetupAuditTrail</name>
     </userPermissions>
 </PermissionSet>

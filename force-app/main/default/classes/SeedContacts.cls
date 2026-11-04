@@ -96,6 +96,68 @@ global class SeedContacts implements SandboxPostCopy {
         insert contacts;
     }
 
+    /*
+    ENVIRONMENT HELPERS
+    -------------------------------------------------------------------------
+    
+    -------------------------------------------------------------------------
+    */
+
+    /*
+    In theory, manuallyAssignRecordTypeToAutomatedProcess() only needs to be ran once in production.
+    It is codified here for documentation and learning purposes - its steps would otherwise be opaque
+    to future admins/developers. 
+
+    Problem Statement: The Automated Process user is the executing entity when refreshing a sandbox.
+    This seed class makes use of the "Stakeholder" record type. However, the user does not have rights
+    to this recordType. As a result, the seed execution fails silently.
+    Solution: This method is ran once in Product to provide the recordType assignment.
+    */
+    public static void manuallyAssignRecordTypeToAutomatedProcess() {
+
+        // Protect this action from accidental use
+        if (!FeatureManagement.checkPermission('ManualDataSeeding')) {
+            throw new System.NoAccessException();
+        }
+
+        // 2. Check running user Schema permissions (Read on User/PermissionSet, Create on PermissionSetAssignment)
+        if (!Schema.sObjectType.User.isAccessible() || 
+            !Schema.sObjectType.PermissionSet.isAccessible() || 
+            !Schema.sObjectType.PermissionSetAssignment.isCreateable()) {
+            throw new System.NoAccessException();
+        }
+
+        // Get the Automated Process user
+        List<User> autoProcUsers = [SELECT Id FROM User WHERE Alias = 'autoproc' LIMIT 10]; // Queried into a list to ensure there's not more than one result available.
+        // Then, ensure we got one and only one result
+        if (autoProcUsers.size() != 1) {
+            throw new QueryException('Expected exactly 1 Automated Process user record (alias "autoproc"), but found: ' + autoProcUsers.size());
+        }
+        User autoProc = autoProcUsers[0];
+
+        // Get the custom permission set holding the recordType assignments
+        List<PermissionSet> permSets = [SELECT Id FROM PermissionSet WHERE Name = 'DataSeedingCapabilities' LIMIT 10]; // Queried into a list to ensure there's not more than one result available.
+        // Then, ensure we got one and only one result
+        if (permSets.size() != 1) {
+            throw new QueryException('Expected exactly 1 Permission Set named "DataSeedingCapabilities", but found: ' + autoProcUsers.size());
+        }
+        PermissionSet ps = permSets[0];
+
+        try {
+            PermissionSetAssignment psa = new PermissionSetAssignment(
+                AssigneeId = autoProc.Id,
+                PermissionSetId = ps.Id
+            );
+
+            insert psa;
+
+        } catch (DmlException e) {
+            System.debug(LoggingLevel.ERROR, 'Failed to insert PermissionSetAssignment: ' + e.getMessage());
+            throw e;
+        }
+    }
+
+
 
     /*
     -------------------------------------------------------------------------

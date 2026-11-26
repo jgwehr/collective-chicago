@@ -135,6 +135,8 @@
         <queriedFields>OwnerId</queriedFields>
         <queriedFields>graduateHealthBenefits__c</queriedFields>
         <queriedFields>residentMoveInDate__c</queriedFields>
+        <queriedFields>intakeCriminalRecordFelony__c</queriedFields>
+        <queriedFields>intakeCriminalRecordMisdemeanor__c</queriedFields>
         <sortField>residentGraduationDate__c</sortField>
         <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -165,7 +167,12 @@
                 <outputFieldApiName>applicationCriminalRecord__c</outputFieldApiName>
                 <transformType>Map</transformType>
                 <value>
-                    <elementReference>loopGraduates.applicationCriminalRecord__c</elementReference>
+                    <formulaDataType>Boolean</formulaDataType>
+                    <formulaExpression>OR (
+{!loopGraduates.applicationCriminalRecord__c}
+,{!loopGraduates.intakeCriminalRecordMisdemeanor__c}
+,{!loopGraduates.intakeCriminalRecordFelony__c}
+)</formulaExpression>
                 </value>
             </transformValueActions>
             <transformValueActions>
